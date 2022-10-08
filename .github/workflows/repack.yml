@@ -1,0 +1,42 @@
+name: Create Repacked Patches
+
+on: workflow_dispatch
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+
+    - uses: actions/setup-java@v3
+      with:
+        distribution: "zulu"
+        java-version: "17"
+
+    - name: Setup build environment 
+      run: sudo apt update ; sudo apt install jq unzip
+
+    - name: Download latest revanced-patches jar
+      run: |
+        wget -c $(curl -ksL "https://api.github.com/repos/revanced/revanced-patches/releases/latest" | jq -r ".assets[1].browser_download_url")
+        echo "PATCHES_VERSION=$(curl -ksL "https://api.github.com/repos/revanced/revanced-patches/releases/latest" | jq -r ".tag_name")" >> $GITHUB_ENV
+
+    - name: Decompile and recompile revanced-patches jar
+      run: |
+        old_file=$(find revanced-patches*.jar)
+        echo "PATCHES_FILE=$old_file" >> $GITHUB_ENV
+        mkdir rp ; mv $old_file rp ; cd rp
+        unzip revanced-patches*.jar ; rm $old_file
+        mv ../branding . ; jar cvf ../$old_file *
+
+    - name: Get patches jar checksum
+      run: |
+        sha=`sha256sum ${{ env.PATCHES_FILE }} | awk '{ print $1 }'`
+        echo "PATCHES_SHA256=$sha" >> $GITHUB_ENV
+
+    - name: Upload repacked jar to a release
+      uses: softprops/action-gh-release@v1
+      with:
+        body: "SHA-256 Checksum: ${{ env.PATCHES_SHA256 }}"
+        files: ${{ env.PATCHES_FILE }}
+        tag_name: ${{ env.PATCHES_VERSION }}
