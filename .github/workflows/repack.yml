@@ -27,7 +27,7 @@ jobs:
         echo "PATCHES_FILE=$old_file" >> $GITHUB_ENV
         mkdir rp ; mv $old_file rp ; cd rp
         unzip revanced-patches*.jar ; rm $old_file
-        mv ../branding . ; jar cvf ../$old_file *
+        cp -r ../branding . ; jar cvf ../$old_file *
 
     - name: Get patches jar checksum
       run: |

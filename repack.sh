@@ -9,6 +9,6 @@ wget -c $(curl -ksL "https://api.github.com/repos/revanced/revanced-patches/rele
 old_file=$(find revanced-patches*.jar)
 mkdir repack ; mv $old_file repack ; cd repack
 unzip revanced-patches*.jar ; rm $old_file
-cp ../branding . ; jar cvf ../$old_file * ; cd .. ; rm -r repack
+cp -r ../branding . ; jar cvf ../$old_file * ; cd .. ; rm -r repack
 
 echo "Done. $old_file has been generated."
