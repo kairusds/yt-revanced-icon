@@ -23,7 +23,7 @@ jobs:
     - name: Setup build environment 
       run: sudo apt update ; sudo apt install jq unzip
 
-    - name: Download latest revanced-patches jar
+    - name: Download revanced-patches jar version
       if: ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.version != 'vX.X.X' }}
       run: |
         wget -c $(curl -ksL "https://api.github.com/repos/revanced/revanced-patches/releases/tags/${{ github.event.inputs.version }}" | jq -r ".assets[1].browser_download_url")
