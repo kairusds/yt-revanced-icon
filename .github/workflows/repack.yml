@@ -24,13 +24,13 @@ jobs:
       run: sudo apt update ; sudo apt install jq unzip
 
     - name: Download latest revanced-patches jar
-      if: ${{ github.event.inputs.version != "vX.X.X" }}
+      if: ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.version != 'vX.X.X' }}
       run: |
         wget -c $(curl -ksL "https://api.github.com/repos/revanced/revanced-patches/releases/tags/${{ github.event.inputs.version }}" | jq -r ".assets[1].browser_download_url")
         echo "PATCHES_VERSION=${{ github.event.inputs.version }}" >> $GITHUB_ENV
 
     - name: Download latest revanced-patches jar
-      if: ${{ github.event.inputs.version == "vX.X.X" }}
+      if: ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.version == 'vX.X.X' }}
       run: |
         wget -c $(curl -ksL "https://api.github.com/repos/revanced/revanced-patches/releases/latest" | jq -r ".assets[1].browser_download_url")
         echo "PATCHES_VERSION=$(curl -ksL "https://api.github.com/repos/revanced/revanced-patches/releases/latest" | jq -r ".tag_name")" >> $GITHUB_ENV
