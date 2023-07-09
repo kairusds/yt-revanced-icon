@@ -23,34 +23,50 @@ jobs:
     - name: Setup build environment 
       run: sudo apt update ; sudo apt install jq unzip
 
-    - name: Download revanced-patches jar version
+    - name: Download revanced-patches version
       if: ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.version != 'vX.X.X' }}
       run: |
-        wget -c $(curl -ksL "https://api.github.com/repos/revanced/revanced-patches/releases/tags/${{ github.event.inputs.version }}" | jq -r ".assets[1].browser_download_url")
+        url="https://api.github.com/repos/revanced/revanced-patches/releases/tags/${{ github.event.inputs.version }}"
+        # patches.json
+        wget -c $(curl -ksL "$url" | jq -r ".assets[0].browser_download_url")
+        # jar
+        wget -c $(curl -ksL "$url" | jq -r ".assets[1].browser_download_url")
         echo "PATCHES_VERSION=${{ github.event.inputs.version }}" >> $GITHUB_ENV
 
-    - name: Download latest revanced-patches jar
+    - name: Download latest revanced-patches
       if: ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.version == 'vX.X.X' }}
       run: |
-        wget -c $(curl -ksL "https://api.github.com/repos/revanced/revanced-patches/releases/latest" | jq -r ".assets[1].browser_download_url")
-        echo "PATCHES_VERSION=$(curl -ksL "https://api.github.com/repos/revanced/revanced-patches/releases/latest" | jq -r ".tag_name")" >> $GITHUB_ENV
+        url="https://api.github.com/repos/revanced/revanced-patches/releases/latest"
+        # patches.json
+        wget -c $(curl -ksL "$url" | jq -r ".assets[0].browser_download_url")
+        # jar
+        wget -c $(curl -ksL "$url" | jq -r ".assets[1].browser_download_url")
+        echo "PATCHES_VERSION=$(curl -ksL "https://api.github.com/repos/revanced/revanced-patches/releases/latest" | jq -r ".tag_name")" >> $GITHUB_ENV 
 
     - name: Decompile and recompile revanced-patches jar
       run: |
         old_file=$(find revanced-patches*.jar)
-        echo "PATCHES_FILE=$old_file" >> $GITHUB_ENV
+        echo "PATCHES_JAR_FILE=$old_file" >> $GITHUB_ENV
         mkdir rp ; mv $old_file rp ; cd rp
         unzip revanced-patches*.jar ; rm $old_file
         cp -r ../branding . ; jar cvf ../$old_file *
 
-    - name: Get patches jar checksum
+    - name: Get files checksum
       run: |
-        sha=`sha256sum ${{ env.PATCHES_FILE }} | awk '{ print $1 }'`
-        echo "PATCHES_SHA256=$sha" >> $GITHUB_ENV
+        json_sha=`sha256sum patches.json | awk '{ print $1 }'`
+        jar_sha=`sha256sum ${{ env.PATCHES_JAR_FILE }} | awk '{ print $1 }'`
+        echo "PATCHES_JSON_SHA256=$json_sha" >> $GITHUB_ENV
+        echo "PATCHES_JAR_SHA256=$jar_sha" >> $GITHUB_ENV
 
-    - name: Upload repacked jar to a release
+    - name: Upload files to a release
       uses: softprops/action-gh-release@v1
       with:
-        body: "SHA-256 Checksum: ${{ env.PATCHES_SHA256 }}"
-        files: ${{ env.PATCHES_FILE }}
+        body: |
+          | Filename | SHA-256 Checksum |
+          | --- | --- |
+          | `patches.json` | `${{ env.PATCHES_JSON_SHA256 }}` |
+          | `${{ env.PATCHES_JAR_FILE }}` | `${{ env.PATCHES_JAR_SHA256 }}` |
+        files: |
+          patches.json
+          ${{ env.PATCHES_JAR_FILE }}
         tag_name: ${{ env.PATCHES_VERSION }}
