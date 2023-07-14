@@ -5,7 +5,7 @@ The custom icons are located in the `branding` directory.
 
 <details>
 
-`change-package-name`: Changes the package name.
+`Change package name`: Changes the package name.
 
 Target version: `all`
 
@@ -23,7 +23,7 @@ Excluded by default: `yes`
 
 ---
 
-`enable-android-debugging`: Enables Android debugging capabilities.
+`Enable android debugging`: Enables Android debugging capabilities.
 
 Target version: `all`
 
@@ -33,7 +33,7 @@ Excluded by default: `yes`
 
 ---
 
-`export-all-activities`: Makes all app activities exportable.
+`Export all activities`: Makes all app activities exportable.
 
 Target version: `all`
 
@@ -43,7 +43,7 @@ Excluded by default: `yes`
 
 ---
 
-`predictive-back-gesture`: Enables the predictive back gesture introduced on Android 13.
+`Predictive back gesture`: Enables the predictive back gesture introduced on Android 13.
 
 Target version: `all`
 
@@ -53,17 +53,17 @@ Excluded by default: `yes`
 
 ---
 
-`remove-screen-capture-restriction`: Removes the restriction of capturing audio from apps that normally wouldn't allow it.
+`Remove screen capture restriction`: Removes the restriction of capturing audio from apps that normally wouldn't allow it.
 
 Target version: `all`
 
-Dependencies: `remove-screen-capture-restriction-resource-patch`
+Dependencies: `RemoveCaptureRestrictionResourcePatch`
 
 Excluded by default: `yes`
 
 ---
 
-`remove-screenshot-restriction`: Removes the restriction of taking screenshots in apps that normally wouldn't allow it.
+`Remove screenshot restriction`: Removes the restriction of taking screenshots in apps that normally wouldn't allow it.
 
 Target version: `all`
 
@@ -73,7 +73,7 @@ Excluded by default: `yes`
 
 ---
 
-`spoof-wifi-connection`: Spoofs an existing Wi-Fi connection.
+`Spoof wifi connection`: Spoofs an existing Wi-Fi connection.
 
 Target version: `all`
 
@@ -89,7 +89,7 @@ Excluded by default: `yes`
 
 <details>
 
-`remove-bootloader-detection`: Removes the check for an unlocked bootloader.
+`Remove bootloader detection`: Removes the check for an unlocked bootloader.
 
 Target version: `all`
 
@@ -99,7 +99,7 @@ Excluded by default: `no`
 
 ---
 
-`remove-root-detection`: Removes the check for root permissions.
+`Remove root detection`: Removes the check for root permissions.
 
 Target version: `all`
 
@@ -115,7 +115,7 @@ Excluded by default: `no`
 
 <details>
 
-`remove-root-detection`: Removes the check for root permissions and unlocked bootloader.
+`Remove root detection`: Removes the check for root permissions and unlocked bootloader.
 
 Target version: `all`
 
@@ -125,7 +125,7 @@ Excluded by default: `no`
 
 ---
 
-`spoof-signature`: Spoofs the signature of the app.
+`Spoof signature`: Spoofs the signature of the app.
 
 Target version: `all`
 
@@ -141,7 +141,7 @@ Excluded by default: `no`
 
 <details>
 
-`unlock-pro`: Unlocks all pro features.
+`Unlock pro`: Unlocks all pro features.
 
 Target version: `all`
 
@@ -157,7 +157,7 @@ Excluded by default: `no`
 
 <details>
 
-`change-oauth-client-id`: Changes the OAuth client ID. The OAuth application type has to be "Installed app" and the redirect URI has to be set to "redditisfun://auth".
+`Change OAuth client id`: Changes the OAuth client ID. The OAuth application type has to be "Installed app" and the redirect URI has to be set to "redditisfun://auth".
 
 Target version: `all`
 
@@ -181,7 +181,7 @@ Excluded by default: `no`
 
 <details>
 
-`change-oauth-client-id`: Changes the OAuth client ID. The OAuth application type has to be "Installed app" and the redirect URI has to be set to "redditisfun://auth".
+`Change OAuth client id`: Changes the OAuth client ID. The OAuth application type has to be "Installed app" and the redirect URI has to be set to "redditisfun://auth".
 
 Target version: `all`
 
@@ -205,7 +205,7 @@ Excluded by default: `no`
 
 <details>
 
-`unlock-pro`: Unlocks all pro features.
+`Unlock pro`: Unlocks all pro features.
 
 Target version: `all`
 
@@ -221,7 +221,7 @@ Excluded by default: `no`
 
 <details>
 
-`pro-unlock`: Unlocks pro-only functions.
+`Pro unlock`: Unlocks pro-only functions.
 
 Target version: `4.52`
 
@@ -237,7 +237,7 @@ Excluded by default: `no`
 
 <details>
 
-`unlock-pro`: Unlocks premium features.
+`Unlock pro`: Unlocks premium features.
 
 Target version: `all`
 
@@ -253,7 +253,7 @@ Excluded by default: `no`
 
 <details>
 
-`unlock-paid-widgets`: Unlocks paid widgets of the app
+`Unlock paid widgets`: Unlocks paid widgets of the app
 
 Target version: `all`
 
@@ -269,7 +269,7 @@ Excluded by default: `no`
 
 <details>
 
-`disable-switching-emoji-to-sticker-in-message-input-field`: Disables switching from emoji to sticker search mode in message input field
+`Disable switching emoji to sticker in message input field`: Disables switching from emoji to sticker search mode in message input field
 
 Target version: `all`
 
@@ -279,7 +279,7 @@ Excluded by default: `no`
 
 ---
 
-`disable-typing-indicator`: Disables the indicator while typing a message
+`Disable typing indicator`: Disables the indicator while typing a message
 
 Target version: `all`
 
@@ -289,7 +289,7 @@ Excluded by default: `no`
 
 ---
 
-`hide-inbox-ads`: Hides ads in inbox.
+`Hide inbox ads`: Hides ads in inbox.
 
 Target version: `all`
 
@@ -305,7 +305,7 @@ Excluded by default: `no`
 
 <details>
 
-`remove-device-restrictions`: Removes restrictions from using the app on any device.
+`Remove device restrictions`: Removes restrictions from using the app on any device.
 
 Target version: `all`
 
@@ -321,7 +321,7 @@ Excluded by default: `no`
 
 <details>
 
-`background-play`: Enables playing music in the background.
+`Background play`: Enables playing music in the background.
 
 Target version: `all`
 
@@ -331,7 +331,7 @@ Excluded by default: `no`
 
 ---
 
-`bypass-certificate-checks`: Bypasses certificate checks which prevent YouTube Music from working on Android Auto.
+`Bypass certificate checks`: Bypasses certificate checks which prevent YouTube Music from working on Android Auto.
 
 Target version: `all`
 
@@ -341,7 +341,7 @@ Excluded by default: `no`
 
 ---
 
-`codecs-unlock`: Adds more audio codec options. The new audio codecs usually result in better audio quality.
+`Codecs unlock`: Adds more audio codec options. The new audio codecs usually result in better audio quality.
 
 Target version: `all`
 
@@ -351,7 +351,7 @@ Excluded by default: `no`
 
 ---
 
-`compact-header`: Hides the music category bar at the top of the homepage.
+`Compact header`: Hides the music category bar at the top of the homepage.
 
 Target version: `all`
 
@@ -361,7 +361,7 @@ Excluded by default: `yes`
 
 ---
 
-`exclusive-audio-playback`: Enables the option to play music without video.
+`Exclusive audio playback`: Enables the option to play music without video.
 
 Target version: `all`
 
@@ -371,7 +371,7 @@ Excluded by default: `no`
 
 ---
 
-`hide-get-premium`: Removes all "Get Premium" evidences from the avatar menu.
+`Hide get premium`: Removes all "Get Premium" evidences from the avatar menu.
 
 Target version: `all`
 
@@ -381,7 +381,7 @@ Excluded by default: `no`
 
 ---
 
-`minimized-playback-music`: Enables minimized playback on Kids music.
+`Minimized playback music`: Enables minimized playback on Kids music.
 
 Target version: `all`
 
@@ -391,7 +391,7 @@ Excluded by default: `no`
 
 ---
 
-`music-video-ads`: Removes ads in the music player.
+`Music video ads`: Removes ads in the music player.
 
 Target version: `all`
 
@@ -401,7 +401,7 @@ Excluded by default: `no`
 
 ---
 
-`upgrade-button-remover`: Removes the upgrade tab from the pivot bar.
+`Upgrade button remover`: Removes the upgrade tab from the pivot bar.
 
 Target version: `all`
 
@@ -411,11 +411,11 @@ Excluded by default: `no`
 
 ---
 
-`vanced-microg-support`: Allows YouTube Music ReVanced to run without root and under a different package name.
+`Vanced MicroG support`: Allows YouTube Music ReVanced to run without root and under a different package name.
 
 Target version: `all`
 
-Dependencies: `microg-resource-patch`
+Dependencies: `MicroGResourcePatch`
 
 Excluded by default: `no`
 
@@ -427,47 +427,47 @@ Excluded by default: `no`
 
 <details>
 
-`always-autorepeat`: Always repeats the playing video again.
+`Always autorepeat`: Always repeats the playing video again.
 
 Target version: `18.16.37`, `18.19.35`, `18.20.39`, `18.23.35`
 
-Dependencies: `integrations`
+Dependencies: `Integrations`
 
 Excluded by default: `no`
 
 ---
 
-`client-spoof`: Spoofs a patched client to allow playback.
+`Client spoof`: Spoofs a patched client to allow playback.
 
 Target version: `18.16.37`, `18.19.35`, `18.20.39`, `18.23.35`
 
-Dependencies: `spoof-signature-verification`
+Dependencies: `Spoof signature verification`
 
 Excluded by default: `no`
 
 ---
 
-`comments`: Hides components related to comments.
+`Comments`: Hides components related to comments.
 
 Target version: `18.16.37`, `18.19.35`, `18.20.39`, `18.23.35`
 
-Dependencies: `settings`, `LithoFilterPatch`
+Dependencies: `Settings`, `LithoFilterPatch`
 
 Excluded by default: `no`
 
 ---
 
-`copy-video-url`: Adds buttons in player to copy video links.
+`Copy video url`: Adds buttons in player to copy video links.
 
 Target version: `18.16.37`, `18.19.35`, `18.20.39`, `18.23.35`
 
-Dependencies: `copy-video-url-resource`, `player-controls-bytecode-patch`, `video-information`
+Dependencies: `CopyVideoUrlResourcePatch`, `Player controls bytecode patch`, `Video information`
 
 Excluded by default: `no`
 
 ---
 
-`custom-branding`: Changes the YouTube launcher icon and name to your choice (defaults to ReVanced).
+`Custom branding`: Changes the YouTube launcher icon and name to your choice (defaults to ReVanced).
 
 Target version: `all`
 
@@ -486,187 +486,187 @@ Excluded by default: `no`
 
 ---
 
-`custom-video-buffer`: Lets you change the buffers of videos.
+`Disable Shorts on startup`: Disables playing YouTube Shorts when launching YouTube.
 
 Target version: `18.16.37`, `18.19.35`, `18.20.39`, `18.23.35`
 
-Dependencies: `settings`
-
-Excluded by default: `yes`
-
----
-
-`disable-auto-captions`: Disable forced captions from being automatically enabled.
-
-Target version: `18.16.37`, `18.19.35`, `18.20.39`, `18.23.35`
-
-Dependencies: `integrations`, `settings`
+Dependencies: `Integrations`, `Settings`
 
 Excluded by default: `no`
 
 ---
 
-`disable-fullscreen-panels`: Disables video description and comments panel in fullscreen view.
+`Disable auto captions`: Disable forced captions from being automatically enabled.
 
 Target version: `18.16.37`, `18.19.35`, `18.20.39`, `18.23.35`
 
-Dependencies: `integrations`, `settings`
+Dependencies: `Integrations`, `Settings`
 
 Excluded by default: `no`
 
 ---
 
-`disable-player-popup-panels`: Disables panels from appearing automatically when going into fullscreen (playlist or live chat).
+`Disable fullscreen panels`: Disables video description and comments panel in fullscreen view.
 
 Target version: `18.16.37`, `18.19.35`, `18.20.39`, `18.23.35`
 
-Dependencies: `integrations`, `settings`
+Dependencies: `Integrations`, `Settings`
 
 Excluded by default: `no`
 
 ---
 
-`disable-shorts-on-startup`: Disables playing YouTube Shorts when launching YouTube.
+`Disable player popup panels`: Disables panels from appearing automatically when going into fullscreen (playlist or live chat).
 
 Target version: `18.16.37`, `18.19.35`, `18.20.39`, `18.23.35`
 
-Dependencies: `integrations`, `settings`
+Dependencies: `Integrations`, `Settings`
 
 Excluded by default: `no`
 
 ---
 
-`disable-zoom-haptics`: Disables haptics when zooming.
+`Disable zoom haptics`: Disables haptics when zooming.
 
 Target version: `all`
 
-Dependencies: `settings`
+Dependencies: `Settings`
 
 Excluded by default: `no`
 
 ---
 
-`enable-debugging`: Adds debugging options.
+`Enable debugging`: Adds debugging options.
 
 Target version: `all`
 
-Dependencies: `integrations`, `settings`
+Dependencies: `Integrations`, `Settings`
 
 Excluded by default: `no`
 
 ---
 
-`external-downloads`: Adds support to download and save YouTube videos using an external app.
+`External downloads`: Adds support to download and save YouTube videos using an external app.
 
 Target version: `18.16.37`, `18.19.35`, `18.20.39`, `18.23.35`
 
-Dependencies: `external-downloads-resource-patch`, `player-controls-bytecode-patch`, `video-information`
+Dependencies: `ExternalDownloadsResourcePatch`, `Player controls bytecode patch`, `Video information`
 
 Excluded by default: `no`
 
 ---
 
-`hdr-auto-brightness`: Makes the brightness of HDR videos follow the system default.
+`HDR auto brightness`: Makes the brightness of HDR videos follow the system default.
 
 Target version: `18.16.37`, `18.19.35`, `18.20.39`, `18.23.35`
 
-Dependencies: `integrations`, `settings`
+Dependencies: `Integrations`, `Settings`
 
 Excluded by default: `no`
 
 ---
 
-`hide-ads`: Removes general ads.
+`Hide Shorts components`: Hides components from YouTube Shorts.
 
 Target version: `18.16.37`, `18.19.35`, `18.20.39`, `18.23.35`
 
-Dependencies: `hide-get-premium`, `HideAdsResourcePatch`, `VerticalScrollPatch`, `FixBackToExitGesturePatch`
+Dependencies: `Integrations`, `LithoFilterPatch`, `HideShortsComponentsResourcePatch`, `ResourceMappingPatch`
 
 Excluded by default: `no`
 
 ---
 
-`hide-album-cards`: Hides the album cards below the artist description.
+`Hide ads`: Removes general ads.
 
 Target version: `18.16.37`, `18.19.35`, `18.20.39`, `18.23.35`
 
-Dependencies: `integrations`, `hide-album-cards-resource-patch`
+Dependencies: `Hide get premium`, `HideAdsResourcePatch`, `VerticalScrollPatch`, `FixBackToExitGesturePatch`
 
 Excluded by default: `no`
 
 ---
 
-`hide-autoplay-button`: Hides the autoplay button in the video player.
+`Hide album cards`: Hides the album cards below the artist description.
 
 Target version: `18.16.37`, `18.19.35`, `18.20.39`, `18.23.35`
 
-Dependencies: `integrations`, `settings`, `resource-mapping`
+Dependencies: `Integrations`, `AlbumCardsResourcePatch`
 
 Excluded by default: `no`
 
 ---
 
-`hide-breaking-news-shelf`: Hides the breaking news shelf on the homepage tab.
+`Hide autoplay button`: Hides the autoplay button in the video player.
 
 Target version: `18.16.37`, `18.19.35`, `18.20.39`, `18.23.35`
 
-Dependencies: `integrations`, `breaking-news-shelf-resource-patch`
+Dependencies: `Integrations`, `Settings`, `ResourceMappingPatch`
 
 Excluded by default: `no`
 
 ---
 
-`hide-captions-button`: Hides the captions button on video player.
+`Hide breaking news shelf`: Hides the breaking news shelf on the homepage tab.
 
 Target version: `18.16.37`, `18.19.35`, `18.20.39`, `18.23.35`
 
-Dependencies: `integrations`, `settings`
+Dependencies: `Integrations`, `BreakingNewsResourcePatch`
 
 Excluded by default: `no`
 
 ---
 
-`hide-cast-button`: Hides the cast button in the video player.
+`Hide captions button`: Hides the captions button on video player.
+
+Target version: `18.16.37`, `18.19.35`, `18.20.39`, `18.23.35`
+
+Dependencies: `Integrations`, `Settings`
+
+Excluded by default: `no`
+
+---
+
+`Hide cast button`: Hides the cast button in the video player.
 
 Target version: `all`
 
-Dependencies: `integrations`, `settings`
+Dependencies: `Integrations`, `Settings`
 
 Excluded by default: `no`
 
 ---
 
-`hide-crowdfunding-box`: Hides the crowdfunding box between the player and video description.
+`Hide crowdfunding box`: Hides the crowdfunding box between the player and video description.
 
 Target version: `18.16.37`, `18.19.35`, `18.20.39`, `18.23.35`
 
-Dependencies: `integrations`, `crowdfunding-box-resource-patch`
+Dependencies: `Integrations`, `CrowdfundingBoxResourcePatch`
 
 Excluded by default: `no`
 
 ---
 
-`hide-email-address`: Hides the email address in the account switcher.
+`Hide email address`: Hides the email address in the account switcher.
 
 Target version: `18.16.37`, `18.19.35`, `18.20.39`, `18.23.35`
 
-Dependencies: `integrations`, `hide-email-address-resource-patch`
+Dependencies: `Integrations`, `HideEmailAddressResourcePatch`
 
 Excluded by default: `no`
 
 ---
 
-`hide-endscreen-cards`: Hides the suggested video cards at the end of a video in fullscreen.
+`Hide endscreen cards`: Hides the suggested video cards at the end of a video in fullscreen.
 
 Target version: `18.16.37`, `18.19.35`, `18.20.39`, `18.23.35`
 
-Dependencies: `integrations`, `hide-endscreen-cards-resource-patch`
+Dependencies: `Integrations`, `HideEndscreenCardsResourcePatch`
 
 Excluded by default: `no`
 
 ---
 
-`hide-filter-bar`: Hides the filter bar in video feeds.
+`Hide filter bar`: Hides the filter bar in video feeds.
 
 Target version: `18.16.37`, `18.19.35`, `18.20.39`, `18.23.35`
 
@@ -676,7 +676,7 @@ Excluded by default: `no`
 
 ---
 
-`hide-floating-microphone-button`: Hides the floating microphone button which appears in search.
+`Hide floating microphone button`: Hides the floating microphone button which appears in search.
 
 Target version: `18.16.37`, `18.19.35`, `18.20.39`, `18.23.35`
 
@@ -686,47 +686,47 @@ Excluded by default: `no`
 
 ---
 
-`hide-info-cards`: Hides info cards in videos.
+`Hide info cards`: Hides info cards in videos.
 
 Target version: `18.16.37`, `18.19.35`, `18.20.39`, `18.23.35`
 
-Dependencies: `integrations`, `HideInfocardsResourcePatch`
+Dependencies: `Integrations`, `HideInfocardsResourcePatch`
 
 Excluded by default: `no`
 
 ---
 
-`hide-layout-components`: Hides general layout components.
+`Hide layout components`: Hides general layout components.
 
 Target version: `18.16.37`, `18.19.35`, `18.20.39`, `18.23.35`
 
-Dependencies: `LithoFilterPatch`, `settings`
+Dependencies: `LithoFilterPatch`, `Settings`
 
 Excluded by default: `no`
 
 ---
 
-`hide-load-more-button`: Hides the button under videos that loads similar videos.
+`Hide load more button`: Hides the button under videos that loads similar videos.
 
 Target version: `18.16.37`, `18.19.35`, `18.20.39`, `18.23.35`
 
-Dependencies: `hide-load-more-button-resource-patch`
+Dependencies: `HideLoadMoreButtonResourcePatch`
 
 Excluded by default: `no`
 
 ---
 
-`hide-player-buttons`: Adds the option to hide video player previous and next buttons.
+`Hide player buttons`: Adds the option to hide video player previous and next buttons.
 
 Target version: `18.16.37`, `18.19.35`, `18.20.39`, `18.23.35`
 
-Dependencies: `integrations`, `settings`
+Dependencies: `Integrations`, `Settings`
 
 Excluded by default: `no`
 
 ---
 
-`hide-player-overlay`: Hides the dark background overlay from the player when player controls are visible.
+`Hide player overlay`: Hides the dark background overlay from the player when player controls are visible.
 
 Target version: `all`
 
@@ -736,97 +736,87 @@ Excluded by default: `no`
 
 ---
 
-`hide-seekbar`: Hides the seekbar.
+`Hide seekbar`: Hides the seekbar.
 
 Target version: `18.16.37`, `18.19.35`, `18.20.39`, `18.23.35`
 
-Dependencies: `integrations`, `settings`, `SeekbarColorBytecodePatch`, `SeekbarPreferencesPatch`
+Dependencies: `Integrations`, `Settings`, `SeekbarColorBytecodePatch`, `SeekbarPreferencesPatch`
 
 Excluded by default: `no`
 
 ---
 
-`hide-shorts-components`: Hides components from YouTube Shorts.
+`Hide timestamp`: Hides timestamp in video player.
 
 Target version: `18.16.37`, `18.19.35`, `18.20.39`, `18.23.35`
 
-Dependencies: `integrations`, `LithoFilterPatch`, `HideShortsComponentsResourcePatch`, `resource-mapping`
+Dependencies: `Integrations`, `Settings`
 
 Excluded by default: `no`
 
 ---
 
-`hide-timestamp`: Hides timestamp in video player.
+`Hide video action buttons`: Adds the options to hide action buttons under a video.
 
 Target version: `18.16.37`, `18.19.35`, `18.20.39`, `18.23.35`
 
-Dependencies: `integrations`, `settings`
+Dependencies: `ResourceMappingPatch`, `LithoFilterPatch`
 
 Excluded by default: `no`
 
 ---
 
-`hide-video-action-buttons`: Adds the options to hide action buttons under a video.
+`Hide watch in VR`: Hides the option to watch in VR from the player settings flyout panel.
 
 Target version: `18.16.37`, `18.19.35`, `18.20.39`, `18.23.35`
 
-Dependencies: `resource-mapping`, `LithoFilterPatch`
+Dependencies: `Integrations`, `Settings`
 
 Excluded by default: `no`
 
 ---
 
-`hide-watch-in-vr`: Hides the option to watch in VR from the player settings flyout panel.
+`Hide watermark`: Hides creator's watermarks on videos.
 
 Target version: `18.16.37`, `18.19.35`, `18.20.39`, `18.23.35`
 
-Dependencies: `integrations`, `settings`
+Dependencies: `Integrations`, `Settings`
 
 Excluded by default: `no`
 
 ---
 
-`hide-watermark`: Hides creator's watermarks on videos.
+`Minimized playback`: Enables minimized and background playback.
 
 Target version: `18.16.37`, `18.19.35`, `18.20.39`, `18.23.35`
 
-Dependencies: `integrations`, `settings`
+Dependencies: `Integrations`, `Player type hook`, `Settings`
 
 Excluded by default: `no`
 
 ---
 
-`minimized-playback`: Enables minimized and background playback.
+`Navigation buttons`: Adds options to hide or change navigation buttons.
 
 Target version: `18.16.37`, `18.19.35`, `18.20.39`, `18.23.35`
 
-Dependencies: `integrations`, `player-type-hook`, `settings`
+Dependencies: `Integrations`, `Settings`, `ResolvePivotBarFingerprintsPatch`
 
 Excluded by default: `no`
 
 ---
 
-`navigation-buttons`: Adds options to hide or change navigation buttons.
-
-Target version: `18.16.37`, `18.19.35`, `18.20.39`, `18.23.35`
-
-Dependencies: `integrations`, `settings`, `ResolvePivotBarFingerprintsPatch`
-
-Excluded by default: `no`
-
----
-
-`old-video-quality-menu`: Shows the old video quality with the advanced video quality options instead of the new one.
+`Old video quality menu`: Shows the old video quality with the advanced video quality options instead of the new one.
 
 Target version: `18.20.39`, `18.23.35`
 
-Dependencies: `integrations`, `OldVideoQualityMenuResourcePatch`, `LithoFilterPatch`, `BottomSheetHookPatch`
+Dependencies: `Integrations`, `OldVideoQualityMenuResourcePatch`, `LithoFilterPatch`, `BottomSheetHookPatch`
 
 Excluded by default: `no`
 
 ---
 
-`open-links-externally`: Open links outside of the app directly in your browser.
+`Open links externally`: Open links outside of the app directly in your browser.
 
 Target version: `18.16.37`, `18.19.35`, `18.20.39`, `18.23.35`
 
@@ -836,7 +826,7 @@ Excluded by default: `no`
 
 ---
 
-`premium-heading`: Shows premium branding on the home screen.
+`Premium heading`: Shows premium branding on the home screen.
 
 Target version: `all`
 
@@ -846,17 +836,17 @@ Excluded by default: `no`
 
 ---
 
-`remember-video-quality`: Adds the ability to remember the video quality you chose in the video quality flyout.
+`Remember video quality`: Adds the ability to remember the video quality you chose in the video quality flyout.
 
 Target version: `18.19.35`, `18.20.39`, `18.23.35`
 
-Dependencies: `integrations`, `video-information`, `settings`
+Dependencies: `Integrations`, `Video information`, `Settings`
 
 Excluded by default: `no`
 
 ---
 
-`remove-player-controls-background`: Removes the background from the video player controls.
+`Remove player controls background`: Removes the background from the video player controls.
 
 Target version: `18.16.37`, `18.19.35`, `18.20.39`, `18.23.35`
 
@@ -866,71 +856,71 @@ Excluded by default: `yes`
 
 ---
 
-`return-youtube-dislike`: Shows the dislike count of videos using the Return YouTube Dislike API.
+`Return YouTube Dislike`: Shows the dislike count of videos using the Return YouTube Dislike API.
 
 Target version: `18.16.37`, `18.19.35`, `18.20.39`, `18.23.35`
 
-Dependencies: `integrations`, `video-id-hook`, `return-youtube-dislike-resource-patch`, `player-type-hook`
+Dependencies: `Integrations`, `Video id hook`, `ReturnYouTubeDislikeResourcePatch`, `Player type hook`
 
 Excluded by default: `no`
 
 ---
 
-`seekbar-tapping`: Enables tap-to-seek on the seekbar of the video player.
+`Seekbar tapping`: Enables tap-to-seek on the seekbar of the video player.
 
 Target version: `18.16.37`, `18.19.35`, `18.20.39`, `18.23.35`
 
-Dependencies: `integrations`, `EnableSeekbarTappingResourcePatch`
+Dependencies: `Integrations`, `EnableSeekbarTappingResourcePatch`
 
 Excluded by default: `no`
 
 ---
 
-`sponsorblock`: Integrates SponsorBlock which allows skipping video segments such as sponsored content.
+`SponsorBlock`: Integrates SponsorBlock which allows skipping video segments such as sponsored content.
 
 Target version: `18.16.37`, `18.19.35`, `18.20.39`, `18.23.35`
 
-Dependencies: `integrations`, `video-id-hook`, `video-information`, `player-type-hook`, `player-controls-bytecode-patch`, `sponsorblock-resource-patch`
+Dependencies: `Integrations`, `Video id hook`, `Video information`, `Player type hook`, `Player controls bytecode patch`, `SponsorBlockResourcePatch`
 
 Excluded by default: `no`
 
 ---
 
-`spoof-app-version`: Tricks YouTube into thinking, you are running an older version of the app. One of the side effects also includes restoring the old UI.
+`Spoof app version`: Tricks YouTube into thinking, you are running an older version of the app. One of the side effects also includes restoring the old UI.
 
 Target version: `18.16.37`, `18.19.35`, `18.20.39`, `18.23.35`
 
-Dependencies: `integrations`, `settings`
+Dependencies: `Integrations`, `Settings`
 
 Excluded by default: `no`
 
 ---
 
-`swipe-controls`: Adds volume and brightness swipe controls.
+`Swipe controls`: Adds volume and brightness swipe controls.
 
 Target version: `18.16.37`, `18.19.35`, `18.20.39`, `18.23.35`
 
-Dependencies: `integrations`, `player-type-hook`, `swipe-controls-resource-patch`
+Dependencies: `Integrations`, `Player type hook`, `SwipeControlsResourcePatch`
 
 Excluded by default: `no`
 
 ---
 
-`tablet-mini-player`: Enables the tablet mini player layout.
+`Tablet mini player`: Enables the tablet mini player layout.
 
 Target version: `18.16.37`, `18.19.35`, `18.20.39`, `18.23.35`
 
-Dependencies: `integrations`, `settings`
+Dependencies: `Integrations`, `Settings`
 
 Excluded by default: `no`
 
 ---
 
-`theme`: Applies a custom theme.
+`Theme`: Applies a custom theme.
 
 Target version: `all`
 
-Dependencies: `litho-color-hook`, `SeekbarColorBytecodePatch`, `ThemeResourcePatch`
+Dependencies: `Litho color hook`, `SeekbarColorBytecodePatch`, `ThemeResourcePatch`
 
 Excluded by default: `no`
 
@@ -945,41 +935,41 @@ Excluded by default: `no`
 
 ---
 
-`vanced-microg-support`: Allows YouTube ReVanced to run without root and under a different package name with Vanced MicroG.
+`Vanced MicroG support`: Allows YouTube ReVanced to run without root and under a different package name with Vanced MicroG.
 
 Target version: `18.16.37`, `18.19.35`, `18.20.39`, `18.23.35`
 
-Dependencies: `microg-resource-patch`, `hide-cast-button`, `client-spoof`
+Dependencies: `MicroGResourcePatch`, `Hide cast button`, `Client spoof`
 
 Excluded by default: `no`
 
 ---
 
-`video-ads`: Removes ads in the video player.
+`Video ads`: Removes ads in the video player.
 
 Target version: `18.16.37`, `18.19.35`, `18.20.39`, `18.23.35`
 
-Dependencies: `integrations`, `settings`
+Dependencies: `Integrations`, `Settings`
 
 Excluded by default: `no`
 
 ---
 
-`video-speed`: Adds custom video speeds and ability to remember the playback speed you chose in the video playback speed flyout.
+`Video speed`: Adds custom video speeds and ability to remember the playback speed you chose in the video playback speed flyout.
 
 Target version: `18.20.39`, `18.23.35`
 
-Dependencies: `custom-video-speed`, `remember-playback-speed`
+Dependencies: `Custom video speed`, `Remember playback speed`
 
 Excluded by default: `no`
 
 ---
 
-`wide-searchbar`: Replaces the search icon with a wide search bar. This will hide the YouTube logo when active.
+`Wide searchbar`: Replaces the search icon with a wide search bar. This will hide the YouTube logo when active.
 
 Target version: `18.16.37`, `18.19.35`, `18.20.39`, `18.23.35`
 
-Dependencies: `integrations`, `settings`
+Dependencies: `Integrations`, `Settings`
 
 Excluded by default: `no`
 
@@ -991,7 +981,7 @@ Excluded by default: `no`
 
 <details>
 
-`hide-timeline-ads`: Removes ads from the timeline.
+`Hide timeline ads`: Removes ads from the timeline.
 
 Target version: `275.0.0.27.98`
 
@@ -1007,7 +997,7 @@ Excluded by default: `no`
 
 <details>
 
-`unlock-pro`: Unlocks pro features.
+`Unlock pro`: Unlocks pro features.
 
 Target version: `all`
 
@@ -1023,7 +1013,7 @@ Excluded by default: `no`
 
 <details>
 
-`change-oauth-client-id`: Changes the OAuth client ID. The OAuth application type has to be "Installed app" and the redirect URI has to be set to "http://redditsync/auth".
+`Change OAuth client id`: Changes the OAuth client ID. The OAuth application type has to be "Installed app" and the redirect URI has to be set to "http://redditsync/auth".
 
 Target version: `all`
 
@@ -1041,7 +1031,7 @@ Excluded by default: `no`
 
 ---
 
-`disable-ads`: Disables ads.
+`Disable ads`: Disables ads.
 
 Target version: `all`
 
@@ -1057,7 +1047,7 @@ Excluded by default: `no`
 
 <details>
 
-`change-oauth-client-id`: Changes the OAuth client ID. The OAuth application type has to be "Installed app" and the redirect URI has to be set to "http://redditsync/auth".
+`Change OAuth client id`: Changes the OAuth client ID. The OAuth application type has to be "Installed app" and the redirect URI has to be set to "http://redditsync/auth".
 
 Target version: `all`
 
@@ -1081,7 +1071,7 @@ Excluded by default: `no`
 
 <details>
 
-`change-oauth-client-id`: Changes the OAuth client ID. The OAuth application type has to be "Installed app" and the redirect URI has to be set to "http://redditsync/auth".
+`Change OAuth client id`: Changes the OAuth client ID. The OAuth application type has to be "Installed app" and the redirect URI has to be set to "http://redditsync/auth".
 
 Target version: `all`
 
@@ -1105,7 +1095,7 @@ Excluded by default: `no`
 
 <details>
 
-`unlock-plus`: Unlocks plus features.
+`Unlock plus`: Unlocks plus features.
 
 Target version: `8.20.0`
 
@@ -1121,7 +1111,7 @@ Excluded by default: `no`
 
 <details>
 
-`disable-ads`: Disables ads in HexEditor.
+`Disable ads`: Disables ads in HexEditor.
 
 Target version: `all`
 
@@ -1137,7 +1127,7 @@ Excluded by default: `no`
 
 <details>
 
-`hide-ads`: Removes ads from Inshorts.
+`Hide ads`: Removes ads from Inshorts.
 
 Target version: `all`
 
@@ -1153,7 +1143,7 @@ Excluded by default: `no`
 
 <details>
 
-`change-oauth-client-id`: Changes the OAuth client ID. The OAuth application type has to be "Installed app" and the redirect URI has to be set to "http://baconreader.com/auth".
+`Change OAuth client id`: Changes the OAuth client ID. The OAuth application type has to be "Installed app" and the redirect URI has to be set to "http://baconreader.com/auth".
 
 Target version: `all`
 
@@ -1177,7 +1167,7 @@ Excluded by default: `no`
 
 <details>
 
-`change-oauth-client-id`: Changes the OAuth client ID. The OAuth application type has to be "Installed app" and the redirect URI has to be set to "http://baconreader.com/auth".
+`Change OAuth client id`: Changes the OAuth client ID. The OAuth application type has to be "Installed app" and the redirect URI has to be set to "http://baconreader.com/auth".
 
 Target version: `all`
 
@@ -1201,7 +1191,7 @@ Excluded by default: `no`
 
 <details>
 
-`disable-screenshot-popup`: Disables the popup that shows up when taking a screenshot.
+`Disable screenshot popup`: Disables the popup that shows up when taking a screenshot.
 
 Target version: `all`
 
@@ -1211,17 +1201,17 @@ Excluded by default: `no`
 
 ---
 
-`hide-ads`: Removes ads from the Reddit.
+`Hide ads`: Removes ads from the Reddit.
 
 Target version: `all`
 
-Dependencies: `hide-subreddit-banner`, `hide-comment-ads`
+Dependencies: `Hide subreddit banner`, `Hide comment ads`
 
 Excluded by default: `no`
 
 ---
 
-`premium-icon-reddit`: Unlocks premium Reddit app icons.
+`Premium icon reddit`: Unlocks premium Reddit app icons.
 
 Target version: `all`
 
@@ -1231,7 +1221,7 @@ Excluded by default: `no`
 
 ---
 
-`sanitize-sharing-links`: Removes (tracking) query parameters from the URLs when sharing links.
+`Sanitize sharing links`: Removes (tracking) query parameters from the URLs when sharing links.
 
 Target version: `all`
 
@@ -1247,7 +1237,7 @@ Excluded by default: `no`
 
 <details>
 
-`change-oauth-client-id`: Changes the OAuth client ID. The OAuth application type has to be "Installed app" and the redirect URI has to be set to "http://rubenmayayo.com".
+`Change OAuth client id`: Changes the OAuth client ID. The OAuth application type has to be "Installed app" and the redirect URI has to be set to "http://rubenmayayo.com".
 
 Target version: `all`
 
@@ -1271,7 +1261,7 @@ Excluded by default: `no`
 
 <details>
 
-`remove-debugging-detection`: Removes the USB and wireless debugging checks.
+`Remove debugging detection`: Removes the USB and wireless debugging checks.
 
 Target version: `all`
 
@@ -1287,7 +1277,7 @@ Excluded by default: `yes`
 
 <details>
 
-`remove-badge-tab`: Removes the badge tab from the activity tab.
+`Remove badge tab`: Removes the badge tab from the activity tab.
 
 Target version: `all`
 
@@ -1297,7 +1287,7 @@ Excluded by default: `no`
 
 ---
 
-`remove-notification-badge`: Removes the red notification badge from the activity tab.
+`Remove notification badge`: Removes the red notification badge from the activity tab.
 
 Target version: `all`
 
@@ -1313,7 +1303,7 @@ Excluded by default: `no`
 
 <details>
 
-`enable-on-demand`: Enables listening to songs on-demand, allowing to play any song from playlists, albums or artists without limitations. This does not remove ads.
+`Enable on demand`: Enables listening to songs on-demand, allowing to play any song from playlists, albums or artists without limitations. This does not remove ads.
 
 Target version: `all`
 
@@ -1329,17 +1319,17 @@ Excluded by default: `no`
 
 <details>
 
-`hide-premium-navbar`: Removes the premium tab from the navbar.
+`Hide premium navbar`: Removes the premium tab from the navbar.
 
 Target version: `all`
 
-Dependencies: `resource-mapping`
+Dependencies: `ResourceMappingPatch`
 
 Excluded by default: `no`
 
 ---
 
-`spotify-theme`: Applies a custom theme.
+`Spotify theme`: Applies a custom theme.
 
 Target version: `all`
 
@@ -1366,7 +1356,7 @@ Excluded by default: `no`
 
 <details>
 
-`disable-login-requirement`: Do not force login.
+`Disable login requirement`: Do not force login.
 
 Target version: `all`
 
@@ -1376,27 +1366,27 @@ Excluded by default: `no`
 
 ---
 
-`downloads`: Removes download restrictions and changes the default path to download to.
+`Downloads`: Removes download restrictions and changes the default path to download to.
 
 Target version: `all`
 
-Dependencies: `integrations`, `settings`
+Dependencies: `Integrations`, `Settings`
 
 Excluded by default: `no`
 
 ---
 
-`feed-filter`: Filters tiktok videos: removing ads, removing livestreams.
+`Feed filter`: Filters tiktok videos: removing ads, removing livestreams.
 
 Target version: `all`
 
-Dependencies: `integrations`, `settings`
+Dependencies: `Integrations`, `Settings`
 
 Excluded by default: `no`
 
 ---
 
-`fix-google-login`: Allows logging in with a Google account.
+`Fix google login`: Allows logging in with a Google account.
 
 Target version: `all`
 
@@ -1406,7 +1396,7 @@ Excluded by default: `no`
 
 ---
 
-`hide-ads`: Removes ads from TikTok.
+`Hide ads`: Removes ads from TikTok.
 
 Target version: `all`
 
@@ -1416,7 +1406,7 @@ Excluded by default: `no`
 
 ---
 
-`playback-speed`: Enables the playback speed option for all videos.
+`Playback speed`: Enables the playback speed option for all videos.
 
 Target version: `all`
 
@@ -1426,17 +1416,17 @@ Excluded by default: `no`
 
 ---
 
-`settings`: Adds ReVanced settings to TikTok.
+`Settings`: Adds ReVanced settings to TikTok.
 
 Target version: `all`
 
-Dependencies: `integrations`
+Dependencies: `Integrations`
 
 Excluded by default: `no`
 
 ---
 
-`show-seekbar`: Shows progress bar for all video.
+`Show seekbar`: Shows progress bar for all video.
 
 Target version: `all`
 
@@ -1446,11 +1436,11 @@ Excluded by default: `no`
 
 ---
 
-`sim-spoof`: Spoofs the information which is retrieved from the sim-card.
+`Sim spoof`: Spoofs the information which is retrieved from the sim-card.
 
 Target version: `all`
 
-Dependencies: `integrations`, `settings`
+Dependencies: `Integrations`, `Settings`
 
 Excluded by default: `yes`
 
@@ -1462,7 +1452,7 @@ Excluded by default: `yes`
 
 <details>
 
-`unlock-prime`: Unlocks Nova Prime and all functions of the app.
+`Unlock prime`: Unlocks Nova Prime and all functions of the app.
 
 Target version: `all`
 
@@ -1478,7 +1468,7 @@ Excluded by default: `no`
 
 <details>
 
-`unlock-themes`: Unlocks all themes that are inaccessible until a certain level is reached.
+`Unlock themes`: Unlocks all themes that are inaccessible until a certain level is reached.
 
 Target version: `all`
 
@@ -1494,7 +1484,7 @@ Excluded by default: `no`
 
 <details>
 
-`dynamic-color`: Replaces the default Twitter Blue with the users Material You palette.
+`Dynamic color`: Replaces the default Twitter Blue with the users Material You palette.
 
 Target version: `all`
 
@@ -1504,27 +1494,27 @@ Excluded by default: `no`
 
 ---
 
-`hide-ads`: Hides ads.
+`Hide ads`: Hides ads.
 
 Target version: `all`
 
-Dependencies: `json-hook`
+Dependencies: `Json hook`
 
 Excluded by default: `no`
 
 ---
 
-`hide-recommended-users`: Hides recommended users.
+`Hide recommended users`: Hides recommended users.
 
 Target version: `all`
 
-Dependencies: `json-hook`
+Dependencies: `Json hook`
 
 Excluded by default: `no`
 
 ---
 
-`hide-views-stats`: Hides the view stats under tweets.
+`Hide views stats`: Hides the view stats under tweets.
 
 Target version: `9.69.1-release.0`, `9.71.0-release.0`
 
@@ -1540,7 +1530,7 @@ Excluded by default: `no`
 
 <details>
 
-`hide-ads`: Removes general ads.
+`Hide ads`: Removes general ads.
 
 Target version: `all`
 
@@ -1556,7 +1546,7 @@ Excluded by default: `no`
 
 <details>
 
-`unlock-pro`: Unlocks pro features.
+`Unlock pro`: Unlocks pro features.
 
 Target version: `all`
 
@@ -1572,7 +1562,7 @@ Excluded by default: `no`
 
 <details>
 
-`unlock-pro`: Unlocks all pro features.
+`Unlock pro`: Unlocks all pro features.
 
 Target version: `all`
 
@@ -1588,7 +1578,7 @@ Excluded by default: `no`
 
 <details>
 
-`disable-login-requirement`: Do not force login.
+`Disable login requirement`: Do not force login.
 
 Target version: `all`
 
@@ -1598,27 +1588,27 @@ Excluded by default: `no`
 
 ---
 
-`downloads`: Removes download restrictions and changes the default path to download to.
+`Downloads`: Removes download restrictions and changes the default path to download to.
 
 Target version: `all`
 
-Dependencies: `integrations`, `settings`
+Dependencies: `Integrations`, `Settings`
 
 Excluded by default: `no`
 
 ---
 
-`feed-filter`: Filters tiktok videos: removing ads, removing livestreams.
+`Feed filter`: Filters tiktok videos: removing ads, removing livestreams.
 
 Target version: `all`
 
-Dependencies: `integrations`, `settings`
+Dependencies: `Integrations`, `Settings`
 
 Excluded by default: `no`
 
 ---
 
-`fix-google-login`: Allows logging in with a Google account.
+`Fix google login`: Allows logging in with a Google account.
 
 Target version: `all`
 
@@ -1628,7 +1618,7 @@ Excluded by default: `no`
 
 ---
 
-`hide-ads`: Removes ads from TikTok.
+`Hide ads`: Removes ads from TikTok.
 
 Target version: `all`
 
@@ -1638,7 +1628,7 @@ Excluded by default: `no`
 
 ---
 
-`playback-speed`: Enables the playback speed option for all videos.
+`Playback speed`: Enables the playback speed option for all videos.
 
 Target version: `all`
 
@@ -1648,17 +1638,17 @@ Excluded by default: `no`
 
 ---
 
-`settings`: Adds ReVanced settings to TikTok.
+`Settings`: Adds ReVanced settings to TikTok.
 
 Target version: `all`
 
-Dependencies: `integrations`
+Dependencies: `Integrations`
 
 Excluded by default: `no`
 
 ---
 
-`show-seekbar`: Shows progress bar for all video.
+`Show seekbar`: Shows progress bar for all video.
 
 Target version: `all`
 
@@ -1668,11 +1658,11 @@ Excluded by default: `no`
 
 ---
 
-`sim-spoof`: Spoofs the information which is retrieved from the sim-card.
+`Sim spoof`: Spoofs the information which is retrieved from the sim-card.
 
 Target version: `all`
 
-Dependencies: `integrations`, `settings`
+Dependencies: `Integrations`, `Settings`
 
 Excluded by default: `yes`
 
@@ -1684,7 +1674,7 @@ Excluded by default: `yes`
 
 <details>
 
-`unlock-pro`: Unlocks pro features.
+`Unlock pro`: Unlocks pro features.
 
 Target version: `4.6364`, `4.6370`, `4.6375`, `4.6377`
 
@@ -1700,11 +1690,11 @@ Excluded by default: `no`
 
 <details>
 
-`promo-code-unlock`: Disables the validation of promo code. Any code will work to unlock all features.
+`Promo code unlock`: Disables the validation of promo code. Any code will work to unlock all features.
 
 Target version: `all`
 
-Dependencies: `spoof-cert-patch`
+Dependencies: `Spoof cert patch`
 
 Excluded by default: `no`
 
@@ -1716,7 +1706,7 @@ Excluded by default: `no`
 
 <details>
 
-`remove-broadcasts-restriction`: Enables starting/stopping NetGuard via broadcasts.
+`Remove broadcasts restriction`: Enables starting/stopping NetGuard via broadcasts.
 
 Target version: `all`
 
@@ -1732,7 +1722,7 @@ Excluded by default: `yes`
 
 <details>
 
-`change-oauth-client-id`: Changes the OAuth client ID. The OAuth application type has to be "Installed app" and the redirect URI has to be set to "dbrady://relay".
+`Change OAuth client id`: Changes the OAuth client ID. The OAuth application type has to be "Installed app" and the redirect URI has to be set to "dbrady://relay".
 
 Target version: `all`
 
@@ -1756,7 +1746,7 @@ Excluded by default: `no`
 
 <details>
 
-`unlock-pro`: Unlocks all pro features.
+`Unlock pro`: Unlocks all pro features.
 
 Target version: `all`
 
@@ -1772,7 +1762,7 @@ Excluded by default: `no`
 
 <details>
 
-`unlock-premium`: Unlocks premium features.
+`Unlock premium`: Unlocks premium features.
 
 Target version: `all`
 
@@ -1788,7 +1778,7 @@ Excluded by default: `no`
 
 <details>
 
-`hide-ads`: Hides ads.
+`Hide ads`: Hides ads.
 
 Target version: `all`
 
@@ -1804,7 +1794,7 @@ Excluded by default: `no`
 
 <details>
 
-`change-oauth-client-id`: Changes the OAuth client ID. The OAuth application type has to be "Installed app" and the redirect URI has to be set to "http://www.ccrama.me".
+`Change OAuth client id`: Changes the OAuth client ID. The OAuth application type has to be "Installed app" and the redirect URI has to be set to "http://www.ccrama.me".
 
 Target version: `all`
 
@@ -1828,7 +1818,7 @@ Excluded by default: `no`
 
 <details>
 
-`change-oauth-client-id`: Changes the OAuth client ID. The OAuth application type has to be "Installed app" and the redirect URI has to be set to "infinity://localhost".
+`Change OAuth client id`: Changes the OAuth client ID. The OAuth application type has to be "Installed app" and the redirect URI has to be set to "infinity://localhost".
 
 Target version: `all`
 
@@ -1852,7 +1842,7 @@ Excluded by default: `no`
 
 <details>
 
-`remove-ads`: Removes all ads from the app.
+`Remove ads`: Removes all ads from the app.
 
 Target version: `all`
 
@@ -1868,7 +1858,7 @@ Excluded by default: `no`
 
 <details>
 
-`unlock-trial`: Unlocks the trial version.
+`Unlock trial`: Unlocks the trial version.
 
 Target version: `all`
 
@@ -1884,7 +1874,7 @@ Excluded by default: `no`
 
 <details>
 
-`unlock-pro`: Unlocks all professional features.
+`Unlock pro`: Unlocks all professional features.
 
 Target version: `3.4.9`
 
@@ -1900,7 +1890,7 @@ Excluded by default: `no`
 
 <details>
 
-`change-oauth-client-id`: Changes the OAuth client ID. The OAuth application type has to be "Installed app" and the redirect URI has to be set to "dbrady://relay".
+`Change OAuth client id`: Changes the OAuth client ID. The OAuth application type has to be "Installed app" and the redirect URI has to be set to "dbrady://relay".
 
 Target version: `all`
 
@@ -1924,7 +1914,7 @@ Excluded by default: `no`
 
 <details>
 
-`unlock-pro`: Unlocks pro features.
+`Unlock pro`: Unlocks pro features.
 
 Target version: `all`
 
@@ -1940,71 +1930,71 @@ Excluded by default: `no`
 
 <details>
 
-`auto-claim-channel-points`: Automatically claim Channel Points.
+`Auto claim channel points`: Automatically claim Channel Points.
 
 Target version: `15.4.1`
 
-Dependencies: `settings`
+Dependencies: `Settings`
 
 Excluded by default: `no`
 
 ---
 
-`block-audio-ads`: Blocks audio ads in streams and VODs.
+`Block audio ads`: Blocks audio ads in streams and VODs.
 
 Target version: `15.4.1`
 
-Dependencies: `integrations`, `settings`
+Dependencies: `Integrations`, `Settings`
 
 Excluded by default: `no`
 
 ---
 
-`block-embedded-ads`: Blocks embedded stream ads using services like TTV.lol or PurpleAdBlocker.
+`Block embedded ads`: Blocks embedded stream ads using services like TTV.lol or PurpleAdBlocker.
 
 Target version: `15.4.1`
 
-Dependencies: `block-video-ads`, `integrations`, `settings`
+Dependencies: `Block video ads`, `Integrations`, `Settings`
 
 Excluded by default: `no`
 
 ---
 
-`block-video-ads`: Blocks video ads in streams and VODs.
+`Block video ads`: Blocks video ads in streams and VODs.
 
 Target version: `15.4.1`
 
-Dependencies: `integrations`, `settings`
+Dependencies: `Integrations`, `Settings`
 
 Excluded by default: `no`
 
 ---
 
-`debug-mode`: Enables Twitch's internal debugging mode.
+`Debug mode`: Enables Twitch's internal debugging mode.
 
 Target version: `all`
 
-Dependencies: `integrations`, `settings`
+Dependencies: `Integrations`, `Settings`
 
 Excluded by default: `yes`
 
 ---
 
-`settings`: Adds settings menu to Twitch.
+`Settings`: Adds settings menu to Twitch.
 
 Target version: `all`
 
-Dependencies: `integrations`, `settings-resource-patch`
+Dependencies: `Integrations`, `SettingsResourcePatch`
 
 Excluded by default: `no`
 
 ---
 
-`show-deleted-messages`: Shows deleted chat messages behind a clickable spoiler.
+`Show deleted messages`: Shows deleted chat messages behind a clickable spoiler.
 
 Target version: `15.4.1`
 
-Dependencies: `integrations`, `settings`
+Dependencies: `Integrations`, `Settings`
 
 Excluded by default: `no`
 
