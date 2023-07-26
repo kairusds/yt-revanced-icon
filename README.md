@@ -826,6 +826,16 @@ Excluded by default: `no`
 
 ---
 
+`Playback speed`: Adds custom playback speeds and ability to remember the playback speed you chose in the video playback speed flyout.
+
+Target version: `18.20.39`, `18.23.35`
+
+Dependencies: `Custom playback speed`, `Remember playback speed`
+
+Excluded by default: `no`
+
+---
+
 `Premium heading`: Shows premium branding on the home screen.
 
 Target version: `all`
@@ -950,16 +960,6 @@ Excluded by default: `no`
 Target version: `18.16.37`, `18.19.35`, `18.20.39`, `18.23.35`
 
 Dependencies: `Integrations`, `Settings`
-
-Excluded by default: `no`
-
----
-
-`Video speed`: Adds custom video speeds and ability to remember the playback speed you chose in the video playback speed flyout.
-
-Target version: `18.20.39`, `18.23.35`
-
-Dependencies: `Custom video speed`, `Remember playback speed`
 
 Excluded by default: `no`
 
@@ -1514,16 +1514,6 @@ Excluded by default: `no`
 
 ---
 
-`Hide views stats`: Hides the view stats under tweets.
-
-Target version: `9.69.1-release.0`, `9.71.0-release.0`
-
-Dependencies: `HideViewsBytecodePatch`
-
-Excluded by default: `no`
-
----
-
 </details>
 
 ## `com.vanced.android.youtube`
@@ -1916,7 +1906,7 @@ Excluded by default: `no`
 
 `Unlock pro`: Unlocks pro features.
 
-Target version: `all`
+Target version: `1.1.1`
 
 Dependencies: `none`
 
