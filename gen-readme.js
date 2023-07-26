@@ -26,7 +26,7 @@ function generatePackage(package_name, data, versions){
 	}
 
 	packages[package_name].push([
-		data.name,
+		data.name.toLowerCase().replaceAll(" ", "-"),
 		data.description,
 		data.excluded,
 		options.length ? options.join(", ") : null,
