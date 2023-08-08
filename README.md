@@ -157,7 +157,7 @@ Excluded by default: `no`
 
 <details>
 
-`change-oauth-client-id`: Changes the OAuth client ID. The OAuth application type has to be "Installed app" and the redirect URI has to be set to "redditisfun://auth".
+`spoof-client`: Spoofs the client in order to allow logging in. The OAuth application type has to be "Installed app" and the redirect URI has to be set to "redditisfun://auth".
 
 Target version: `all`
 
@@ -181,7 +181,7 @@ Excluded by default: `no`
 
 <details>
 
-`change-oauth-client-id`: Changes the OAuth client ID. The OAuth application type has to be "Installed app" and the redirect URI has to be set to "redditisfun://auth".
+`spoof-client`: Spoofs the client in order to allow logging in. The OAuth application type has to be "Installed app" and the redirect URI has to be set to "redditisfun://auth".
 
 Target version: `all`
 
@@ -437,7 +437,7 @@ Excluded by default: `no`
 
 ---
 
-`client-spoof`: Spoofs a patched client to allow playback.
+`client-spoof`: Spoofs the client to allow playback.
 
 Target version: `18.16.37`, `18.19.35`, `18.20.39`, `18.23.35`
 
@@ -766,16 +766,6 @@ Excluded by default: `no`
 
 ---
 
-`hide-watch-in-vr`: Hides the option to watch in VR from the player settings flyout panel.
-
-Target version: `18.16.37`, `18.19.35`, `18.20.39`, `18.23.35`
-
-Dependencies: `Integrations`, `Settings`
-
-Excluded by default: `no`
-
----
-
 `hide-watermark`: Hides creator's watermarks on videos.
 
 Target version: `18.16.37`, `18.19.35`, `18.20.39`, `18.23.35`
@@ -831,6 +821,16 @@ Excluded by default: `no`
 Target version: `18.20.39`, `18.23.35`
 
 Dependencies: `Custom playback speed`, `Remember playback speed`
+
+Excluded by default: `no`
+
+---
+
+`player-flyout-menu`: Hides player flyout menu items.
+
+Target version: `18.16.37`, `18.19.35`, `18.20.39`, `18.23.35`
+
+Dependencies: `LithoFilterPatch`, `Settings`
 
 Excluded by default: `no`
 
@@ -896,7 +896,7 @@ Excluded by default: `no`
 
 ---
 
-`spoof-app-version`: Tricks YouTube into thinking, you are running an older version of the app. One of the side effects also includes restoring the old UI.
+`spoof-app-version`: Tricks YouTube into thinking you are running an older version of the app. One of the side effects also includes restoring the old UI.
 
 Target version: `18.16.37`, `18.19.35`, `18.20.39`, `18.23.35`
 
@@ -1013,11 +1013,31 @@ Excluded by default: `no`
 
 <details>
 
-`change-oauth-client-id`: Changes the OAuth client ID. The OAuth application type has to be "Installed app" and the redirect URI has to be set to "http://redditsync/auth".
+`disable-sync-for-lemmy-bottom-sheet`: Disables the bottom sheet at the startup that asks you to signup to "Sync for Lemmy".
+
+Target version: `v23.06.30-13:39`
+
+Dependencies: `none`
+
+Excluded by default: `no`
+
+---
+
+`disable-ads`: This patch has no description.
 
 Target version: `all`
 
-Dependencies: `none`
+Dependencies: `DisablePiracyDetectionPatch`
+
+Excluded by default: `no`
+
+---
+
+`spoof-client`: Spoofs the client in order to allow logging in. The OAuth application type has to be "Installed app" and the redirect URI has to be set to "http://redditsync/auth".
+
+Target version: `all`
+
+Dependencies: `DisablePiracyDetectionPatch`
 
 Excluded by default: `no`
 
@@ -1031,27 +1051,27 @@ Excluded by default: `no`
 
 ---
 
-`disable-ads`: Disables ads.
-
-Target version: `all`
-
-Dependencies: `DisablePiracyDetectionPatch`
-
-Excluded by default: `no`
-
----
-
 </details>
 
 ## `com.laurencedawson.reddit_sync.dev`
 
 <details>
 
-`change-oauth-client-id`: Changes the OAuth client ID. The OAuth application type has to be "Installed app" and the redirect URI has to be set to "http://redditsync/auth".
+`disable-sync-for-lemmy-bottom-sheet`: Disables the bottom sheet at the startup that asks you to signup to "Sync for Lemmy".
 
 Target version: `all`
 
 Dependencies: `none`
+
+Excluded by default: `no`
+
+---
+
+`spoof-client`: Spoofs the client in order to allow logging in. The OAuth application type has to be "Installed app" and the redirect URI has to be set to "http://redditsync/auth".
+
+Target version: `all`
+
+Dependencies: `DisablePiracyDetectionPatch`
 
 Excluded by default: `no`
 
@@ -1071,11 +1091,21 @@ Excluded by default: `no`
 
 <details>
 
-`change-oauth-client-id`: Changes the OAuth client ID. The OAuth application type has to be "Installed app" and the redirect URI has to be set to "http://redditsync/auth".
+`disable-sync-for-lemmy-bottom-sheet`: Disables the bottom sheet at the startup that asks you to signup to "Sync for Lemmy".
 
 Target version: `all`
 
 Dependencies: `none`
+
+Excluded by default: `no`
+
+---
+
+`spoof-client`: Spoofs the client in order to allow logging in. The OAuth application type has to be "Installed app" and the redirect URI has to be set to "http://redditsync/auth".
+
+Target version: `all`
+
+Dependencies: `DisablePiracyDetectionPatch`
 
 Excluded by default: `no`
 
@@ -1143,7 +1173,7 @@ Excluded by default: `no`
 
 <details>
 
-`change-oauth-client-id`: Changes the OAuth client ID. The OAuth application type has to be "Installed app" and the redirect URI has to be set to "http://baconreader.com/auth".
+`spoof-client`: Spoofs the client in order to allow logging in. The OAuth application type has to be "Installed app" and the redirect URI has to be set to "http://baconreader.com/auth".
 
 Target version: `all`
 
@@ -1167,7 +1197,7 @@ Excluded by default: `no`
 
 <details>
 
-`change-oauth-client-id`: Changes the OAuth client ID. The OAuth application type has to be "Installed app" and the redirect URI has to be set to "http://baconreader.com/auth".
+`spoof-client`: Spoofs the client in order to allow logging in. The OAuth application type has to be "Installed app" and the redirect URI has to be set to "http://baconreader.com/auth".
 
 Target version: `all`
 
@@ -1237,7 +1267,7 @@ Excluded by default: `no`
 
 <details>
 
-`change-oauth-client-id`: Changes the OAuth client ID. The OAuth application type has to be "Installed app" and the redirect URI has to be set to "http://rubenmayayo.com".
+`spoof-client`: Spoofs the client in order to allow logging in. The OAuth application type has to be "Installed app" and the redirect URI has to be set to "http://rubenmayayo.com".
 
 Target version: `all`
 
@@ -1712,7 +1742,7 @@ Excluded by default: `yes`
 
 <details>
 
-`change-oauth-client-id`: Changes the OAuth client ID. The OAuth application type has to be "Installed app" and the redirect URI has to be set to "dbrady://relay".
+`spoof-client`: Spoofs the client in order to allow logging in. The OAuth application type has to be "Installed app" and the redirect URI has to be set to "dbrady://relay".
 
 Target version: `all`
 
@@ -1784,7 +1814,7 @@ Excluded by default: `no`
 
 <details>
 
-`change-oauth-client-id`: Changes the OAuth client ID. The OAuth application type has to be "Installed app" and the redirect URI has to be set to "http://www.ccrama.me".
+`spoof-client`: Spoofs the client in order to allow logging in. The OAuth application type has to be "Installed app" and the redirect URI has to be set to "http://www.ccrama.me".
 
 Target version: `all`
 
@@ -1808,7 +1838,7 @@ Excluded by default: `no`
 
 <details>
 
-`change-oauth-client-id`: Changes the OAuth client ID. The OAuth application type has to be "Installed app" and the redirect URI has to be set to "infinity://localhost".
+`spoof-client`: Spoofs the client in order to allow logging in. The OAuth application type has to be "Installed app" and the redirect URI has to be set to "infinity://localhost".
 
 Target version: `all`
 
@@ -1860,6 +1890,88 @@ Excluded by default: `no`
 
 </details>
 
+## `o.o.joey`
+
+<details>
+
+`disable-ads`: This patch has no description.
+
+Target version: `all`
+
+Dependencies: `DisablePiracyDetectionPatch`
+
+Excluded by default: `no`
+
+---
+
+`spoof-client`: Spoofs the client in order to allow logging in. The OAuth application type has to be "Installed app" and the redirect URI has to be set to "https://127.0.0.1:65023/authorize_callback".
+
+Target version: `all`
+
+Dependencies: `DisablePiracyDetectionPatch`
+
+Excluded by default: `no`
+
+<details>
+<summary>Options</summary>
+
+| Key | Description |
+| :---: | :---: |
+| `client-id` | The Reddit OAuth client ID. |
+</details>
+
+---
+
+</details>
+
+## `o.o.joey.dev`
+
+<details>
+
+`spoof-client`: Spoofs the client in order to allow logging in. The OAuth application type has to be "Installed app" and the redirect URI has to be set to "https://127.0.0.1:65023/authorize_callback".
+
+Target version: `all`
+
+Dependencies: `DisablePiracyDetectionPatch`
+
+Excluded by default: `no`
+
+<details>
+<summary>Options</summary>
+
+| Key | Description |
+| :---: | :---: |
+| `client-id` | The Reddit OAuth client ID. |
+</details>
+
+---
+
+</details>
+
+## `o.o.joey.pro`
+
+<details>
+
+`spoof-client`: Spoofs the client in order to allow logging in. The OAuth application type has to be "Installed app" and the redirect URI has to be set to "https://127.0.0.1:65023/authorize_callback".
+
+Target version: `all`
+
+Dependencies: `DisablePiracyDetectionPatch`
+
+Excluded by default: `no`
+
+<details>
+<summary>Options</summary>
+
+| Key | Description |
+| :---: | :---: |
+| `client-id` | The Reddit OAuth client ID. |
+</details>
+
+---
+
+</details>
+
 ## `org.totschnig.myexpenses`
 
 <details>
@@ -1880,7 +1992,7 @@ Excluded by default: `no`
 
 <details>
 
-`change-oauth-client-id`: Changes the OAuth client ID. The OAuth application type has to be "Installed app" and the redirect URI has to be set to "dbrady://relay".
+`spoof-client`: Spoofs the client in order to allow logging in. The OAuth application type has to be "Installed app" and the redirect URI has to be set to "dbrady://relay".
 
 Target version: `all`
 
