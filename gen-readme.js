@@ -9,7 +9,7 @@ const patches = JSON.parse(fs.readFileSync("patches.json", "utf8"));
  * [
  * 	"patch_name",
  * 	"patch_description",
- * 	boolean excluded_by_default,
+ * 	boolean included_by_default,
  * 	"option1_key:option1_description, option2_key:option2_description..." or null,
  * 	"`versions1`, `versions2`..." or "`all`",
  * 	"`dependencies1`, `dependencies2`..." or "none"
@@ -26,9 +26,10 @@ function generatePackage(package_name, data, versions){
 	}
 
 	packages[package_name].push([
-		data.name.toLowerCase().replaceAll(" ", "-"),
+		// data.name.toLowerCase().replaceAll(" ", "-"),
+		data.name,
 		data.description,
-		data.excluded,
+		data.use,
 		options.length ? options.join(", ") : null,
 		versions// ,
 		// data.dependencies.length ? data.dependencies.map(e => `\`${e}\``).join(", ") :  "`none`"
@@ -65,7 +66,7 @@ The custom icons are located in the \`branding\` directory.
 			output.push(`\`${patch[0]}\`: ${patch[1]}\n\n`);
 			output.push(`Target version: ${patch[4]}\n\n`);
 			// output.push(`Dependencies: ${patch[5]}\n\n`);
-			output.push(`Excluded by default: \`${patch[2] ? "yes" : "no"}\`\n\n`);
+			output.push(`Included by default: \`${patch[2] ? "yes" : "no"}\`\n\n`);
 
 			if(patch[3] != null){
 				output.push("<details>\n");
