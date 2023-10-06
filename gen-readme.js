@@ -30,8 +30,8 @@ function generatePackage(package_name, data, versions){
 		data.description,
 		data.excluded,
 		options.length ? options.join(", ") : null,
-		versions,
-		data.dependencies.length ? data.dependencies.map(e => `\`${e}\``).join(", ") :  "`none`"
+		versions// ,
+		// data.dependencies.length ? data.dependencies.map(e => `\`${e}\``).join(", ") :  "`none`"
 	]);
 }
 
@@ -40,7 +40,7 @@ function generatePackages(){
 		if(patch.compatiblePackages?.length){
 			patch.compatiblePackages.forEach(pkg => {
 				if(packages[pkg.name] === undefined) packages[pkg.name] = [];
-				generatePackage(pkg.name, patch, pkg.versions.length ? pkg.versions.map(e => `\`${e}\``).join(", ") : "`all`");
+				generatePackage(pkg.name, patch, pkg.versions?.map(e => `\`${e}\``).join(", ") ?? "`all`");
 			});
 		}else{
 			generatePackage("all", patch, "`all`");
@@ -64,7 +64,7 @@ The custom icons are located in the \`branding\` directory.
 		for(let patch of packages[pkg]){
 			output.push(`\`${patch[0]}\`: ${patch[1]}\n\n`);
 			output.push(`Target version: ${patch[4]}\n\n`);
-			output.push(`Dependencies: ${patch[5]}\n\n`);
+			// output.push(`Dependencies: ${patch[5]}\n\n`);
 			output.push(`Excluded by default: \`${patch[2] ? "yes" : "no"}\`\n\n`);
 
 			if(patch[3] != null){
