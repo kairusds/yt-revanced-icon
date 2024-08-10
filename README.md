@@ -5,43 +5,11 @@ The custom icons are located in the `branding` directory.
 
 <details>
 
-`Spoof Wi-Fi connection`: Spoofs an existing Wi-Fi connection.
+`Remove screen capture restriction`: Removes the restriction of capturing audio from apps that normally wouldn't allow it.
 
 Target version: `all`
 
 Included by default: `no`
-
----
-
-`Remove screenshot restriction`: Removes the restriction of taking screenshots in apps that normally wouldn't allow it.
-
-Target version: `all`
-
-Included by default: `no`
-
----
-
-`Export all activities`: Makes all app activities exportable.
-
-Target version: `all`
-
-Included by default: `no`
-
----
-
-`Change package name`: Appends ".revanced" to the package name by default. Changing the package name of the app can lead to unexpected issues.
-
-Target version: `all`
-
-Included by default: `no`
-
-<details>
-<summary>Options</summary>
-
-| Key | Description |
-| :---: | :---: |
-| `packageName` | The name of the package to rename the app to. |
-</details>
 
 ---
 
@@ -57,6 +25,22 @@ Included by default: `no`
 | Key | Description |
 | :---: | :---: |
 | `versionCode` | The version code to use |
+</details>
+
+---
+
+`Change package name`: Appends ".revanced" to the package name by default. Changing the package name of the app can lead to unexpected issues.
+
+Target version: `all`
+
+Included by default: `no`
+
+<details>
+<summary>Options</summary>
+
+| Key | Description |
+| :---: | :---: |
+| `packageName` | The name of the package to rename the app to. |
 </details>
 
 ---
@@ -99,6 +83,52 @@ Full example of a valid input` |
 
 ---
 
+`Spoof build info`: Spoof the information about the current build.
+
+Target version: `all`
+
+Included by default: `no`
+
+<details>
+<summary>Options</summary>
+
+| Key | Description |
+| :---: | :---: |
+| `board` | The name of the underlying board |
+| `like "goldfish".` | undefined |
+| `bootloader` | The system bootloader version number. |
+| `brand` | The consumer-visible brand with which the product/hardware will be associated |
+| `if any.` | undefined |
+| `cpu-abi` | This field was deprecated in API level 21. Use SUPPORTED_ABIS instead. |
+| `cpu-abi-2` | This field was deprecated in API level 21. Use SUPPORTED_ABIS instead. |
+| `device` | The name of the industrial design. |
+| `display` | A build ID string meant for displaying to the user. |
+| `fingerprint` | A string that uniquely identifies this build. |
+| `hardware` | The name of the hardware (from the kernel command line or /proc). |
+| `host` | The host. |
+| `id` | Either a changelist number |
+| `or a label like "M4-rc20".` | undefined |
+| `manufacturer` | The manufacturer of the product/hardware. |
+| `model` | The end-user-visible name for the end product. |
+| `odm-sku` | The SKU of the device as set by the original design manufacturer (ODM). |
+| `product` | The name of the overall product. |
+| `radio` | This field was deprecated in API level 15. The radio firmware version is frequently not available when this class is initialized |
+| `leading to a blank or "unknown" value for this string. Use getRadioVersion() instead.` | undefined |
+| `serial` | This field was deprecated in API level 26. Use getSerial() instead. |
+| `sku` | The SKU of the hardware (from the kernel command line). |
+| `soc-manufacturer` | The manufacturer of the device's primary system-on-chip. |
+| `soc-model` | The model name of the device's primary system-on-chip. |
+| `tags` | Comma-separated tags describing the build |
+| `like "unsigned,debug".` | undefined |
+| `time` | The time at which the build was produced |
+| `given in milliseconds since the UNIX epoch.` | undefined |
+| `type` | The type of build |
+| `like "user" or "eng".` | undefined |
+| `user` | The user. |
+</details>
+
+---
+
 `Override certificate pinning`: Overrides certificate pinning, allowing to inspect traffic via a proxy.
 
 Target version: `all`
@@ -107,7 +137,7 @@ Included by default: `no`
 
 ---
 
-`Remove share targets`: Removes share targets like directly sharing to a frequent contact.
+`Export all activities`: Makes all app activities exportable.
 
 Target version: `all`
 
@@ -115,7 +145,7 @@ Included by default: `no`
 
 ---
 
-`Remove screen capture restriction`: Removes the restriction of capturing audio from apps that normally wouldn't allow it.
+`Hide mock location`: Prevents the app from knowing the device location is being mocked by a third party app.
 
 Target version: `all`
 
@@ -145,6 +175,30 @@ Included by default: `no`
 | `networkCountryIso` | ISO-3166-1 alpha-2 country code equivalent for the SIM provider's country code. |
 | `simCountryIso` | ISO-3166-1 alpha-2 country code equivalent for the SIM provider's country code. |
 </details>
+
+---
+
+`Spoof Wi-Fi connection`: Spoofs an existing Wi-Fi connection.
+
+Target version: `all`
+
+Included by default: `no`
+
+---
+
+`Remove share targets`: Removes share targets like directly sharing to a frequent contact.
+
+Target version: `all`
+
+Included by default: `no`
+
+---
+
+`Remove screenshot restriction`: Removes the restriction of taking screenshots in apps that normally wouldn't allow it.
+
+Target version: `all`
+
+Included by default: `no`
 
 ---
 
@@ -226,7 +280,7 @@ Included by default: `yes`
 
 <details>
 
-`Unlock premium`: null
+`Disable mandatory login`: null
 
 Target version: `all`
 
@@ -234,7 +288,7 @@ Included by default: `yes`
 
 ---
 
-`Disable mandatory login`: null
+`Unlock premium`: null
 
 Target version: `all`
 
@@ -344,20 +398,6 @@ Included by default: `yes`
 
 </details>
 
-## `com.candylink.openvpn`
-
-<details>
-
-`Unlock pro`: null
-
-Target version: `all`
-
-Included by default: `yes`
-
----
-
-</details>
-
 ## `com.facebook.katana`
 
 <details>
@@ -376,6 +416,22 @@ Included by default: `yes`
 
 <details>
 
+`Disable switching emoji to sticker`: Disables switching from emoji to sticker search mode in message input field.
+
+Target version: `439.0.0.29.119`
+
+Included by default: `yes`
+
+---
+
+`Disable typing indicator`: Disables the indicator while typing a message.
+
+Target version: `all`
+
+Included by default: `yes`
+
+---
+
 `Hide inbox ads`: Hides ads in inbox.
 
 Target version: `all`
@@ -392,7 +448,29 @@ Included by default: `yes`
 
 ---
 
-`Disable switching emoji to sticker`: Disables switching from emoji to sticker search mode in message input field.
+</details>
+
+## `com.google.android.apps.magazines`
+
+<details>
+
+`GmsCore support`: Allows patched Google apps to run without root and under a different package name by using GmsCore instead of Google Play Services.
+
+Target version: `5.108.0.644447823`
+
+Included by default: `yes`
+
+<details>
+<summary>Options</summary>
+
+| Key | Description |
+| :---: | :---: |
+| `gmsCoreVendorGroupId` | The vendor's group ID for GmsCore. |
+</details>
+
+---
+
+`Enable CustomTabs`: Enables CustomTabs to open articles in your default browser.
 
 Target version: `all`
 
@@ -400,11 +478,25 @@ Included by default: `yes`
 
 ---
 
-`Disable typing indicator`: Disables the indicator while typing a message.
+</details>
+
+## `com.google.android.apps.photos`
+
+<details>
+
+`GmsCore support`: Allows patched Google apps to run without root and under a different package name by using GmsCore instead of Google Play Services.
 
 Target version: `all`
 
 Included by default: `yes`
+
+<details>
+<summary>Options</summary>
+
+| Key | Description |
+| :---: | :---: |
+| `gmsCoreVendorGroupId` | The vendor's group ID for GmsCore. |
+</details>
 
 ---
 
@@ -428,7 +520,23 @@ Included by default: `yes`
 
 <details>
 
-`Hide music video ads`: null
+`Remove upgrade button`: Removes the upgrade tab from the pivot bar.
+
+Target version: `6.45.54`, `6.51.53`, `7.01.53`, `7.02.52`, `7.03.52`
+
+Included by default: `yes`
+
+---
+
+`Hide category bar`: Hides the category bar at the top of the homepage.
+
+Target version: `6.45.54`, `6.51.53`, `7.01.53`, `7.02.52`, `7.03.52`
+
+Included by default: `no`
+
+---
+
+`Hide 'Get Music Premium' label`: Hides the "Get Music Premium" label from the account menu and settings.
 
 Target version: `6.45.54`, `6.51.53`, `7.01.53`, `7.02.52`, `7.03.52`
 
@@ -468,6 +576,14 @@ Included by default: `yes`
 
 ---
 
+`Hide video ads`: Hides ads that appear while listening to or streaming music videos, podcasts, or songs.
+
+Target version: `6.45.54`, `6.51.53`, `7.01.53`, `7.02.52`, `7.03.52`
+
+Included by default: `yes`
+
+---
+
 `Enable exclusive audio playback`: Enables the option to play audio without video.
 
 Target version: `6.45.54`, `6.51.53`, `7.01.53`, `7.02.52`, `7.03.52`
@@ -476,39 +592,15 @@ Included by default: `yes`
 
 ---
 
-`Hide 'Get Music Premium' label`: Hides the "Get Music Premium" label from the account menu and settings.
-
-Target version: `6.45.54`, `6.51.53`, `7.01.53`, `7.02.52`, `7.03.52`
-
-Included by default: `yes`
-
----
-
-`Hide category bar`: Hides the category bar at the top of the homepage.
+`Permanent repeat`: Permanently remember your repeating preference even if the playlist ends or another track is played.
 
 Target version: `6.45.54`, `6.51.53`, `7.01.53`, `7.02.52`, `7.03.52`
 
 Included by default: `no`
-
----
-
-`Remove upgrade button`: Removes the upgrade tab from the pivot bar.
-
-Target version: `6.45.54`, `6.51.53`, `7.01.53`, `7.02.52`, `7.03.52`
-
-Included by default: `yes`
 
 ---
 
 `Permanent shuffle`: Permanently remember your shuffle preference even if the playlist ends or another track is played.
-
-Target version: `6.45.54`, `6.51.53`, `7.01.53`, `7.02.52`, `7.03.52`
-
-Included by default: `no`
-
----
-
-`Permanent repeat`: Permanently remember your repeating preference even if the playlist ends or another track is played.
 
 Target version: `6.45.54`, `6.51.53`, `7.01.53`, `7.02.52`, `7.03.52`
 
@@ -522,206 +614,6 @@ Included by default: `no`
 
 <details>
 
-`Hide ads`: Adds options to remove general ads.
-
-Target version: `18.32.39`, `18.37.36`, `18.38.44`, `18.43.45`, `18.44.41`, `18.45.43`, `18.48.39`, `18.49.37`, `19.01.34`, `19.02.39`, `19.03.36`, `19.04.38`, `19.05.36`, `19.06.39`, `19.07.40`, `19.08.36`, `19.09.38`, `19.10.39`, `19.11.43`, `19.12.41`, `19.13.37`, `19.14.43`, `19.15.36`, `19.16.39`
-
-Included by default: `yes`
-
----
-
-`Video ads`: Adds an option to remove ads in the video player.
-
-Target version: `18.32.39`, `18.37.36`, `18.38.44`, `18.43.45`, `18.44.41`, `18.45.43`, `18.48.39`, `18.49.37`, `19.01.34`, `19.02.39`, `19.03.36`, `19.04.38`, `19.05.36`, `19.06.39`, `19.07.40`, `19.08.36`, `19.09.38`, `19.10.39`, `19.11.43`, `19.12.41`, `19.13.37`, `19.14.43`, `19.15.36`, `19.16.39`
-
-Included by default: `yes`
-
----
-
-`GmsCore support`: Allows patched Google apps to run without root and under a different package name by using GmsCore instead of Google Play Services.
-
-Target version: `18.37.36`, `18.38.44`, `18.43.45`, `18.44.41`, `18.45.43`, `18.48.39`, `18.49.37`, `19.01.34`, `19.02.39`, `19.03.36`, `19.04.38`, `19.05.36`, `19.06.39`, `19.07.40`, `19.08.36`, `19.09.38`, `19.10.39`, `19.11.43`, `19.12.41`, `19.13.37`, `19.14.43`, `19.15.36`, `19.16.39`
-
-Included by default: `yes`
-
-<details>
-<summary>Options</summary>
-
-| Key | Description |
-| :---: | :---: |
-| `gmsCoreVendorGroupId` | The vendor's group ID for GmsCore. |
-</details>
-
----
-
-`Remove tracking query parameter`: Adds an option to remove the tracking info from links you share.
-
-Target version: `18.43.45`, `18.44.41`, `18.45.43`, `18.48.39`, `18.49.37`, `19.01.34`, `19.02.39`, `19.03.36`, `19.04.38`, `19.05.36`, `19.06.39`, `19.07.40`, `19.08.36`, `19.09.38`, `19.10.39`, `19.11.43`, `19.12.41`, `19.13.37`, `19.14.43`, `19.15.36`, `19.16.39`
-
-Included by default: `yes`
-
----
-
-`Announcements`: Adds an option to show announcements from ReVanced on app startup.
-
-Target version: `all`
-
-Included by default: `yes`
-
----
-
-`Spoof client`: Spoofs the client to allow video playback.
-
-Target version: `18.37.36`, `18.38.44`, `18.43.45`, `18.44.41`, `18.45.43`, `18.48.39`, `18.49.37`, `19.01.34`, `19.02.39`, `19.03.36`, `19.04.38`, `19.05.36`, `19.06.39`, `19.07.40`, `19.08.36`, `19.09.38`, `19.10.39`, `19.11.43`, `19.12.41`, `19.13.37`, `19.14.43`, `19.15.36`, `19.16.39`
-
-Included by default: `yes`
-
----
-
-`Enable debugging`: Adds options for debugging.
-
-Target version: `all`
-
-Included by default: `yes`
-
----
-
-`Remove background playback restrictions`: Removes restrictions on background playback, including playing kids videos in the background.
-
-Target version: `18.48.39`, `18.49.37`, `19.01.34`, `19.02.39`, `19.03.36`, `19.04.38`, `19.05.36`, `19.06.39`, `19.07.40`, `19.08.36`, `19.09.38`, `19.10.39`, `19.11.43`, `19.12.41`, `19.13.37`, `19.14.43`, `19.15.36`, `19.16.39`
-
-Included by default: `yes`
-
----
-
-`Disable zoom haptics`: Adds an option to disable haptics when zooming.
-
-Target version: `all`
-
-Included by default: `yes`
-
----
-
-`Spoof device dimensions`: Adds an option to spoof the device dimensions which can unlock higher video qualities.
-
-Target version: `18.38.44`, `18.43.45`, `18.44.41`, `18.45.43`, `18.48.39`, `18.49.37`, `19.01.34`, `19.02.39`, `19.03.36`, `19.04.38`, `19.05.36`, `19.06.39`, `19.07.40`, `19.08.36`, `19.09.38`, `19.10.39`, `19.11.43`, `19.12.41`, `19.13.37`, `19.14.43`, `19.15.36`, `19.16.39`
-
-Included by default: `yes`
-
----
-
-`Bypass URL redirects`: Adds an option to bypass URL redirects and open the original URL directly.
-
-Target version: `18.43.45`, `18.44.41`, `18.45.43`, `18.48.39`, `18.49.37`, `19.01.34`, `19.02.39`, `19.03.36`, `19.04.38`, `19.05.36`, `19.06.39`, `19.07.40`, `19.08.36`, `19.09.38`, `19.10.39`, `19.11.43`, `19.12.41`, `19.13.37`, `19.14.43`, `19.15.36`, `19.16.39`
-
-Included by default: `yes`
-
----
-
-`Open links externally`: Adds an option to always open links in your browser instead of in the in-app-browser.
-
-Target version: `18.32.39`, `18.37.36`, `18.38.44`, `18.43.45`, `18.44.41`, `18.45.43`, `18.48.39`, `18.49.37`, `19.01.34`, `19.02.39`, `19.03.36`, `19.04.38`, `19.05.36`, `19.06.39`, `19.07.40`, `19.08.36`, `19.09.38`, `19.10.39`, `19.11.43`, `19.12.41`, `19.13.37`, `19.14.43`, `19.15.36`, `19.16.39`
-
-Included by default: `yes`
-
----
-
-`Always repeat`: Adds an option to always repeat videos when they end.
-
-Target version: `18.32.39`, `18.37.36`, `18.38.44`, `18.43.45`, `18.44.41`, `18.45.43`, `18.48.39`, `18.49.37`, `19.01.34`, `19.02.39`, `19.03.36`, `19.04.38`, `19.05.36`, `19.06.39`, `19.07.40`, `19.08.36`, `19.09.38`, `19.10.39`, `19.11.43`, `19.12.41`, `19.13.37`, `19.14.43`, `19.15.36`, `19.16.39`
-
-Included by default: `yes`
-
----
-
-`Alternative thumbnails`: Adds options to replace video thumbnails using the DeArrow API or image captures from the video.
-
-Target version: `18.32.39`, `18.37.36`, `18.38.44`, `18.43.45`, `18.44.41`, `18.45.43`, `18.48.39`, `18.49.37`, `19.01.34`, `19.02.39`, `19.03.36`, `19.04.38`, `19.05.36`, `19.06.39`, `19.07.40`, `19.08.36`, `19.09.38`, `19.10.39`, `19.11.43`, `19.12.41`, `19.13.37`, `19.14.43`, `19.15.36`, `19.16.39`
-
-Included by default: `yes`
-
----
-
-`Hide captions button`: Adds an option to hide the captions button in the video player.
-
-Target version: `18.32.39`, `18.37.36`, `18.38.44`, `18.43.45`, `18.44.41`, `18.45.43`, `18.48.39`, `18.49.37`, `19.01.34`, `19.02.39`, `19.03.36`, `19.04.38`, `19.05.36`, `19.06.39`, `19.07.40`, `19.08.36`, `19.09.38`, `19.10.39`, `19.11.43`, `19.12.41`, `19.13.37`, `19.14.43`, `19.15.36`, `19.16.39`
-
-Included by default: `yes`
-
----
-
-`Hide video action buttons`: Adds options to hide action buttons (such as the Download button) under videos.
-
-Target version: `18.32.39`, `18.37.36`, `18.38.44`, `18.43.45`, `18.44.41`, `18.45.43`, `18.48.39`, `18.49.37`, `19.01.34`, `19.02.39`, `19.03.36`, `19.04.38`, `19.05.36`, `19.06.39`, `19.07.40`, `19.08.36`, `19.09.38`, `19.10.39`, `19.11.43`, `19.12.41`, `19.13.37`, `19.14.43`, `19.15.36`, `19.16.39`
-
-Included by default: `yes`
-
----
-
-`Hide cast button`: Adds an option to hide the cast button in the video player.
-
-Target version: `all`
-
-Included by default: `yes`
-
----
-
-`Hide player buttons`: Adds an option to hide the previous and next buttons in the video player.
-
-Target version: `18.32.39`, `18.37.36`, `18.38.44`, `18.43.45`, `18.44.41`, `18.45.43`, `18.48.39`, `18.49.37`, `19.01.34`, `19.02.39`, `19.03.36`, `19.04.38`, `19.05.36`, `19.06.39`, `19.07.40`, `19.08.36`, `19.09.38`, `19.10.39`, `19.11.43`, `19.12.41`, `19.13.37`, `19.14.43`, `19.15.36`, `19.16.39`
-
-Included by default: `yes`
-
----
-
-`Navigation buttons`: Adds options to hide and change navigation buttons (such as the Shorts button).
-
-Target version: `18.32.39`, `18.37.36`, `18.38.44`, `18.43.45`, `18.44.41`, `18.45.43`, `18.48.39`, `18.49.37`, `19.01.34`, `19.02.39`, `19.03.36`, `19.04.38`, `19.05.36`, `19.06.39`, `19.07.40`, `19.08.36`, `19.09.38`, `19.10.39`, `19.11.43`, `19.12.41`, `19.13.37`, `19.14.43`, `19.15.36`, `19.16.39`
-
-Included by default: `yes`
-
----
-
-`Hide autoplay button`: Adds an option to hide the autoplay button in the video player.
-
-Target version: `18.32.39`, `18.37.36`, `18.38.44`, `18.43.45`, `18.44.41`, `18.45.43`, `18.48.39`, `18.49.37`, `19.01.34`, `19.02.39`, `19.03.36`, `19.04.38`, `19.05.36`, `19.06.39`, `19.07.40`, `19.08.36`, `19.09.38`, `19.10.39`, `19.11.43`, `19.12.41`, `19.13.37`, `19.14.43`, `19.15.36`, `19.16.39`
-
-Included by default: `yes`
-
----
-
-`Return YouTube Dislike`: Adds an option to show the dislike count of videos using the Return YouTube Dislike API.
-
-Target version: `18.49.37`, `19.01.34`, `19.02.39`, `19.03.36`, `19.04.38`, `19.05.36`, `19.06.39`, `19.07.40`, `19.08.36`, `19.09.38`, `19.10.39`, `19.11.43`, `19.12.41`, `19.13.37`, `19.14.43`, `19.15.36`, `19.16.39`
-
-Included by default: `yes`
-
----
-
-`Change start page`: Adds an option to set which page the app opens in instead of the homepage.
-
-Target version: `all`
-
-Included by default: `yes`
-
----
-
-`Remove player controls background`: Removes the dark background surrounding the video player controls.
-
-Target version: `18.32.39`, `18.37.36`, `18.38.44`, `18.43.45`, `18.44.41`, `18.45.43`, `18.48.39`, `18.49.37`, `19.01.34`, `19.02.39`, `19.03.36`, `19.04.38`, `19.05.36`, `19.06.39`, `19.07.40`, `19.08.36`, `19.09.38`, `19.10.39`, `19.11.43`, `19.12.41`, `19.13.37`, `19.14.43`, `19.15.36`, `19.16.39`
-
-Included by default: `no`
-
----
-
-`Custom player overlay opacity`: Adds an option to change the opacity of the video player background when player controls are visible.
-
-Target version: `all`
-
-Included by default: `yes`
-
----
-
 `Disable player popup panels`: Adds an option to disable panels (such as live chat) from opening automatically.
 
 Target version: `18.32.39`, `18.37.36`, `18.38.44`, `18.43.45`, `18.44.41`, `18.45.43`, `18.48.39`, `18.49.37`, `19.01.34`, `19.02.39`, `19.03.36`, `19.04.38`, `19.05.36`, `19.06.39`, `19.07.40`, `19.08.36`, `19.09.38`, `19.10.39`, `19.11.43`, `19.12.41`, `19.13.37`, `19.14.43`, `19.15.36`, `19.16.39`
@@ -730,31 +622,163 @@ Included by default: `yes`
 
 ---
 
-`Change header`: Applies a custom header in the top left corner within the app. Defaults to the ReVanced header.
+`Hide album cards`: Adds an option to hide album cards below artist descriptions.
 
-Target version: `all`
+Target version: `18.32.39`, `18.37.36`, `18.38.44`, `18.43.45`, `18.44.41`, `18.45.43`, `18.48.39`, `18.49.37`, `19.01.34`, `19.02.39`, `19.03.36`, `19.04.38`, `19.05.36`, `19.06.39`, `19.07.40`, `19.08.36`, `19.09.38`, `19.10.39`, `19.11.43`, `19.12.41`, `19.13.37`, `19.14.43`, `19.15.36`, `19.16.39`
 
-Included by default: `no`
+Included by default: `yes`
 
-<details>
-<summary>Options</summary>
+---
 
-| Key | Description |
-| :---: | :---: |
-| `header` | The header to apply to the app.
+`Disable rolling number animations`: Adds an option to disable rolling number animations of video view count, user likes, and upload time.
 
-If a path to a folder is provided |
-| `the folder must contain one or more of the following folders` | undefined |
-| `depending on the DPI of the device` | 
+Target version: `18.43.45`, `18.44.41`, `18.45.43`, `18.48.39`, `18.49.37`, `19.01.34`, `19.02.39`, `19.03.36`, `19.04.38`, `19.05.36`, `19.06.39`, `19.07.40`, `19.08.36`, `19.09.38`, `19.10.39`, `19.11.43`, `19.12.41`, `19.13.37`, `19.14.43`, `19.15.36`, `19.16.39`
 
-- drawable-xxxhdpi
-- drawable-xxhdpi
-- drawable-xhdpi
-- drawable-hdpi
-- drawable-mdpi
+Included by default: `yes`
 
-Each of the folders must contain all of the following files |
-</details>
+---
+
+`Disable suggested video end screen`: Adds an option to disable the suggested video end screen at the end of videos.
+
+Target version: `18.37.36`, `18.38.44`, `18.43.45`, `18.44.41`, `18.45.43`, `18.48.39`, `18.49.37`, `19.01.34`, `19.02.39`, `19.03.36`, `19.04.38`, `19.05.36`, `19.06.39`, `19.07.40`, `19.08.36`, `19.09.38`, `19.10.39`, `19.11.43`, `19.12.41`, `19.13.37`, `19.14.43`, `19.15.36`, `19.16.39`
+
+Included by default: `yes`
+
+---
+
+`Hide seekbar`: Adds an option to hide the seekbar.
+
+Target version: `18.32.39`, `18.37.36`, `18.38.44`, `18.43.45`, `18.44.41`, `18.45.43`, `18.48.39`, `18.49.37`, `19.01.34`, `19.02.39`, `19.03.36`, `19.04.38`, `19.05.36`, `19.06.39`, `19.07.40`, `19.08.36`, `19.09.38`, `19.10.39`, `19.11.43`, `19.12.41`, `19.13.37`, `19.14.43`, `19.15.36`, `19.16.39`
+
+Included by default: `yes`
+
+---
+
+`Hide crowdfunding box`: Adds an option to hide the crowdfunding box between the player and video description.
+
+Target version: `18.32.39`, `18.37.36`, `18.38.44`, `18.43.45`, `18.44.41`, `18.45.43`, `18.48.39`, `18.49.37`, `19.01.34`, `19.02.39`, `19.03.36`, `19.04.38`, `19.05.36`, `19.06.39`, `19.07.40`, `19.08.36`, `19.09.38`, `19.10.39`, `19.11.43`, `19.12.41`, `19.13.37`, `19.14.43`, `19.15.36`, `19.16.39`
+
+Included by default: `yes`
+
+---
+
+`Disable fullscreen ambient mode`: Adds an option to disable the ambient mode when in fullscreen.
+
+Target version: `18.37.36`, `18.38.44`, `18.43.45`, `18.44.41`, `18.45.43`, `18.48.39`, `18.49.37`, `19.01.34`, `19.02.39`, `19.03.36`, `19.04.38`, `19.05.36`, `19.06.39`, `19.07.40`, `19.08.36`, `19.09.38`, `19.10.39`, `19.11.43`, `19.12.41`, `19.13.37`, `19.14.43`, `19.15.36`, `19.16.39`
+
+Included by default: `yes`
+
+---
+
+`Hide endscreen cards`: Adds an option to hide suggested video cards at the end of videos.
+
+Target version: `18.32.39`, `18.37.36`, `18.38.44`, `18.43.45`, `18.44.41`, `18.45.43`, `18.48.39`, `18.49.37`, `19.01.34`, `19.02.39`, `19.03.36`, `19.04.38`, `19.05.36`, `19.06.39`, `19.07.40`, `19.08.36`, `19.09.38`, `19.10.39`, `19.11.43`, `19.12.41`, `19.13.37`, `19.14.43`, `19.15.36`, `19.16.39`
+
+Included by default: `yes`
+
+---
+
+`Hide Shorts components`: Adds options to hide components related to YouTube Shorts.
+
+Target version: `18.32.39`, `18.37.36`, `18.38.44`, `18.43.45`, `18.44.41`, `18.45.43`, `18.48.39`, `18.49.37`, `19.01.34`, `19.02.39`, `19.03.36`, `19.04.38`, `19.05.36`, `19.06.39`, `19.07.40`, `19.08.36`, `19.09.38`, `19.10.39`, `19.11.43`, `19.12.41`, `19.13.37`, `19.14.43`, `19.15.36`, `19.16.39`
+
+Included by default: `yes`
+
+---
+
+`Hide floating microphone button`: Adds an option to hide the floating microphone button when searching.
+
+Target version: `18.32.39`, `18.37.36`, `18.38.44`, `18.43.45`, `18.44.41`, `18.45.43`, `18.48.39`, `18.49.37`, `19.01.34`, `19.02.39`, `19.03.36`, `19.04.38`, `19.05.36`, `19.06.39`, `19.07.40`, `19.08.36`, `19.09.38`, `19.10.39`, `19.11.43`, `19.12.41`, `19.13.37`, `19.14.43`, `19.15.36`, `19.16.39`
+
+Included by default: `yes`
+
+---
+
+`Hide info cards`: Adds an option to hide info cards that creators add in the video player.
+
+Target version: `18.32.39`, `18.37.36`, `18.38.44`, `18.43.45`, `18.44.41`, `18.45.43`, `18.48.39`, `18.49.37`, `19.01.34`, `19.02.39`, `19.03.36`, `19.04.38`, `19.05.36`, `19.06.39`, `19.07.40`, `19.08.36`, `19.09.38`, `19.10.39`, `19.11.43`, `19.12.41`, `19.13.37`, `19.14.43`, `19.15.36`, `19.16.39`
+
+Included by default: `yes`
+
+---
+
+`Player flyout menu`: Adds options to hide menu items that appear when pressing the gear icon in the video player.
+
+Target version: `18.32.39`, `18.37.36`, `18.38.44`, `18.43.45`, `18.44.41`, `18.45.43`, `18.48.39`, `18.49.37`, `19.01.34`, `19.02.39`, `19.03.36`, `19.04.38`, `19.05.36`, `19.06.39`, `19.07.40`, `19.08.36`, `19.09.38`, `19.10.39`, `19.11.43`, `19.12.41`, `19.13.37`, `19.14.43`, `19.15.36`, `19.16.39`
+
+Included by default: `yes`
+
+---
+
+`Hide filter bar`: Adds options to hide the category bar at the top of video feeds.
+
+Target version: `18.32.39`, `18.37.36`, `18.38.44`, `18.43.45`, `18.44.41`, `18.45.43`, `18.48.39`, `18.49.37`, `19.01.34`, `19.02.39`, `19.03.36`, `19.04.38`, `19.05.36`, `19.06.39`, `19.07.40`, `19.08.36`, `19.09.38`, `19.10.39`, `19.11.43`, `19.12.41`, `19.13.37`, `19.14.43`, `19.15.36`, `19.16.39`
+
+Included by default: `yes`
+
+---
+
+`Comments`: Adds options to hide components related to comments.
+
+Target version: `18.32.39`, `18.37.36`, `18.38.44`, `18.43.45`, `18.44.41`, `18.45.43`, `18.48.39`, `18.49.37`, `19.01.34`, `19.02.39`, `19.03.36`, `19.04.38`, `19.05.36`, `19.06.39`, `19.07.40`, `19.08.36`, `19.09.38`, `19.10.39`, `19.11.43`, `19.12.41`, `19.13.37`, `19.14.43`, `19.15.36`, `19.16.39`
+
+Included by default: `yes`
+
+---
+
+`Hide timestamp`: Adds an option to hide the timestamp in the bottom left of the video player.
+
+Target version: `18.37.36`, `18.38.44`, `18.43.45`, `18.44.41`, `18.45.43`, `18.48.39`, `18.49.37`, `19.01.34`, `19.02.39`, `19.03.36`, `19.04.38`, `19.05.36`, `19.06.39`, `19.07.40`, `19.08.36`, `19.09.38`, `19.10.39`, `19.11.43`, `19.12.41`, `19.13.37`, `19.14.43`, `19.15.36`, `19.16.39`
+
+Included by default: `yes`
+
+---
+
+`Hide layout components`: Adds options to hide general layout components.
+
+Target version: `18.32.39`, `18.37.36`, `18.38.44`, `18.43.45`, `18.44.41`, `18.45.43`, `18.48.39`, `18.49.37`, `19.01.34`, `19.02.39`, `19.03.36`, `19.04.38`, `19.05.36`, `19.06.39`, `19.07.40`, `19.08.36`, `19.09.38`, `19.10.39`, `19.11.43`, `19.12.41`, `19.13.37`, `19.14.43`, `19.15.36`, `19.16.39`
+
+Included by default: `yes`
+
+---
+
+`Disable resuming Shorts on startup`: Adds an option to disable the Shorts player from resuming on app startup when Shorts were last being watched.
+
+Target version: `18.32.39`, `18.37.36`, `18.38.44`, `18.43.45`, `18.44.41`, `18.45.43`, `18.48.39`, `18.49.37`, `19.01.34`, `19.02.39`, `19.03.36`, `19.04.38`, `19.05.36`, `19.06.39`, `19.07.40`, `19.08.36`, `19.09.38`, `19.10.39`, `19.11.43`, `19.12.41`, `19.13.37`, `19.14.43`, `19.15.36`, `19.16.39`
+
+Included by default: `yes`
+
+---
+
+`Miniplayer`: Adds options to change the in app minimized player, and if patching target 19.16+ adds options to use modern miniplayers.
+
+Target version: `18.32.39`, `18.37.36`, `18.38.44`, `18.43.45`, `18.44.41`, `18.45.43`, `18.48.39`, `18.49.37`, `19.01.34`, `19.02.39`, `19.03.36`, `19.04.38`, `19.05.36`, `19.06.39`, `19.07.40`, `19.08.36`, `19.09.38`, `19.10.39`, `19.11.43`, `19.12.41`, `19.13.37`, `19.16.39`
+
+Included by default: `yes`
+
+---
+
+`Wide searchbar`: Adds an option to replace the search icon with a wide search bar. This will hide the YouTube logo when active.
+
+Target version: `18.32.39`, `18.37.36`, `18.38.44`, `18.43.45`, `18.45.43`, `18.48.39`, `18.49.37`, `19.01.34`, `19.02.39`, `19.03.36`, `19.04.38`, `19.05.36`, `19.06.39`, `19.07.40`, `19.08.36`, `19.09.38`, `19.10.39`, `19.11.43`, `19.12.41`, `19.13.37`, `19.14.43`, `19.15.36`, `19.16.39`
+
+Included by default: `yes`
+
+---
+
+`Restore old seekbar thumbnails`: Adds an option to restore the old seekbar thumbnails that appear above the seekbar while seeking instead of fullscreen thumbnails.
+
+Target version: `18.37.36`, `18.38.44`, `18.43.45`, `18.44.41`, `18.45.43`, `18.48.39`, `18.49.37`, `19.01.34`, `19.02.39`, `19.03.36`, `19.04.38`, `19.05.36`, `19.06.39`, `19.07.40`, `19.08.36`, `19.09.38`, `19.10.39`, `19.11.43`, `19.12.41`, `19.13.37`, `19.14.43`, `19.15.36`, `19.16.39`
+
+Included by default: `yes`
+
+---
+
+`Disable auto captions`: Adds an option to disable captions from being automatically enabled.
+
+Target version: `18.32.39`, `18.37.36`, `18.38.44`, `18.43.45`, `18.44.41`, `18.45.43`, `18.48.39`, `18.49.37`, `19.01.34`, `19.02.39`, `19.03.36`, `19.04.38`, `19.05.36`, `19.06.39`, `19.07.40`, `19.08.36`, `19.09.38`, `19.10.39`, `19.11.43`, `19.12.41`, `19.13.37`, `19.14.43`, `19.15.36`, `19.16.39`
+
+Included by default: `yes`
 
 ---
 
@@ -786,11 +810,31 @@ Each of these folders must contain the following files |
 
 ---
 
-`Restore old seekbar thumbnails`: Adds an option to restore the old seekbar thumbnails that appear above the seekbar while seeking instead of fullscreen thumbnails.
+`Change header`: Applies a custom header in the top left corner within the app. Defaults to the ReVanced header.
 
-Target version: `18.37.36`, `18.38.44`, `18.43.45`, `18.44.41`, `18.45.43`, `18.48.39`, `18.49.37`, `19.01.34`, `19.02.39`, `19.03.36`, `19.04.38`, `19.05.36`, `19.06.39`, `19.07.40`, `19.08.36`, `19.09.38`, `19.10.39`, `19.11.43`, `19.12.41`, `19.13.37`, `19.14.43`, `19.15.36`, `19.16.39`
+Target version: `all`
 
-Included by default: `yes`
+Included by default: `no`
+
+<details>
+<summary>Options</summary>
+
+| Key | Description |
+| :---: | :---: |
+| `header` | The header to apply to the app.
+
+If a path to a folder is provided |
+| `the folder must contain one or more of the following folders` | undefined |
+| `depending on the DPI of the device` | 
+
+- drawable-xxxhdpi
+- drawable-xxhdpi
+- drawable-xhdpi
+- drawable-hdpi
+- drawable-mdpi
+
+Each of the folders must contain all of the following files |
+</details>
 
 ---
 
@@ -802,7 +846,7 @@ Included by default: `yes`
 
 ---
 
-`Disable resuming Shorts on startup`: Adds an option to disable the Shorts player from resuming on app startup when Shorts were last being watched.
+`Hide video action buttons`: Adds options to hide action buttons (such as the Download button) under videos.
 
 Target version: `18.32.39`, `18.37.36`, `18.38.44`, `18.43.45`, `18.44.41`, `18.45.43`, `18.48.39`, `18.49.37`, `19.01.34`, `19.02.39`, `19.03.36`, `19.04.38`, `19.05.36`, `19.06.39`, `19.07.40`, `19.08.36`, `19.09.38`, `19.10.39`, `19.11.43`, `19.12.41`, `19.13.37`, `19.14.43`, `19.15.36`, `19.16.39`
 
@@ -810,7 +854,15 @@ Included by default: `yes`
 
 ---
 
-`Disable auto captions`: Adds an option to disable captions from being automatically enabled.
+`Hide cast button`: Adds an option to hide the cast button in the video player.
+
+Target version: `all`
+
+Included by default: `yes`
+
+---
+
+`Navigation buttons`: Adds options to hide and change navigation buttons (such as the Shorts button).
 
 Target version: `18.32.39`, `18.37.36`, `18.38.44`, `18.43.45`, `18.44.41`, `18.45.43`, `18.48.39`, `18.49.37`, `19.01.34`, `19.02.39`, `19.03.36`, `19.04.38`, `19.05.36`, `19.06.39`, `19.07.40`, `19.08.36`, `19.09.38`, `19.10.39`, `19.11.43`, `19.12.41`, `19.13.37`, `19.14.43`, `19.15.36`, `19.16.39`
 
@@ -818,15 +870,23 @@ Included by default: `yes`
 
 ---
 
-`Miniplayer`: Adds options to change the in app minimized player, and if patching target 19.16+ adds options to use modern miniplayers.
+`Hide player buttons`: Adds an option to hide the previous and next buttons in the video player.
 
-Target version: `18.32.39`, `18.37.36`, `18.38.44`, `18.43.45`, `18.44.41`, `18.45.43`, `18.48.39`, `18.49.37`, `19.01.34`, `19.02.39`, `19.03.36`, `19.04.38`, `19.05.36`, `19.06.39`, `19.07.40`, `19.08.36`, `19.09.38`, `19.10.39`, `19.11.43`, `19.12.41`, `19.13.37`, `19.16.39`
+Target version: `18.32.39`, `18.37.36`, `18.38.44`, `18.43.45`, `18.44.41`, `18.45.43`, `18.48.39`, `18.49.37`, `19.01.34`, `19.02.39`, `19.03.36`, `19.04.38`, `19.05.36`, `19.06.39`, `19.07.40`, `19.08.36`, `19.09.38`, `19.10.39`, `19.11.43`, `19.12.41`, `19.13.37`, `19.14.43`, `19.15.36`, `19.16.39`
 
 Included by default: `yes`
 
 ---
 
-`Enable tablet layout`: Adds an option to enable tablet layout
+`Hide captions button`: Adds an option to hide the captions button in the video player.
+
+Target version: `18.32.39`, `18.37.36`, `18.38.44`, `18.43.45`, `18.44.41`, `18.45.43`, `18.48.39`, `18.49.37`, `19.01.34`, `19.02.39`, `19.03.36`, `19.04.38`, `19.05.36`, `19.06.39`, `19.07.40`, `19.08.36`, `19.09.38`, `19.10.39`, `19.11.43`, `19.12.41`, `19.13.37`, `19.14.43`, `19.15.36`, `19.16.39`
+
+Included by default: `yes`
+
+---
+
+`Hide autoplay button`: Adds an option to hide the autoplay button in the video player.
 
 Target version: `18.32.39`, `18.37.36`, `18.38.44`, `18.43.45`, `18.44.41`, `18.45.43`, `18.48.39`, `18.49.37`, `19.01.34`, `19.02.39`, `19.03.36`, `19.04.38`, `19.05.36`, `19.06.39`, `19.07.40`, `19.08.36`, `19.09.38`, `19.10.39`, `19.11.43`, `19.12.41`, `19.13.37`, `19.14.43`, `19.15.36`, `19.16.39`
 
@@ -851,6 +911,46 @@ Included by default: `yes`
 
 ---
 
+`Custom player overlay opacity`: Adds an option to change the opacity of the video player background when player controls are visible.
+
+Target version: `all`
+
+Included by default: `yes`
+
+---
+
+`Remove player controls background`: Removes the dark background surrounding the video player controls.
+
+Target version: `18.32.39`, `18.37.36`, `18.38.44`, `18.43.45`, `18.44.41`, `18.45.43`, `18.48.39`, `18.49.37`, `19.01.34`, `19.02.39`, `19.03.36`, `19.04.38`, `19.05.36`, `19.06.39`, `19.07.40`, `19.08.36`, `19.09.38`, `19.10.39`, `19.11.43`, `19.12.41`, `19.13.37`, `19.14.43`, `19.15.36`, `19.16.39`
+
+Included by default: `no`
+
+---
+
+`Alternative thumbnails`: Adds options to replace video thumbnails using the DeArrow API or image captures from the video.
+
+Target version: `18.32.39`, `18.37.36`, `18.38.44`, `18.43.45`, `18.44.41`, `18.45.43`, `18.48.39`, `18.49.37`, `19.01.34`, `19.02.39`, `19.03.36`, `19.04.38`, `19.05.36`, `19.06.39`, `19.07.40`, `19.08.36`, `19.09.38`, `19.10.39`, `19.11.43`, `19.12.41`, `19.13.37`, `19.14.43`, `19.15.36`, `19.16.39`
+
+Included by default: `yes`
+
+---
+
+`Bypass image region restrictions`: Adds an option to use a different host for user avatar and channel images,and can fix missing images that are blocked in some countries.
+
+Target version: `18.32.39`, `18.37.36`, `18.38.44`, `18.43.45`, `18.44.41`, `18.45.43`, `18.48.39`, `18.49.37`, `19.01.34`, `19.02.39`, `19.03.36`, `19.04.38`, `19.05.36`, `19.06.39`, `19.07.40`, `19.08.36`, `19.09.38`, `19.10.39`, `19.11.43`, `19.12.41`, `19.13.37`, `19.14.43`, `19.15.36`, `19.16.39`
+
+Included by default: `yes`
+
+---
+
+`Change start page`: Adds an option to set which page the app opens in instead of the homepage.
+
+Target version: `all`
+
+Included by default: `yes`
+
+---
+
 `SponsorBlock`: Adds options to enable and configure SponsorBlock, which can skip undesired video segments such as sponsored content.
 
 Target version: `18.48.39`, `18.49.37`, `19.01.34`, `19.02.39`, `19.03.36`, `19.04.38`, `19.05.36`, `19.06.39`, `19.07.40`, `19.08.36`, `19.09.38`, `19.10.39`, `19.11.43`, `19.12.41`, `19.13.37`, `19.14.43`, `19.15.36`, `19.16.39`
@@ -859,7 +959,7 @@ Included by default: `yes`
 
 ---
 
-`Hide info cards`: Adds an option to hide info cards that creators add in the video player.
+`Enable tablet layout`: Adds an option to enable tablet layout
 
 Target version: `18.32.39`, `18.37.36`, `18.38.44`, `18.43.45`, `18.44.41`, `18.45.43`, `18.48.39`, `18.49.37`, `19.01.34`, `19.02.39`, `19.03.36`, `19.04.38`, `19.05.36`, `19.06.39`, `19.07.40`, `19.08.36`, `19.09.38`, `19.10.39`, `19.11.43`, `19.12.41`, `19.13.37`, `19.14.43`, `19.15.36`, `19.16.39`
 
@@ -867,7 +967,79 @@ Included by default: `yes`
 
 ---
 
-`Disable rolling number animations`: Adds an option to disable rolling number animations of video view count, user likes, and upload time.
+`Return YouTube Dislike`: Adds an option to show the dislike count of videos using the Return YouTube Dislike API.
+
+Target version: `18.49.37`, `19.01.34`, `19.02.39`, `19.03.36`, `19.04.38`, `19.05.36`, `19.06.39`, `19.07.40`, `19.08.36`, `19.09.38`, `19.10.39`, `19.11.43`, `19.12.41`, `19.13.37`, `19.14.43`, `19.15.36`, `19.16.39`
+
+Included by default: `yes`
+
+---
+
+`GmsCore support`: Allows patched Google apps to run without root and under a different package name by using GmsCore instead of Google Play Services.
+
+Target version: `18.48.39`, `18.49.37`, `19.01.34`, `19.02.39`, `19.03.36`, `19.04.38`, `19.05.36`, `19.06.39`, `19.07.40`, `19.08.36`, `19.09.38`, `19.10.39`, `19.11.43`, `19.12.41`, `19.13.37`, `19.14.43`, `19.15.36`, `19.16.39`
+
+Included by default: `yes`
+
+<details>
+<summary>Options</summary>
+
+| Key | Description |
+| :---: | :---: |
+| `gmsCoreVendorGroupId` | The vendor's group ID for GmsCore. |
+</details>
+
+---
+
+`Disable zoom haptics`: Adds an option to disable haptics when zooming.
+
+Target version: `all`
+
+Included by default: `yes`
+
+---
+
+`Announcements`: Adds an option to show announcements from ReVanced on app startup.
+
+Target version: `all`
+
+Included by default: `yes`
+
+---
+
+`Enable debugging`: Adds options for debugging.
+
+Target version: `all`
+
+Included by default: `yes`
+
+---
+
+`Always repeat`: Adds an option to always repeat videos when they end.
+
+Target version: `18.32.39`, `18.37.36`, `18.38.44`, `18.43.45`, `18.44.41`, `18.45.43`, `18.48.39`, `18.49.37`, `19.01.34`, `19.02.39`, `19.03.36`, `19.04.38`, `19.05.36`, `19.06.39`, `19.07.40`, `19.08.36`, `19.09.38`, `19.10.39`, `19.11.43`, `19.12.41`, `19.13.37`, `19.14.43`, `19.15.36`, `19.16.39`
+
+Included by default: `yes`
+
+---
+
+`Spoof device dimensions`: Adds an option to spoof the device dimensions which can unlock higher video qualities.
+
+Target version: `18.38.44`, `18.43.45`, `18.44.41`, `18.45.43`, `18.48.39`, `18.49.37`, `19.01.34`, `19.02.39`, `19.03.36`, `19.04.38`, `19.05.36`, `19.06.39`, `19.07.40`, `19.08.36`, `19.09.38`, `19.10.39`, `19.11.43`, `19.12.41`, `19.13.37`, `19.14.43`, `19.15.36`, `19.16.39`
+
+Included by default: `yes`
+
+---
+
+`Open links externally`: Adds an option to always open links in your browser instead of in the in-app-browser.
+
+Target version: `18.32.39`, `18.37.36`, `18.38.44`, `18.43.45`, `18.44.41`, `18.45.43`, `18.48.39`, `18.49.37`, `19.01.34`, `19.02.39`, `19.03.36`, `19.04.38`, `19.05.36`, `19.06.39`, `19.07.40`, `19.08.36`, `19.09.38`, `19.10.39`, `19.11.43`, `19.12.41`, `19.13.37`, `19.14.43`, `19.15.36`, `19.16.39`
+
+Included by default: `yes`
+
+---
+
+`Bypass URL redirects`: Adds an option to bypass URL redirects and open the original URL directly.
 
 Target version: `18.43.45`, `18.44.41`, `18.45.43`, `18.48.39`, `18.49.37`, `19.01.34`, `19.02.39`, `19.03.36`, `19.04.38`, `19.05.36`, `19.06.39`, `19.07.40`, `19.08.36`, `19.09.38`, `19.10.39`, `19.11.43`, `19.12.41`, `19.13.37`, `19.14.43`, `19.15.36`, `19.16.39`
 
@@ -875,15 +1047,31 @@ Included by default: `yes`
 
 ---
 
-`Hide timestamp`: Adds an option to hide the timestamp in the bottom left of the video player.
+`Remove tracking query parameter`: Adds an option to remove the tracking info from links you share.
 
-Target version: `18.37.36`, `18.38.44`, `18.43.45`, `18.44.41`, `18.45.43`, `18.48.39`, `18.49.37`, `19.01.34`, `19.02.39`, `19.03.36`, `19.04.38`, `19.05.36`, `19.06.39`, `19.07.40`, `19.08.36`, `19.09.38`, `19.10.39`, `19.11.43`, `19.12.41`, `19.13.37`, `19.14.43`, `19.15.36`, `19.16.39`
+Target version: `18.43.45`, `18.44.41`, `18.45.43`, `18.48.39`, `18.49.37`, `19.01.34`, `19.02.39`, `19.03.36`, `19.04.38`, `19.05.36`, `19.06.39`, `19.07.40`, `19.08.36`, `19.09.38`, `19.10.39`, `19.11.43`, `19.12.41`, `19.13.37`, `19.14.43`, `19.15.36`, `19.16.39`
 
 Included by default: `yes`
 
 ---
 
-`Hide Shorts components`: Adds options to hide components related to YouTube Shorts.
+`Remove background playback restrictions`: Removes restrictions on background playback, including playing kids videos in the background.
+
+Target version: `18.48.39`, `18.49.37`, `19.01.34`, `19.02.39`, `19.03.36`, `19.04.38`, `19.05.36`, `19.06.39`, `19.07.40`, `19.08.36`, `19.09.38`, `19.10.39`, `19.11.43`, `19.12.41`, `19.13.37`, `19.14.43`, `19.15.36`, `19.16.39`
+
+Included by default: `yes`
+
+---
+
+`Spoof client`: Spoofs the client to allow video playback.
+
+Target version: `18.48.39`, `18.49.37`, `19.01.34`, `19.02.39`, `19.03.36`, `19.04.38`, `19.05.36`, `19.06.39`, `19.07.40`, `19.08.36`, `19.09.38`, `19.10.39`, `19.11.43`, `19.12.41`, `19.13.37`, `19.14.43`, `19.15.36`, `19.16.39`
+
+Included by default: `yes`
+
+---
+
+`Video ads`: Adds an option to remove ads in the video player.
 
 Target version: `18.32.39`, `18.37.36`, `18.38.44`, `18.43.45`, `18.44.41`, `18.45.43`, `18.48.39`, `18.49.37`, `19.01.34`, `19.02.39`, `19.03.36`, `19.04.38`, `19.05.36`, `19.06.39`, `19.07.40`, `19.08.36`, `19.09.38`, `19.10.39`, `19.11.43`, `19.12.41`, `19.13.37`, `19.14.43`, `19.15.36`, `19.16.39`
 
@@ -891,97 +1079,9 @@ Included by default: `yes`
 
 ---
 
-`Comments`: Adds options to hide components related to comments.
+`Hide ads`: Adds options to remove general ads.
 
 Target version: `18.32.39`, `18.37.36`, `18.38.44`, `18.43.45`, `18.44.41`, `18.45.43`, `18.48.39`, `18.49.37`, `19.01.34`, `19.02.39`, `19.03.36`, `19.04.38`, `19.05.36`, `19.06.39`, `19.07.40`, `19.08.36`, `19.09.38`, `19.10.39`, `19.11.43`, `19.12.41`, `19.13.37`, `19.14.43`, `19.15.36`, `19.16.39`
-
-Included by default: `yes`
-
----
-
-`Hide album cards`: Adds an option to hide album cards below artist descriptions.
-
-Target version: `18.32.39`, `18.37.36`, `18.38.44`, `18.43.45`, `18.44.41`, `18.45.43`, `18.48.39`, `18.49.37`, `19.01.34`, `19.02.39`, `19.03.36`, `19.04.38`, `19.05.36`, `19.06.39`, `19.07.40`, `19.08.36`, `19.09.38`, `19.10.39`, `19.11.43`, `19.12.41`, `19.13.37`, `19.14.43`, `19.15.36`, `19.16.39`
-
-Included by default: `yes`
-
----
-
-`Player flyout menu`: Adds options to hide menu items that appear when pressing the gear icon in the video player.
-
-Target version: `18.32.39`, `18.37.36`, `18.38.44`, `18.43.45`, `18.44.41`, `18.45.43`, `18.48.39`, `18.49.37`, `19.01.34`, `19.02.39`, `19.03.36`, `19.04.38`, `19.05.36`, `19.06.39`, `19.07.40`, `19.08.36`, `19.09.38`, `19.10.39`, `19.11.43`, `19.12.41`, `19.13.37`, `19.14.43`, `19.15.36`, `19.16.39`
-
-Included by default: `yes`
-
----
-
-`Disable suggested video end screen`: Adds an option to disable the suggested video end screen at the end of videos.
-
-Target version: `18.37.36`, `18.38.44`, `18.43.45`, `18.44.41`, `18.45.43`, `18.48.39`, `18.49.37`, `19.01.34`, `19.02.39`, `19.03.36`, `19.04.38`, `19.05.36`, `19.06.39`, `19.07.40`, `19.08.36`, `19.09.38`, `19.10.39`, `19.11.43`, `19.12.41`, `19.13.37`, `19.14.43`, `19.15.36`, `19.16.39`
-
-Included by default: `yes`
-
----
-
-`Hide seekbar`: Adds an option to hide the seekbar.
-
-Target version: `18.32.39`, `18.37.36`, `18.38.44`, `18.43.45`, `18.44.41`, `18.45.43`, `18.48.39`, `18.49.37`, `19.01.34`, `19.02.39`, `19.03.36`, `19.04.38`, `19.05.36`, `19.06.39`, `19.07.40`, `19.08.36`, `19.09.38`, `19.10.39`, `19.11.43`, `19.12.41`, `19.13.37`, `19.14.43`, `19.15.36`, `19.16.39`
-
-Included by default: `yes`
-
----
-
-`Hide floating microphone button`: Adds an option to hide the floating microphone button when searching.
-
-Target version: `18.32.39`, `18.37.36`, `18.38.44`, `18.43.45`, `18.44.41`, `18.45.43`, `18.48.39`, `18.49.37`, `19.01.34`, `19.02.39`, `19.03.36`, `19.04.38`, `19.05.36`, `19.06.39`, `19.07.40`, `19.08.36`, `19.09.38`, `19.10.39`, `19.11.43`, `19.12.41`, `19.13.37`, `19.14.43`, `19.15.36`, `19.16.39`
-
-Included by default: `yes`
-
----
-
-`Disable fullscreen ambient mode`: Adds an option to disable the ambient mode when in fullscreen.
-
-Target version: `18.37.36`, `18.38.44`, `18.43.45`, `18.44.41`, `18.45.43`, `18.48.39`, `18.49.37`, `19.01.34`, `19.02.39`, `19.03.36`, `19.04.38`, `19.05.36`, `19.06.39`, `19.07.40`, `19.08.36`, `19.09.38`, `19.10.39`, `19.11.43`, `19.12.41`, `19.13.37`, `19.14.43`, `19.15.36`, `19.16.39`
-
-Included by default: `yes`
-
----
-
-`Hide layout components`: Adds options to hide general layout components.
-
-Target version: `18.32.39`, `18.37.36`, `18.38.44`, `18.43.45`, `18.44.41`, `18.45.43`, `18.48.39`, `18.49.37`, `19.01.34`, `19.02.39`, `19.03.36`, `19.04.38`, `19.05.36`, `19.06.39`, `19.07.40`, `19.08.36`, `19.09.38`, `19.10.39`, `19.11.43`, `19.12.41`, `19.13.37`, `19.14.43`, `19.15.36`, `19.16.39`
-
-Included by default: `yes`
-
----
-
-`Hide filter bar`: Adds options to hide the category bar at the top of video feeds.
-
-Target version: `18.32.39`, `18.37.36`, `18.38.44`, `18.43.45`, `18.44.41`, `18.45.43`, `18.48.39`, `18.49.37`, `19.01.34`, `19.02.39`, `19.03.36`, `19.04.38`, `19.05.36`, `19.06.39`, `19.07.40`, `19.08.36`, `19.09.38`, `19.10.39`, `19.11.43`, `19.12.41`, `19.13.37`, `19.14.43`, `19.15.36`, `19.16.39`
-
-Included by default: `yes`
-
----
-
-`Hide crowdfunding box`: Adds an option to hide the crowdfunding box between the player and video description.
-
-Target version: `18.32.39`, `18.37.36`, `18.38.44`, `18.43.45`, `18.44.41`, `18.45.43`, `18.48.39`, `18.49.37`, `19.01.34`, `19.02.39`, `19.03.36`, `19.04.38`, `19.05.36`, `19.06.39`, `19.07.40`, `19.08.36`, `19.09.38`, `19.10.39`, `19.11.43`, `19.12.41`, `19.13.37`, `19.14.43`, `19.15.36`, `19.16.39`
-
-Included by default: `yes`
-
----
-
-`Hide endscreen cards`: Adds an option to hide suggested video cards at the end of videos.
-
-Target version: `18.32.39`, `18.37.36`, `18.38.44`, `18.43.45`, `18.44.41`, `18.45.43`, `18.48.39`, `18.49.37`, `19.01.34`, `19.02.39`, `19.03.36`, `19.04.38`, `19.05.36`, `19.06.39`, `19.07.40`, `19.08.36`, `19.09.38`, `19.10.39`, `19.11.43`, `19.12.41`, `19.13.37`, `19.14.43`, `19.15.36`, `19.16.39`
-
-Included by default: `yes`
-
----
-
-`Wide searchbar`: Adds an option to replace the search icon with a wide search bar. This will hide the YouTube logo when active.
-
-Target version: `18.32.39`, `18.37.36`, `18.38.44`, `18.43.45`, `18.45.43`, `18.48.39`, `18.49.37`, `19.01.34`, `19.02.39`, `19.03.36`, `19.04.38`, `19.05.36`, `19.06.39`, `19.07.40`, `19.08.36`, `19.09.38`, `19.10.39`, `19.11.43`, `19.12.41`, `19.13.37`, `19.14.43`, `19.15.36`, `19.16.39`
 
 Included by default: `yes`
 
@@ -1011,19 +1111,11 @@ Included by default: `yes`
 
 ---
 
-`Downloads`: Adds support to download videos with an external downloader app using the in-app download button or a video player action button.
+`Enable slide to seek`: Adds an option to enable slide to seek instead of playing at 2x speed when pressing and holding in the video player. Including this patch may cause issues with tapping or double tapping the video player overlay.
 
-Target version: `18.48.39`, `18.49.37`, `19.01.34`, `19.02.39`, `19.03.36`, `19.04.38`, `19.05.36`, `19.06.39`, `19.07.40`, `19.08.36`, `19.09.38`, `19.10.39`, `19.11.43`, `19.12.41`, `19.13.37`, `19.14.43`, `19.15.36`, `19.16.39`
+Target version: `18.43.45`, `18.44.41`, `18.45.43`, `18.48.39`, `18.49.37`, `19.01.34`, `19.02.39`, `19.03.36`, `19.04.38`, `19.05.36`, `19.06.39`, `19.07.40`, `19.08.36`, `19.09.38`, `19.10.39`, `19.11.43`, `19.12.41`, `19.13.37`, `19.14.43`, `19.15.36`, `19.16.39`
 
-Included by default: `yes`
-
----
-
-`Swipe controls`: Adds options to enable and configure volume and brightness swipe controls.
-
-Target version: `18.32.39`, `18.37.36`, `18.38.44`, `18.43.45`, `18.44.41`, `18.45.43`, `18.48.39`, `18.49.37`, `19.01.34`, `19.02.39`, `19.03.36`, `19.04.38`, `19.05.36`, `19.06.39`, `19.07.40`, `19.08.36`, `19.09.38`, `19.10.39`, `19.11.43`, `19.12.41`, `19.13.37`, `19.14.43`, `19.15.36`, `19.16.39`
-
-Included by default: `yes`
+Included by default: `no`
 
 ---
 
@@ -1035,15 +1127,23 @@ Included by default: `yes`
 
 ---
 
-`Enable slide to seek`: Adds an option to enable slide to seek instead of playing at 2x speed when pressing and holding in the video player. Including this patch may cause issues with tapping or double tapping the video player overlay.
+`Disable precise seeking gesture`: Adds an option to disable precise seeking when swiping up on the seekbar.
 
-Target version: `18.43.45`, `18.44.41`, `18.45.43`, `18.48.39`, `18.49.37`, `19.01.34`, `19.02.39`, `19.03.36`, `19.04.38`, `19.05.36`, `19.06.39`, `19.07.40`, `19.08.36`, `19.09.38`, `19.10.39`, `19.11.43`, `19.12.41`, `19.13.37`, `19.14.43`, `19.15.36`, `19.16.39`
+Target version: `18.32.39`, `18.37.36`, `18.38.44`, `18.43.45`, `18.44.41`, `18.45.43`, `18.48.39`, `18.49.37`, `19.01.34`, `19.02.39`, `19.03.36`, `19.04.38`, `19.05.36`, `19.06.39`, `19.07.40`, `19.08.36`, `19.09.38`, `19.10.39`, `19.11.43`, `19.12.41`, `19.13.37`, `19.14.43`, `19.15.36`, `19.16.39`
 
-Included by default: `no`
+Included by default: `yes`
 
 ---
 
-`Disable precise seeking gesture`: Adds an option to disable precise seeking when swiping up on the seekbar.
+`Downloads`: Adds support to download videos with an external downloader app using the in-app download button or a video player action button.
+
+Target version: `18.48.39`, `18.49.37`, `19.01.34`, `19.02.39`, `19.03.36`, `19.04.38`, `19.05.36`, `19.06.39`, `19.07.40`, `19.08.36`, `19.09.38`, `19.10.39`, `19.11.43`, `19.12.41`, `19.13.37`, `19.14.43`, `19.15.36`, `19.16.39`
+
+Included by default: `yes`
+
+---
+
+`Swipe controls`: Adds options to enable and configure volume and brightness swipe controls.
 
 Target version: `18.32.39`, `18.37.36`, `18.38.44`, `18.43.45`, `18.44.41`, `18.45.43`, `18.48.39`, `18.49.37`, `19.01.34`, `19.02.39`, `19.03.36`, `19.04.38`, `19.05.36`, `19.06.39`, `19.07.40`, `19.08.36`, `19.09.38`, `19.10.39`, `19.11.43`, `19.12.41`, `19.13.37`, `19.14.43`, `19.15.36`, `19.16.39`
 
@@ -1081,37 +1181,15 @@ Included by default: `yes`
 
 ---
 
-`Hide timeline ads`: null
-
-Target version: `all`
-
-Included by default: `yes`
-
----
-
-</details>
-
-## `com.ithebk.expensemanager`
-
-<details>
-
-`Unlock pro`: null
-
-Target version: `all`
-
-Included by default: `yes`
-
----
-
 </details>
 
 ## `com.laurencedawson.reddit_sync`
 
 <details>
 
-`Disable ads`: null
+`Disable Sync for Lemmy bottom sheet`: Disables the bottom sheet at the startup that asks you to signup to "Sync for Lemmy".
 
-Target version: `all`
+Target version: `v23.06.30-13:39`
 
 Included by default: `yes`
 
@@ -1141,9 +1219,9 @@ Included by default: `yes`
 
 ---
 
-`Disable Sync for Lemmy bottom sheet`: Disables the bottom sheet at the startup that asks you to signup to "Sync for Lemmy".
+`Disable ads`: null
 
-Target version: `v23.06.30-13:39`
+Target version: `all`
 
 Included by default: `yes`
 
@@ -1155,6 +1233,14 @@ Included by default: `yes`
 
 <details>
 
+`Disable Sync for Lemmy bottom sheet`: Disables the bottom sheet at the startup that asks you to signup to "Sync for Lemmy".
+
+Target version: `all`
+
+Included by default: `yes`
+
+---
+
 `Spoof client`: Restores functionality of the app by using custom client ID.
 
 Target version: `all`
@@ -1172,14 +1258,6 @@ Included by default: `yes`
 ---
 
 `Fix /s/ links`: null
-
-Target version: `all`
-
-Included by default: `yes`
-
----
-
-`Disable Sync for Lemmy bottom sheet`: Disables the bottom sheet at the startup that asks you to signup to "Sync for Lemmy".
 
 Target version: `all`
 
@@ -1193,6 +1271,14 @@ Included by default: `yes`
 
 <details>
 
+`Disable Sync for Lemmy bottom sheet`: Disables the bottom sheet at the startup that asks you to signup to "Sync for Lemmy".
+
+Target version: `all`
+
+Included by default: `yes`
+
+---
+
 `Spoof client`: Restores functionality of the app by using custom client ID.
 
 Target version: `all`
@@ -1217,21 +1303,13 @@ Included by default: `yes`
 
 ---
 
-`Disable Sync for Lemmy bottom sheet`: Disables the bottom sheet at the startup that asks you to signup to "Sync for Lemmy".
-
-Target version: `all`
-
-Included by default: `yes`
-
----
-
 </details>
 
 ## `com.microblink.photomath`
 
 <details>
 
-`Unlock plus`: null
+`Hide update popup`: Prevents the update popup from showing up.
 
 Target version: `8.37.0`
 
@@ -1239,7 +1317,7 @@ Included by default: `yes`
 
 ---
 
-`Hide update popup`: Prevents the update popup from showing up.
+`Unlock plus`: null
 
 Target version: `8.37.0`
 
@@ -1391,15 +1469,7 @@ Included by default: `yes`
 
 <details>
 
-`Hide ads`: null
-
-Target version: `2024.17.0`
-
-Included by default: `yes`
-
----
-
-`Sanitize sharing links`: Removes (tracking) query parameters from the URLs when sharing links.
+`Disable screenshot popup`: Disables the popup that shows up when taking a screenshot.
 
 Target version: `all`
 
@@ -1415,9 +1485,17 @@ Included by default: `yes`
 
 ---
 
-`Disable screenshot popup`: Disables the popup that shows up when taking a screenshot.
+`Sanitize sharing links`: Removes (tracking) query parameters from the URLs when sharing links.
 
 Target version: `all`
+
+Included by default: `yes`
+
+---
+
+`Hide ads`: null
+
+Target version: `2024.17.0`
 
 Included by default: `yes`
 
@@ -1442,6 +1520,14 @@ Included by default: `yes`
 | :---: | :---: |
 | `client-id` | The Reddit OAuth client ID. You can get your client ID from https |
 </details>
+
+---
+
+`Disable ads`: null
+
+Target version: `all`
+
+Included by default: `yes`
 
 ---
 
@@ -1519,6 +1605,14 @@ Included by default: `yes`
 
 ---
 
+`Enable offline sync`: null
+
+Target version: `all`
+
+Included by default: `yes`
+
+---
+
 </details>
 
 ## `com.spotify.lite`
@@ -1538,14 +1632,6 @@ Included by default: `yes`
 ## `com.spotify.music`
 
 <details>
-
-`Hide premium navbar`: Removes the premium tab from the navbar.
-
-Target version: `all`
-
-Included by default: `yes`
-
----
 
 `Custom theme`: Applies a custom theme.
 
@@ -1568,15 +1654,23 @@ Included by default: `yes`
 
 ---
 
+`Hide premium navbar`: Removes the premium tab from the navbar.
+
+Target version: `all`
+
+Included by default: `yes`
+
+---
+
 </details>
 
 ## `com.ss.android.ugc.trill`
 
 <details>
 
-`Fix Google login`: Allows logging in with a Google account.
+`Feed filter`: Removes ads, livestreams, stories, image videos and videos with a specific amount of views or likes from the feed.
 
-Target version: `all`
+Target version: `32.5.3`
 
 Included by default: `yes`
 
@@ -1590,11 +1684,11 @@ Included by default: `yes`
 
 ---
 
-`SIM spoof`: Spoofs the information which is retrieved from the SIM card.
+`Fix Google login`: Allows logging in with a Google account.
 
 Target version: `all`
 
-Included by default: `no`
+Included by default: `yes`
 
 ---
 
@@ -1606,7 +1700,23 @@ Included by default: `yes`
 
 ---
 
-`Remember clear display`: Remembers the clear display configurations in between videos.
+`SIM spoof`: Spoofs the information which is retrieved from the SIM card.
+
+Target version: `all`
+
+Included by default: `no`
+
+---
+
+`Show seekbar`: Shows progress bar for all video.
+
+Target version: `all`
+
+Included by default: `yes`
+
+---
+
+`Playback speed`: Enables the playback speed option for all videos and retains the speed configurations in between videos.
 
 Target version: `32.5.3`
 
@@ -1622,23 +1732,7 @@ Included by default: `yes`
 
 ---
 
-`Playback speed`: Enables the playback speed option for all videos and retains the speed configurations in between videos.
-
-Target version: `32.5.3`
-
-Included by default: `yes`
-
----
-
-`Show seekbar`: Shows progress bar for all video.
-
-Target version: `all`
-
-Included by default: `yes`
-
----
-
-`Feed filter`: Removes ads, livestreams, stories, image videos and videos with a specific amount of views or likes from the feed.
+`Remember clear display`: Remembers the clear display configurations in between videos.
 
 Target version: `32.5.3`
 
@@ -1661,6 +1755,20 @@ Included by default: `yes`
 ---
 
 `Unlock subscription features`: Unlocks "Routes", "Matched Runs" and "Segment Efforts".
+
+Target version: `all`
+
+Included by default: `yes`
+
+---
+
+</details>
+
+## `com.swisssign.swissid.mobile`
+
+<details>
+
+`Remove Google Play Integrity Integrity check`: Removes the Google Play Integrity check. With this it's possible to use SwissID on custom ROMS.If the device is rooted, root permissions must be hidden from the app.
 
 Target version: `all`
 
@@ -1696,23 +1804,7 @@ Included by default: `no`
 
 ---
 
-`Disable dashboard ads`: Disables ads in the dashboard.
-
-Target version: `all`
-
-Included by default: `yes`
-
----
-
-`Disable blog notification reminder`: Disables the reminder to enable notifications for blogs you visit.
-
-Target version: `all`
-
-Included by default: `yes`
-
----
-
-`Disable in-app update`: Disables the in-app update check and update prompt.
+`Disable Ad-Free Banner`: Disables the banner with a frog, prompting you to buy Tumblr Ad-Free.
 
 Target version: `all`
 
@@ -1728,7 +1820,23 @@ Included by default: `yes`
 
 ---
 
-`Disable Ad-Free Banner`: Disables the banner with a frog, prompting you to buy Tumblr Ad-Free.
+`Disable in-app update`: Disables the in-app update check and update prompt.
+
+Target version: `all`
+
+Included by default: `yes`
+
+---
+
+`Disable blog notification reminder`: Disables the reminder to enable notifications for blogs you visit.
+
+Target version: `all`
+
+Included by default: `yes`
+
+---
+
+`Disable dashboard ads`: Disables ads in the dashboard.
 
 Target version: `all`
 
@@ -1741,6 +1849,14 @@ Included by default: `yes`
 ## `com.twitter.android`
 
 <details>
+
+`Hide view count`: Hides the view count of Posts.
+
+Target version: `all`
+
+Included by default: `no`
+
+---
 
 `Dynamic color`: Replaces the default X (Formerly Twitter) Blue with the user's Material You palette.
 
@@ -1775,14 +1891,6 @@ Included by default: `yes`
 ---
 
 `Open links with app chooser`: Instead of opening links directly, open them with an app chooser. As a result you can select a browser to open the link with.
-
-Target version: `all`
-
-Included by default: `no`
-
----
-
-`Hide view count`: Hides the view count of Posts.
 
 Target version: `all`
 
@@ -1854,9 +1962,9 @@ Included by default: `yes`
 
 <details>
 
-`Fix Google login`: Allows logging in with a Google account.
+`Feed filter`: Removes ads, livestreams, stories, image videos and videos with a specific amount of views or likes from the feed.
 
-Target version: `all`
+Target version: `32.5.3`
 
 Included by default: `yes`
 
@@ -1870,11 +1978,11 @@ Included by default: `yes`
 
 ---
 
-`SIM spoof`: Spoofs the information which is retrieved from the SIM card.
+`Fix Google login`: Allows logging in with a Google account.
 
 Target version: `all`
 
-Included by default: `no`
+Included by default: `yes`
 
 ---
 
@@ -1886,7 +1994,23 @@ Included by default: `yes`
 
 ---
 
-`Remember clear display`: Remembers the clear display configurations in between videos.
+`SIM spoof`: Spoofs the information which is retrieved from the SIM card.
+
+Target version: `all`
+
+Included by default: `no`
+
+---
+
+`Show seekbar`: Shows progress bar for all video.
+
+Target version: `all`
+
+Included by default: `yes`
+
+---
+
+`Playback speed`: Enables the playback speed option for all videos and retains the speed configurations in between videos.
 
 Target version: `32.5.3`
 
@@ -1902,23 +2026,7 @@ Included by default: `yes`
 
 ---
 
-`Playback speed`: Enables the playback speed option for all videos and retains the speed configurations in between videos.
-
-Target version: `32.5.3`
-
-Included by default: `yes`
-
----
-
-`Show seekbar`: Shows progress bar for all video.
-
-Target version: `all`
-
-Included by default: `yes`
-
----
-
-`Feed filter`: Removes ads, livestreams, stories, image videos and videos with a specific amount of views or likes from the feed.
+`Remember clear display`: Remembers the clear display configurations in between videos.
 
 Target version: `32.5.3`
 
@@ -1974,7 +2082,7 @@ Included by default: `yes`
 
 <details>
 
-`Hide offers tab`: null
+`Hide story bubbles`: null
 
 Target version: `all`
 
@@ -1982,7 +2090,7 @@ Included by default: `yes`
 
 ---
 
-`Hide story bubbles`: null
+`Hide offers tab`: null
 
 Target version: `all`
 
@@ -2138,14 +2246,6 @@ Included by default: `yes`
 
 <details>
 
-`Unlock subscription`: Unlocks the subscription feature but requires a custom client ID.
-
-Target version: `all`
-
-Included by default: `yes`
-
----
-
 `Spoof client`: Restores functionality of the app by using custom client ID.
 
 Target version: `all`
@@ -2159,6 +2259,14 @@ Included by default: `yes`
 | :---: | :---: |
 | `client-id` | The Reddit OAuth client ID. You can get your client ID from https |
 </details>
+
+---
+
+`Unlock subscription`: Unlocks the subscription feature but requires a custom client ID.
+
+Target version: `all`
+
+Included by default: `yes`
 
 ---
 
@@ -2320,7 +2428,15 @@ Included by default: `yes`
 
 <details>
 
-`Block embedded ads`: Blocks embedded stream ads using services like Luminous or PurpleAdBlocker.
+`Debug mode`: Enables Twitch's internal debugging mode.
+
+Target version: `all`
+
+Included by default: `no`
+
+---
+
+`Settings`: Adds settings menu to Twitch.
 
 Target version: `15.4.1`, `16.1.0`, `16.9.1`
 
@@ -2328,7 +2444,7 @@ Included by default: `yes`
 
 ---
 
-`Block audio ads`: Blocks audio ads in streams and VODs.
+`Block embedded ads`: Blocks embedded stream ads using services like Luminous or PurpleAdBlocker.
 
 Target version: `15.4.1`, `16.1.0`, `16.9.1`
 
@@ -2344,15 +2460,7 @@ Included by default: `yes`
 
 ---
 
-`Settings`: Adds settings menu to Twitch.
-
-Target version: `15.4.1`, `16.1.0`, `16.9.1`
-
-Included by default: `yes`
-
----
-
-`Show deleted messages`: Shows deleted chat messages behind a clickable spoiler.
+`Block audio ads`: Blocks audio ads in streams and VODs.
 
 Target version: `15.4.1`, `16.1.0`, `16.9.1`
 
@@ -2368,11 +2476,11 @@ Included by default: `yes`
 
 ---
 
-`Debug mode`: Enables Twitch's internal debugging mode.
+`Show deleted messages`: Shows deleted chat messages behind a clickable spoiler.
 
-Target version: `all`
+Target version: `15.4.1`, `16.1.0`, `16.9.1`
 
-Included by default: `no`
+Included by default: `yes`
 
 ---
 
