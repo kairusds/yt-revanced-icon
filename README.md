@@ -25,7 +25,17 @@ Included by default: `no`
 
 ---
 
-`Spoof build info`: Spoof the information about the current build.
+`Hide app icon`: Hides the app icon from the Android launcher.
+
+Target version: `all`
+
+Dependencies: `none`
+
+Included by default: `no`
+
+---
+
+`Spoof build info`: Spoofs the information about the current build.
 
 Target version: `all`
 
@@ -264,6 +274,16 @@ Included by default: `no`
 
 ---
 
+`Disable Pairip license check`: Disables Play Integrity API (Pairip) client-side license check.
+
+Target version: `all`
+
+Dependencies: `none`
+
+Included by default: `no`
+
+---
+
 </details>
 
 ## `at.gv.bka.serviceportal`
@@ -354,6 +374,16 @@ Included by default: `yes`
 
 <details>
 
+`Remove free accounts limit`: Removes the limit for maximum free accounts logged in.
+
+Target version: `all`
+
+Dependencies: `none`
+
+Included by default: `yes`
+
+---
+
 `Remove 'Sent from' signature`: Removes the 'Sent from Proton Mail mobile' signature from emails.
 
 Target version: `all`
@@ -380,7 +410,7 @@ Included by default: `yes`
 
 ---
 
-`Unlock premium`: null
+`Unlock Premium`: null
 
 Target version: `10.0.2`
 
@@ -403,6 +433,16 @@ Target version: `3.0.403.257`
 Dependencies: `BytecodePatch`
 
 Included by default: `yes`
+
+---
+
+`Rename shared permissions`: Rename certain permissions shared across Amazon apps. Applying this patch can fix installation errors, but can also break features in certain apps.
+
+Target version: `all`
+
+Dependencies: `none`
+
+Included by default: `no`
 
 ---
 
@@ -512,7 +552,7 @@ Included by default: `yes`
 
 Target version: `all`
 
-Dependencies: `none`
+Dependencies: `Disable Pairip license check`
 
 Included by default: `yes`
 
@@ -596,16 +636,6 @@ Included by default: `yes`
 
 ---
 
-`Disable switching emoji to sticker`: Disables switching from emoji to sticker search mode in message input field.
-
-Target version: `439.0.0.29.119`
-
-Dependencies: `none`
-
-Included by default: `yes`
-
----
-
 `Disable typing indicator`: Disables the indicator while typing a message.
 
 Target version: `all`
@@ -616,11 +646,21 @@ Included by default: `yes`
 
 ---
 
-`Remove Meta AI tab`: Removes the 'Meta AI' tab from the navbar.
+`Hide Facebook button`: Hides the Facebook button in the top toolbar.
 
 Target version: `all`
 
 Dependencies: `none`
+
+Included by default: `yes`
+
+---
+
+`Remove Meta AI`: Removes UI elements related to Meta AI.
+
+Target version: `all`
+
+Dependencies: `BytecodePatch`
 
 Included by default: `yes`
 
@@ -665,6 +705,16 @@ Included by default: `yes`
 ## `com.google.android.apps.photos`
 
 <details>
+
+`Enable DCIM folders backup control`: Disables always on backup for the Camera and other DCIM folders, allowing you to control backup for each folder individually. This will make the app default to having no folders backed up.
+
+Target version: `all`
+
+Dependencies: `none`
+
+Included by default: `no`
+
+---
 
 `Spoof features`: Spoofs the device to enable Google Pixel exclusive features, including unlimited storage.
 
@@ -999,7 +1049,7 @@ Included by default: `yes`
 
 ---
 
-`Hide player overlay buttons`: Adds options to hide the player Cast, Autoplay, Captions, and Previous & Next buttons.
+`Hide player overlay buttons`: Adds options to hide the player Cast, Autoplay, Captions, Previous & Next buttons, and the player control buttons background.
 
 Target version: `19.16.39`, `19.25.37`, `19.34.42`, `19.43.41`, `19.47.53`, `20.07.39`, `20.12.46`
 
@@ -1079,6 +1129,16 @@ Included by default: `yes`
 
 ---
 
+`Hide related video overlay`: Adds an option to hide the related video overlay shown when swiping up in fullscreen.
+
+Target version: `19.16.39`, `19.25.37`, `19.34.42`, `19.43.41`, `19.47.53`, `20.07.39`, `20.12.46`
+
+Dependencies: `BytecodePatch`, `BytecodePatch`, `ResourcePatch`, `ResourcePatch`
+
+Included by default: `yes`
+
+---
+
 `Disable rolling number animations`: Adds an option to disable rolling number animations of video view count, user likes, and upload time.
 
 Target version: `19.16.39`, `19.25.37`, `19.34.42`, `19.43.41`, `19.47.53`, `20.07.39`, `20.12.46`
@@ -1135,16 +1195,6 @@ Target version: `19.16.39`, `19.25.37`, `19.34.42`, `19.43.41`, `19.47.53`, `20.
 Dependencies: `BytecodePatch`, `BytecodePatch`, `ResourcePatch`
 
 Included by default: `yes`
-
----
-
-`Remove player controls background`: Removes the dark background surrounding the video player controls.
-
-Target version: `19.16.39`, `19.25.37`, `19.34.42`, `19.43.41`, `19.47.53`, `20.07.39`, `20.12.46`
-
-Dependencies: `none`
-
-Included by default: `no`
 
 ---
 
@@ -1212,7 +1262,7 @@ Included by default: `yes`
 
 Target version: `19.16.39`, `19.25.37`, `19.34.42`, `19.43.41`, `19.47.53`, `20.07.39`, `20.12.46`
 
-Dependencies: `BytecodePatch`, `BytecodePatch`, `ResourcePatch`, `BytecodePatch`, `BytecodePatch`, `ResourcePatch`
+Dependencies: `BytecodePatch`, `BytecodePatch`, `ResourcePatch`, `BytecodePatch`, `BytecodePatch`, `ResourcePatch`, `ResourcePatch`
 
 Included by default: `yes`
 
@@ -1327,7 +1377,7 @@ Included by default: `yes`
 
 ---
 
-`Enable debugging`: Adds options for debugging.
+`Enable debugging`: Adds options for debugging and exporting ReVanced logs to the clipboard.
 
 Target version: `19.16.39`, `19.25.37`, `19.34.42`, `19.43.41`, `19.47.53`, `20.07.39`, `20.12.46`
 
@@ -1375,6 +1425,16 @@ Included by default: `yes`
 
 ---
 
+`Disable haptic feedback`: Adds an option to disable haptic feedback in the player for various actions.
+
+Target version: `19.16.39`, `19.25.37`, `19.34.42`, `19.43.41`, `19.47.53`, `20.07.39`, `20.12.46`
+
+Dependencies: `BytecodePatch`, `ResourcePatch`
+
+Included by default: `yes`
+
+---
+
 `Bypass URL redirects`: Adds an option to bypass URL redirects and open the original URL directly.
 
 Target version: `19.16.39`, `19.25.37`, `19.34.42`, `19.43.41`, `19.47.53`, `20.07.39`, `20.12.46`
@@ -1410,16 +1470,6 @@ Included by default: `yes`
 Target version: `19.16.39`, `19.25.37`, `19.34.42`, `19.43.41`, `19.47.53`, `20.07.39`, `20.12.46`
 
 Dependencies: `BytecodePatch`, `BytecodePatch`, `ResourcePatch`, `ResourcePatch`
-
-Included by default: `yes`
-
----
-
-`Disable zoom haptics`: Adds an option to disable haptics when zooming.
-
-Target version: `19.16.39`, `19.25.37`, `19.34.42`, `19.43.41`, `19.47.53`, `20.07.39`, `20.12.46`
-
-Dependencies: `BytecodePatch`, `ResourcePatch`
 
 Included by default: `yes`
 
@@ -1471,7 +1521,33 @@ Included by default: `yes`
 
 <details>
 
-`Hide ads`: Hides ads in stories, discover, profile, etc. An ad can still appear once when refreshing the home feed.
+`Disable signature check`: Disables the signature check that causes the app to crash on startup.
+
+Target version: `378.0.0.52.68`
+
+Dependencies: `none`
+
+Included by default: `yes`
+
+---
+
+`Hide ads`: null
+
+Target version: `all`
+
+Dependencies: `none`
+
+Included by default: `yes`
+
+---
+
+</details>
+
+## `com.instagram.barcelona`
+
+<details>
+
+`Hide ads`: null
 
 Target version: `all`
 
@@ -1530,6 +1606,16 @@ Included by default: `yes`
 Target version: `all`
 
 Dependencies: `BytecodePatch`
+
+Included by default: `yes`
+
+---
+
+`Fix post thumbnails`: Fixes loading post thumbnails by correcting their URLs.
+
+Target version: `all`
+
+Dependencies: `none`
 
 Included by default: `yes`
 
@@ -1599,6 +1685,16 @@ Included by default: `yes`
 
 ---
 
+`Fix post thumbnails`: Fixes loading post thumbnails by correcting their URLs.
+
+Target version: `all`
+
+Dependencies: `none`
+
+Included by default: `yes`
+
+---
+
 `Use /user/ endpoint`: Replaces the deprecated endpoint for viewing user profiles /u with /user, that used to fix a bug.
 
 Target version: `all`
@@ -1658,6 +1754,16 @@ Included by default: `yes`
 Target version: `all`
 
 Dependencies: `BytecodePatch`
+
+Included by default: `yes`
+
+---
+
+`Fix post thumbnails`: Fixes loading post thumbnails by correcting their URLs.
+
+Target version: `all`
+
+Dependencies: `none`
 
 Included by default: `yes`
 
@@ -1917,7 +2023,7 @@ Included by default: `yes`
 
 ---
 
-`Unlock premium Reddit icons`: Unlocks the premium Reddit icons.
+`Unlock Premium icons`: Unlocks the Reddit Premium icons.
 
 Target version: `all`
 
@@ -2055,25 +2161,19 @@ Included by default: `yes`
 
 </details>
 
-## `com.spotify.lite`
+## `com.spotify.music`
 
 <details>
 
-`Enable on demand`: Enables listening to songs on-demand, allowing to play any song from playlists, albums or artists without limitations. This does not remove ads.
+`Hide Create button`: Hides the "Create" button in the navigation bar.
 
 Target version: `all`
 
-Dependencies: `none`
+Dependencies: `BytecodePatch`
 
 Included by default: `yes`
 
 ---
-
-</details>
-
-## `com.spotify.music`
-
-<details>
 
 `Custom theme`: Applies a custom theme (defaults to amoled black)
 
@@ -2093,7 +2193,7 @@ Included by default: `no`
 | `which changes dynamically with the song.` | undefined |
 | `backgroundColorSecondary` | The secondary background color. (e.g. playlist list in home |
 | `player artist` | undefined |
-| `song credits). Can be a hex color or a resource reference.` | undefined |
+| `song credits). Can be a hex color or a resource reference.",` | undefined |
 | `accentColor` | The accent color ('Spotify green' by default). Can be a hex color or a resource reference. |
 | `accentColorPressed` | The color when accented buttons are pressed |
 | `by default slightly darker than accent. Can be a hex color or a resource reference.` | undefined |
@@ -2101,7 +2201,7 @@ Included by default: `no`
 
 ---
 
-`Unlock Spotify Premium`: Unlocks Spotify Premium features. Server-sided features like downloading songs are still locked.
+`Unlock Premium`: Unlocks Spotify Premium features. Server-sided features like downloading songs are still locked.
 
 Target version: `all`
 
@@ -2121,11 +2221,31 @@ Included by default: `yes`
 
 ---
 
+`Fix Facebook login`: Fix logging in with Facebook when the app is patched by always opening the login in a web browser window.
+
+Target version: `all`
+
+Dependencies: `none`
+
+Included by default: `yes`
+
+---
+
 `Sanitize sharing links`: Removes the tracking query parameters from links before they are shared.
 
 Target version: `all`
 
 Dependencies: `BytecodePatch`
+
+Included by default: `yes`
+
+---
+
+`Fix third party launchers widgets`: Fixes Spotify widgets not working in third party launchers, like Nova Launcher.
+
+Target version: `all`
+
+Dependencies: `none`
 
 Included by default: `yes`
 
@@ -2747,22 +2867,6 @@ Included by default: `yes`
 
 </details>
 
-## `io.yuka.android`
-
-<details>
-
-`Unlock premium`: null
-
-Target version: `4.29`
-
-Dependencies: `none`
-
-Included by default: `yes`
-
----
-
-</details>
-
 ## `it.ipzs.cieid`
 
 <details>
@@ -2943,7 +3047,7 @@ Included by default: `yes`
 
 `Hide ads`: Hide ads and sponsored articles in list pages and remove pre-roll ads on videos.
 
-Target version: `11.0.0`, `11.0.1`, `11.1.0`
+Target version: `11.3.0`
 
 Dependencies: `BytecodePatch`
 
