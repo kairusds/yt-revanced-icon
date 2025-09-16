@@ -394,7 +394,7 @@ Included by default: `yes`
 
 `Remove free accounts limit`: Removes the limit for maximum free accounts logged in.
 
-Target version: `all`
+Target version: `4.15.0`
 
 Dependencies: `none`
 
@@ -404,7 +404,7 @@ Included by default: `yes`
 
 `Remove 'Sent from' signature`: Removes the 'Sent from Proton Mail mobile' signature from emails.
 
-Target version: `all`
+Target version: `4.15.0`
 
 Dependencies: `none`
 
@@ -535,22 +535,6 @@ Included by default: `yes`
 | :---: | :---: |
 | `client-id` | The Reddit OAuth client ID. You can get your client ID from https |
 </details>
-
----
-
-</details>
-
-## `com.backdrops.wallpapers`
-
-<details>
-
-`Pro unlock`: null
-
-Target version: `all`
-
-Dependencies: `none`
-
-Included by default: `yes`
 
 ---
 
@@ -835,11 +819,11 @@ Included by default: `yes`
 
 <details>
 
-`Hide music video ads`: Hides ads that appear while listening to or streaming music videos, podcasts, or songs.
+`Hide music video ads`: Adds an option to hide ads that appear while listening to or streaming music videos, podcasts, or songs.
 
-Target version: `all`
+Target version: `7.29.52`
 
-Dependencies: `none`
+Dependencies: `BytecodePatch`, `BytecodePatch`, `ResourcePatch`
 
 Included by default: `yes`
 
@@ -847,49 +831,49 @@ Included by default: `yes`
 
 `Enable exclusive audio playback`: Enables the option to play audio without video.
 
-Target version: `all`
+Target version: `7.29.52`
 
-Dependencies: `none`
-
-Included by default: `yes`
-
----
-
-`Permanent repeat`: Permanently remember your repeating preference even if the playlist ends or another track is played.
-
-Target version: `all`
-
-Dependencies: `none`
-
-Included by default: `no`
-
----
-
-`Hide category bar`: Hides the category bar at the top of the homepage.
-
-Target version: `all`
-
-Dependencies: `none`
-
-Included by default: `no`
-
----
-
-`Hide 'Get Music Premium' label`: Hides the "Get Music Premium" label from the account menu and settings.
-
-Target version: `all`
-
-Dependencies: `none`
+Dependencies: `BytecodePatch`, `BytecodePatch`
 
 Included by default: `yes`
 
 ---
 
-`Remove upgrade button`: Removes the upgrade tab from the pivot bar.
+`Permanent repeat`: Adds an option to always repeat even if the playlist ends or another track is played.
 
-Target version: `all`
+Target version: `7.29.52`
 
-Dependencies: `none`
+Dependencies: `BytecodePatch`, `BytecodePatch`, `ResourcePatch`
+
+Included by default: `yes`
+
+---
+
+`Hide category bar`: Adds an option to hide the category bar at the top of the homepage.
+
+Target version: `7.29.52`
+
+Dependencies: `BytecodePatch`, `BytecodePatch`, `ResourcePatch`
+
+Included by default: `yes`
+
+---
+
+`Hide 'Get Music Premium'`: Adds an option to hide the "Get Music Premium" label in the settings and account menu.
+
+Target version: `7.29.52`
+
+Dependencies: `BytecodePatch`, `BytecodePatch`, `ResourcePatch`
+
+Included by default: `yes`
+
+---
+
+`Hide upgrade button`: Hides the upgrade tab from the pivot bar.
+
+Target version: `7.29.52`
+
+Dependencies: `BytecodePatch`, `BytecodePatch`, `ResourcePatch`
 
 Included by default: `yes`
 
@@ -897,9 +881,9 @@ Included by default: `yes`
 
 `Bypass certificate checks`: Bypasses certificate checks which prevent YouTube Music from working on Android Auto.
 
-Target version: `all`
+Target version: `7.29.52`
 
-Dependencies: `none`
+Dependencies: `BytecodePatch`, `BytecodePatch`
 
 Included by default: `yes`
 
@@ -907,9 +891,9 @@ Included by default: `yes`
 
 `Remove background playback restrictions`: Removes restrictions on background playback, including playing kids videos in the background.
 
-Target version: `all`
+Target version: `7.29.52`
 
-Dependencies: `none`
+Dependencies: `BytecodePatch`, `BytecodePatch`
 
 Included by default: `yes`
 
@@ -919,7 +903,7 @@ Included by default: `yes`
 
 Target version: `all`
 
-Dependencies: `Change package name`, `ResourcePatch`, `BytecodePatch`, `Spoof client`
+Dependencies: `Change package name`, `ResourcePatch`, `BytecodePatch`, `Spoof video streams`
 
 Included by default: `yes`
 
@@ -933,11 +917,11 @@ Included by default: `yes`
 
 ---
 
-`Spoof client`: Spoofs the client to fix playback.
+`Spoof video streams`: Adds options to spoof the client video streams to fix playback.
 
-Target version: `all`
+Target version: `7.29.52`
 
-Dependencies: `BytecodePatch`, `BytecodePatch`
+Dependencies: `BytecodePatch`, `BytecodePatch`, `ResourcePatch`, `ResourcePatch`, `BytecodePatch`
 
 Included by default: `yes`
 
@@ -1233,6 +1217,16 @@ Included by default: `yes`
 | `hideShortsAppShortcut` | Permanently hides the shortcut to open Shorts when long pressing the app icon in your launcher. |
 | `hideShortsWidget` | Permanently hides the launcher widget Shorts button. |
 </details>
+
+---
+
+`Disable sign in to TV popup`: Adds an option to disable the popup asking to sign into a TV on the same local network.
+
+Target version: `19.34.42`, `19.43.41`, `19.47.53`, `20.07.39`, `20.12.46`, `20.13.41`
+
+Dependencies: `BytecodePatch`, `BytecodePatch`, `ResourcePatch`, `ResourcePatch`
+
+Included by default: `yes`
 
 ---
 
@@ -1557,7 +1551,7 @@ Included by default: `yes`
 
 Target version: `19.34.42`, `19.43.41`, `19.47.53`, `20.07.39`, `20.12.46`, `20.13.41`
 
-Dependencies: `BytecodePatch`, `BytecodePatch`, `ResourcePatch`
+Dependencies: `BytecodePatch`, `BytecodePatch`, `ResourcePatch`, `BytecodePatch`
 
 Included by default: `yes`
 
@@ -1599,9 +1593,48 @@ Included by default: `yes`
 
 ---
 
+`Hide explore feed`: Hides posts and reels from the explore/search page.
+
+Target version: `all`
+
+Dependencies: `none`
+
+Included by default: `no`
+
+---
+
+`Hide navigation buttons`: Hides navigation bar buttons, such as the Reels and Create button.
+
+Target version: `397.1.0.52.81`
+
+Dependencies: `none`
+
+Included by default: `no`
+
+<details>
+<summary>Options</summary>
+
+| Key | Description |
+| :---: | :---: |
+| `hideReels` | Permanently hides the Reels button. |
+| `hideCreate` | Permanently hides the Create button. |
+</details>
+
+---
+
+`Hide Stories from Home`: Hides Stories from the main page, by removing the buttons.
+
+Target version: `all`
+
+Dependencies: `none`
+
+Included by default: `no`
+
+---
+
 `Disable signature check`: Disables the signature check that causes the app to crash on startup.
 
-Target version: `378.0.0.52.68`
+Target version: `all`
 
 Dependencies: `none`
 
@@ -1666,6 +1699,16 @@ Included by default: `yes`
 | :---: | :---: |
 | `client-id` | The Reddit OAuth client ID. You can get your client ID from https |
 </details>
+
+---
+
+`Fix Redgifs API`: null
+
+Target version: `all`
+
+Dependencies: `BytecodePatch`
+
+Included by default: `yes`
 
 ---
 
@@ -1743,6 +1786,16 @@ Included by default: `yes`
 
 ---
 
+`Fix Redgifs API`: null
+
+Target version: `all`
+
+Dependencies: `BytecodePatch`
+
+Included by default: `yes`
+
+---
+
 `Fix /s/ links`: null
 
 Target version: `all`
@@ -1814,6 +1867,16 @@ Included by default: `yes`
 | :---: | :---: |
 | `client-id` | The Reddit OAuth client ID. You can get your client ID from https |
 </details>
+
+---
+
+`Fix Redgifs API`: null
+
+Target version: `all`
+
+Dependencies: `BytecodePatch`
+
+Included by default: `yes`
 
 ---
 
@@ -1981,6 +2044,16 @@ Included by default: `yes`
 
 ---
 
+`Fix Redgifs API`: null
+
+Target version: `all`
+
+Dependencies: `BytecodePatch`
+
+Included by default: `yes`
+
+---
+
 </details>
 
 ## `com.onelouder.baconreader.premium`
@@ -2002,6 +2075,16 @@ Included by default: `yes`
 | :---: | :---: |
 | `client-id` | The Reddit OAuth client ID. You can get your client ID from https |
 </details>
+
+---
+
+`Fix Redgifs API`: null
+
+Target version: `all`
+
+Dependencies: `BytecodePatch`
+
+Included by default: `yes`
 
 ---
 
@@ -2171,6 +2254,16 @@ Included by default: `yes`
 
 ---
 
+`Fix Redgifs API`: null
+
+Target version: `all`
+
+Dependencies: `BytecodePatch`
+
+Included by default: `yes`
+
+---
+
 `Fix /s/ links`: null
 
 Target version: `all`
@@ -2281,41 +2374,6 @@ Included by default: `no`
 | `accentColor` | The accent color ('Spotify green' by default). Can be a hex color or a resource reference. |
 | `accentColorPressed` | The color when accented buttons are pressed |
 | `by default slightly darker than accent. Can be a hex color or a resource reference.` | undefined |
-</details>
-
----
-
-`Unlock Premium`: Unlocks Spotify Premium features. Server-sided features like downloading songs are still locked.
-
-Target version: `all`
-
-Dependencies: `BytecodePatch`
-
-Included by default: `yes`
-
----
-
-`Spoof client`: Spoofs the client to fix various functions of the app.
-
-Target version: `all`
-
-Dependencies: `BytecodePatch`, `RawResourcePatch`
-
-Included by default: `yes`
-
-<details>
-<summary>Options</summary>
-
-| Key | Description |
-| :---: | :---: |
-| `requestListenerPort` | The port to use for the listener that intercepts and handles spoofed requests. Port must be between 0 and 65535. Do not change this option |
-| `if you do not know what you are doing.` | undefined |
-| `clientVersion` | The client version used for spoofing the client token. Do not change this option |
-| `if you do not know what you are doing.` | undefined |
-| `hardwareMachine` | The hardware machine used for spoofing the client token. Do not change this option |
-| `if you do not know what you are doing.` | undefined |
-| `systemVersion` | The system version used for spoofing the client token. Do not change this option |
-| `if you do not know what you are doing.` | undefined |
 </details>
 
 ---
@@ -2684,6 +2742,22 @@ Included by default: `yes`
 
 </details>
 
+## `com.viber.voip`
+
+<details>
+
+`Hide Ads`: Hides ad banners between chats.
+
+Target version: `25.9.2.0`
+
+Dependencies: `none`
+
+Included by default: `yes`
+
+---
+
+</details>
+
 ## `com.xiaomi.wearable`
 
 <details>
@@ -2990,7 +3064,7 @@ Included by default: `yes`
 
 `Hide ads`: null
 
-Target version: `all`
+Target version: `6.141.1`
 
 Dependencies: `none`
 
@@ -3148,7 +3222,7 @@ Included by default: `yes`
 
 `Hide ads`: Hide ads and sponsored articles in list pages and remove pre-roll ads on videos.
 
-Target version: `11.3.0`
+Target version: `all`
 
 Dependencies: `BytecodePatch`
 
@@ -3328,7 +3402,7 @@ Included by default: `yes`
 
 `Block audio ads`: Blocks audio ads in streams and VODs.
 
-Target version: `all`
+Target version: `16.9.1`, `25.3.0`
 
 Dependencies: `BytecodePatch`, `Settings`, `ResourcePatch`
 
@@ -3338,7 +3412,7 @@ Included by default: `yes`
 
 `Block embedded ads`: Blocks embedded stream ads using services like Luminous or PurpleAdBlocker.
 
-Target version: `all`
+Target version: `16.9.1`, `25.3.0`
 
 Dependencies: `Block video ads`, `BytecodePatch`, `Settings`
 
@@ -3348,7 +3422,7 @@ Included by default: `yes`
 
 `Block video ads`: Blocks video ads in streams and VODs.
 
-Target version: `all`
+Target version: `16.9.1`, `25.3.0`
 
 Dependencies: `BytecodePatch`, `Settings`, `ResourcePatch`, `BytecodePatch`
 
@@ -3358,7 +3432,7 @@ Included by default: `yes`
 
 `Show deleted messages`: Shows deleted chat messages behind a clickable spoiler.
 
-Target version: `all`
+Target version: `16.9.1`, `25.3.0`
 
 Dependencies: `BytecodePatch`, `Settings`, `ResourcePatch`
 
@@ -3368,7 +3442,7 @@ Included by default: `yes`
 
 `Auto claim channel points`: Automatically claim Channel Points.
 
-Target version: `all`
+Target version: `16.9.1`, `25.3.0`
 
 Dependencies: `Settings`, `ResourcePatch`
 
@@ -3378,7 +3452,7 @@ Included by default: `yes`
 
 `Debug mode`: Enables Twitch's internal debugging mode.
 
-Target version: `all`
+Target version: `16.9.1`, `25.3.0`
 
 Dependencies: `BytecodePatch`, `Settings`, `ResourcePatch`
 
@@ -3388,7 +3462,7 @@ Included by default: `no`
 
 `Settings`: Adds settings menu to Twitch.
 
-Target version: `all`
+Target version: `16.9.1`
 
 Dependencies: `BytecodePatch`, `ResourcePatch`, `ResourcePatch`
 
