@@ -821,7 +821,7 @@ Included by default: `yes`
 
 `Hide music video ads`: Adds an option to hide ads that appear while listening to or streaming music videos, podcasts, or songs.
 
-Target version: `7.29.52`
+Target version: `7.29.52`, `8.10.52`
 
 Dependencies: `BytecodePatch`, `BytecodePatch`, `ResourcePatch`
 
@@ -831,7 +831,7 @@ Included by default: `yes`
 
 `Enable exclusive audio playback`: Enables the option to play audio without video.
 
-Target version: `7.29.52`
+Target version: `7.29.52`, `8.10.52`
 
 Dependencies: `BytecodePatch`, `BytecodePatch`
 
@@ -841,7 +841,17 @@ Included by default: `yes`
 
 `Permanent repeat`: Adds an option to always repeat even if the playlist ends or another track is played.
 
-Target version: `7.29.52`
+Target version: `7.29.52`, `8.10.52`
+
+Dependencies: `BytecodePatch`, `BytecodePatch`, `ResourcePatch`
+
+Included by default: `yes`
+
+---
+
+`Hide cast button`: Adds an option to hide the cast button.
+
+Target version: `7.29.52`, `8.10.52`
 
 Dependencies: `BytecodePatch`, `BytecodePatch`, `ResourcePatch`
 
@@ -851,9 +861,19 @@ Included by default: `yes`
 
 `Hide category bar`: Adds an option to hide the category bar at the top of the homepage.
 
-Target version: `7.29.52`
+Target version: `7.29.52`, `8.10.52`
 
 Dependencies: `BytecodePatch`, `BytecodePatch`, `ResourcePatch`
+
+Included by default: `yes`
+
+---
+
+`Navigation bar`: Adds options to hide navigation bar, labels and buttons.
+
+Target version: `7.29.52`, `8.10.52`
+
+Dependencies: `ResourcePatch`, `BytecodePatch`, `BytecodePatch`, `ResourcePatch`, `ResourcePatch`
 
 Included by default: `yes`
 
@@ -861,7 +881,7 @@ Included by default: `yes`
 
 `Hide 'Get Music Premium'`: Adds an option to hide the "Get Music Premium" label in the settings and account menu.
 
-Target version: `7.29.52`
+Target version: `7.29.52`, `8.10.52`
 
 Dependencies: `BytecodePatch`, `BytecodePatch`, `ResourcePatch`
 
@@ -869,19 +889,27 @@ Included by default: `yes`
 
 ---
 
-`Hide upgrade button`: Hides the upgrade tab from the pivot bar.
+`Theme`: Adds options for theming and applies a custom background theme (dark background theme defaults to pure black).
 
-Target version: `7.29.52`
+Target version: `7.29.52`, `8.10.52`
 
-Dependencies: `BytecodePatch`, `BytecodePatch`, `ResourcePatch`
+Dependencies: `BytecodePatch`, `ResourcePatch`, `BytecodePatch`
 
 Included by default: `yes`
+
+<details>
+<summary>Options</summary>
+
+| Key | Description |
+| :---: | :---: |
+| `darkThemeBackgroundColor` | Can be a hex color (#RRGGBB) or a color resource reference. |
+</details>
 
 ---
 
 `Bypass certificate checks`: Bypasses certificate checks which prevent YouTube Music from working on Android Auto.
 
-Target version: `7.29.52`
+Target version: `7.29.52`, `8.10.52`
 
 Dependencies: `BytecodePatch`, `BytecodePatch`
 
@@ -891,7 +919,7 @@ Included by default: `yes`
 
 `Remove background playback restrictions`: Removes restrictions on background playback, including playing kids videos in the background.
 
-Target version: `7.29.52`
+Target version: `7.29.52`, `8.10.52`
 
 Dependencies: `BytecodePatch`, `BytecodePatch`
 
@@ -899,9 +927,29 @@ Included by default: `yes`
 
 ---
 
+`Enable debugging`: Adds options for debugging and exporting ReVanced logs to the clipboard.
+
+Target version: `7.29.52`, `8.10.52`
+
+Dependencies: `ResourcePatch`, `BytecodePatch`, `BytecodePatch`
+
+Included by default: `yes`
+
+---
+
+`Check watch history domain name resolution`: Checks if the device DNS server is preventing user watch history from being saved.
+
+Target version: `7.29.52`, `8.10.52`
+
+Dependencies: `BytecodePatch`
+
+Included by default: `yes`
+
+---
+
 `GmsCore support`: Allows the app to work without root by using a different package name when patched using a GmsCore instead of Google Play Services.
 
-Target version: `all`
+Target version: `7.29.52`, `8.10.52`
 
 Dependencies: `Change package name`, `ResourcePatch`, `BytecodePatch`, `Spoof video streams`
 
@@ -917,9 +965,19 @@ Included by default: `yes`
 
 ---
 
+`Sanitize sharing links`: Adds an option to remove the tracking query parameter from shared links.
+
+Target version: `7.29.52`, `8.10.52`
+
+Dependencies: `BytecodePatch`, `BytecodePatch`, `ResourcePatch`
+
+Included by default: `yes`
+
+---
+
 `Spoof video streams`: Adds options to spoof the client video streams to fix playback.
 
-Target version: `7.29.52`
+Target version: `7.29.52`, `8.10.52`
 
 Dependencies: `BytecodePatch`, `BytecodePatch`, `ResourcePatch`, `ResourcePatch`, `BytecodePatch`
 
@@ -935,7 +993,7 @@ Included by default: `yes`
 
 `Hide ads`: Adds options to remove general ads.
 
-Target version: `19.34.42`, `19.43.41`, `19.47.53`, `20.07.39`, `20.12.46`, `20.13.41`
+Target version: `19.34.42`, `20.07.39`, `20.13.41`, `20.14.43`
 
 Dependencies: `BytecodePatch`, `ResourcePatch`, `BytecodePatch`, `BytecodePatch`
 
@@ -945,7 +1003,7 @@ Included by default: `yes`
 
 `Video ads`: Adds an option to remove ads in the video player.
 
-Target version: `19.34.42`, `19.43.41`, `19.47.53`, `20.07.39`, `20.12.46`, `20.13.41`
+Target version: `19.34.42`, `20.07.39`, `20.13.41`, `20.14.43`
 
 Dependencies: `BytecodePatch`, `BytecodePatch`, `ResourcePatch`
 
@@ -955,7 +1013,7 @@ Included by default: `yes`
 
 `Copy video URL`: Adds options to display buttons in the video player to copy video URLs.
 
-Target version: `19.34.42`, `19.43.41`, `19.47.53`, `20.07.39`, `20.12.46`, `20.13.41`
+Target version: `19.34.42`, `20.07.39`, `20.13.41`, `20.14.43`
 
 Dependencies: `ResourcePatch`, `BytecodePatch`, `BytecodePatch`
 
@@ -965,7 +1023,7 @@ Included by default: `yes`
 
 `Remove viewer discretion dialog`: Adds an option to remove the dialog that appears when opening a video that has been age-restricted by accepting it automatically. This does not bypass the age restriction.
 
-Target version: `19.34.42`, `19.43.41`, `19.47.53`, `20.07.39`, `20.12.46`, `20.13.41`
+Target version: `19.34.42`, `20.07.39`, `20.13.41`, `20.14.43`
 
 Dependencies: `BytecodePatch`, `BytecodePatch`, `ResourcePatch`
 
@@ -975,7 +1033,7 @@ Included by default: `yes`
 
 `Disable double tap actions`: Adds an option to disable player double tap gestures.
 
-Target version: `20.07.39`, `20.12.46`, `20.13.41`
+Target version: `20.07.39`, `20.13.41`, `20.14.43`
 
 Dependencies: `BytecodePatch`, `BytecodePatch`, `ResourcePatch`
 
@@ -985,7 +1043,7 @@ Included by default: `yes`
 
 `Downloads`: Adds support to download videos with an external downloader app using the in-app download button or a video player action button.
 
-Target version: `19.34.42`, `19.43.41`, `19.47.53`, `20.07.39`, `20.12.46`, `20.13.41`
+Target version: `19.34.42`, `20.07.39`, `20.13.41`, `20.14.43`
 
 Dependencies: `ResourcePatch`, `BytecodePatch`, `BytecodePatch`
 
@@ -995,7 +1053,7 @@ Included by default: `yes`
 
 `Seekbar`: Adds options to disable precise seeking when swiping up on the seekbar, slide to seek instead of playing at 2x speed when pressing and holding, tapping the player seekbar to seek, and hiding the video player seekbar.
 
-Target version: `19.34.42`, `19.43.41`, `19.47.53`, `20.07.39`, `20.12.46`, `20.13.41`
+Target version: `19.34.42`, `20.07.39`, `20.13.41`, `20.14.43`
 
 Dependencies: `BytecodePatch`, `BytecodePatch`, `BytecodePatch`, `BytecodePatch`, `BytecodePatch`
 
@@ -1005,7 +1063,7 @@ Included by default: `yes`
 
 `Swipe controls`: Adds options to enable and configure volume and brightness swipe controls.
 
-Target version: `19.34.42`, `19.43.41`, `19.47.53`, `20.07.39`, `20.12.46`, `20.13.41`
+Target version: `19.34.42`, `20.07.39`, `20.13.41`, `20.14.43`
 
 Dependencies: `BytecodePatch`, `BytecodePatch`, `ResourcePatch`
 
@@ -1015,7 +1073,7 @@ Included by default: `yes`
 
 `Disable auto captions`: Adds an option to disable captions from being automatically enabled.
 
-Target version: `19.34.42`, `19.43.41`, `19.47.53`, `20.07.39`, `20.12.46`, `20.13.41`
+Target version: `19.34.42`, `20.07.39`, `20.13.41`, `20.14.43`
 
 Dependencies: `BytecodePatch`, `BytecodePatch`, `ResourcePatch`
 
@@ -1025,7 +1083,7 @@ Included by default: `yes`
 
 `Custom branding`: Applies a custom app name and icon. Defaults to "YouTube ReVanced" and the ReVanced logo.
 
-Target version: `19.34.42`, `19.43.41`, `19.47.53`, `20.07.39`, `20.12.46`, `20.13.41`
+Target version: `19.34.42`, `20.07.39`, `20.13.41`, `20.14.43`
 
 Dependencies: `ResourcePatch`
 
@@ -1055,7 +1113,7 @@ Each of these folders must contain the following files |
 
 `Change header`: Adds an option to change the header logo in the top left corner of the app.
 
-Target version: `19.34.42`, `19.43.41`, `19.47.53`, `20.07.39`, `20.12.46`, `20.13.41`
+Target version: `19.34.42`, `20.07.39`, `20.13.41`, `20.14.43`
 
 Dependencies: `ResourcePatch`, `BytecodePatch`
 
@@ -1083,7 +1141,7 @@ Each of the folders must contain all of the following files |
 
 `Hide video action buttons`: Adds options to hide action buttons (such as the Download button) under videos.
 
-Target version: `19.34.42`, `19.43.41`, `19.47.53`, `20.07.39`, `20.12.46`, `20.13.41`
+Target version: `19.34.42`, `20.07.39`, `20.13.41`, `20.14.43`
 
 Dependencies: `ResourcePatch`, `BytecodePatch`, `ResourcePatch`
 
@@ -1093,7 +1151,7 @@ Included by default: `yes`
 
 `Navigation buttons`: Adds options to hide and change navigation buttons (such as the Shorts button).
 
-Target version: `19.34.42`, `19.43.41`, `19.47.53`, `20.07.39`, `20.12.46`, `20.13.41`
+Target version: `19.34.42`, `20.07.39`, `20.13.41`, `20.14.43`
 
 Dependencies: `BytecodePatch`, `BytecodePatch`, `ResourcePatch`, `BytecodePatch`, `ResourcePatch`
 
@@ -1103,7 +1161,7 @@ Included by default: `yes`
 
 `Hide player overlay buttons`: Adds options to hide the player Cast, Autoplay, Captions, Previous & Next buttons, and the player control buttons background.
 
-Target version: `19.34.42`, `19.43.41`, `19.47.53`, `20.07.39`, `20.12.46`, `20.13.41`
+Target version: `19.34.42`, `20.07.39`, `20.13.41`, `20.14.43`
 
 Dependencies: `BytecodePatch`, `BytecodePatch`, `ResourcePatch`, `ResourcePatch`
 
@@ -1113,7 +1171,7 @@ Included by default: `yes`
 
 `Change form factor`: Adds an option to change the UI appearance to a phone, tablet, or automotive device.
 
-Target version: `19.34.42`, `19.43.41`, `19.47.53`, `20.07.39`, `20.12.46`, `20.13.41`
+Target version: `19.34.42`, `20.07.39`, `20.13.41`, `20.14.43`
 
 Dependencies: `BytecodePatch`, `BytecodePatch`, `ResourcePatch`, `Navigation buttons`
 
@@ -1123,7 +1181,7 @@ Included by default: `yes`
 
 `Hide end screen cards`: Adds an option to hide suggested video cards at the end of videos.
 
-Target version: `19.34.42`, `19.43.41`, `19.47.53`, `20.07.39`, `20.12.46`, `20.13.41`
+Target version: `19.34.42`, `20.07.39`, `20.13.41`, `20.14.43`
 
 Dependencies: `BytecodePatch`, `ResourcePatch`
 
@@ -1133,7 +1191,7 @@ Included by default: `yes`
 
 `Hide end screen suggested video`: Adds an option to hide the suggested video at the end of videos.
 
-Target version: `19.34.42`, `19.43.41`, `19.47.53`, `20.07.39`, `20.12.46`, `20.13.41`
+Target version: `19.34.42`, `20.07.39`, `20.13.41`, `20.14.43`
 
 Dependencies: `BytecodePatch`, `ResourcePatch`
 
@@ -1143,7 +1201,7 @@ Included by default: `yes`
 
 `Disable fullscreen ambient mode`: Adds an option to disable the ambient mode when in fullscreen.
 
-Target version: `19.34.42`, `19.43.41`, `19.47.53`, `20.07.39`, `20.12.46`, `20.13.41`
+Target version: `19.34.42`, `20.07.39`, `20.13.41`, `20.14.43`
 
 Dependencies: `BytecodePatch`, `BytecodePatch`, `ResourcePatch`
 
@@ -1153,7 +1211,7 @@ Included by default: `yes`
 
 `Hide layout components`: Adds options to hide general layout components.
 
-Target version: `19.34.42`, `19.43.41`, `19.47.53`, `20.07.39`, `20.12.46`, `20.13.41`
+Target version: `19.34.42`, `20.07.39`, `20.13.41`, `20.14.43`
 
 Dependencies: `BytecodePatch`, `BytecodePatch`, `ResourcePatch`, `ResourcePatch`, `BytecodePatch`
 
@@ -1163,7 +1221,7 @@ Included by default: `yes`
 
 `Hide info cards`: Adds an option to hide info cards that creators add in the video player.
 
-Target version: `19.34.42`, `19.43.41`, `19.47.53`, `20.07.39`, `20.12.46`, `20.13.41`
+Target version: `19.34.42`, `20.07.39`, `20.13.41`, `20.14.43`
 
 Dependencies: `BytecodePatch`, `BytecodePatch`, `ResourcePatch`
 
@@ -1173,7 +1231,7 @@ Included by default: `yes`
 
 `Hide player flyout menu items`: Adds options to hide menu items that appear when pressing the gear icon in the video player.
 
-Target version: `19.34.42`, `19.43.41`, `19.47.53`, `20.07.39`, `20.12.46`, `20.13.41`
+Target version: `19.34.42`, `20.07.39`, `20.13.41`, `20.14.43`
 
 Dependencies: `BytecodePatch`, `BytecodePatch`, `BytecodePatch`, `ResourcePatch`
 
@@ -1183,7 +1241,7 @@ Included by default: `yes`
 
 `Hide related video overlay`: Adds an option to hide the related video overlay shown when swiping up in fullscreen.
 
-Target version: `19.34.42`, `19.43.41`, `19.47.53`, `20.07.39`, `20.12.46`, `20.13.41`
+Target version: `19.34.42`, `20.07.39`, `20.13.41`, `20.14.43`
 
 Dependencies: `BytecodePatch`, `BytecodePatch`, `ResourcePatch`, `ResourcePatch`
 
@@ -1193,7 +1251,7 @@ Included by default: `yes`
 
 `Disable rolling number animations`: Adds an option to disable rolling number animations of video view count, user likes, and upload time.
 
-Target version: `19.34.42`, `19.43.41`, `19.47.53`, `20.07.39`, `20.12.46`, `20.13.41`
+Target version: `19.34.42`, `20.07.39`, `20.13.41`, `20.14.43`
 
 Dependencies: `BytecodePatch`, `BytecodePatch`, `ResourcePatch`
 
@@ -1203,7 +1261,7 @@ Included by default: `yes`
 
 `Hide Shorts components`: Adds options to hide components related to Shorts.
 
-Target version: `19.34.42`, `19.43.41`, `19.47.53`, `20.07.39`, `20.12.46`, `20.13.41`
+Target version: `19.34.42`, `20.07.39`, `20.13.41`, `20.14.43`
 
 Dependencies: `BytecodePatch`, `BytecodePatch`, `ResourcePatch`, `ResourcePatch`, `BytecodePatch`, `ResourcePatch`
 
@@ -1222,7 +1280,7 @@ Included by default: `yes`
 
 `Disable sign in to TV popup`: Adds an option to disable the popup asking to sign into a TV on the same local network.
 
-Target version: `19.34.42`, `19.43.41`, `19.47.53`, `20.07.39`, `20.12.46`, `20.13.41`
+Target version: `19.34.42`, `20.07.39`, `20.13.41`, `20.14.43`
 
 Dependencies: `BytecodePatch`, `BytecodePatch`, `ResourcePatch`, `ResourcePatch`
 
@@ -1232,7 +1290,7 @@ Included by default: `yes`
 
 `Hide timestamp`: Adds an option to hide the timestamp in the bottom left of the video player.
 
-Target version: `19.34.42`, `19.43.41`, `19.47.53`, `20.07.39`, `20.12.46`, `20.13.41`
+Target version: `19.34.42`, `20.07.39`, `20.13.41`, `20.14.43`
 
 Dependencies: `BytecodePatch`, `BytecodePatch`, `ResourcePatch`
 
@@ -1242,7 +1300,7 @@ Included by default: `yes`
 
 `Miniplayer`: Adds options to change the in-app minimized player.
 
-Target version: `19.34.42`, `19.43.41`, `19.47.53`, `20.07.39`, `20.12.46`, `20.13.41`
+Target version: `19.34.42`, `20.07.39`, `20.13.41`, `20.14.43`
 
 Dependencies: `BytecodePatch`, `BytecodePatch`, `ResourcePatch`, `ResourcePatch`
 
@@ -1252,7 +1310,7 @@ Included by default: `yes`
 
 `Disable player popup panels`: Adds an option to disable panels (such as live chat) from opening automatically.
 
-Target version: `19.34.42`, `19.43.41`, `19.47.53`, `20.07.39`, `20.12.46`, `20.13.41`
+Target version: `19.34.42`, `20.07.39`, `20.13.41`, `20.14.43`
 
 Dependencies: `BytecodePatch`, `BytecodePatch`, `ResourcePatch`
 
@@ -1262,7 +1320,7 @@ Included by default: `yes`
 
 `Exit fullscreen mode`: Adds options to automatically exit fullscreen mode when a video reaches the end.
 
-Target version: `19.34.42`, `19.43.41`, `19.47.53`, `20.07.39`, `20.12.46`, `20.13.41`
+Target version: `19.34.42`, `20.07.39`, `20.13.41`, `20.14.43`
 
 Dependencies: `BytecodePatch`, `BytecodePatch`, `ResourcePatch`, `BytecodePatch`, `BytecodePatch`
 
@@ -1272,7 +1330,7 @@ Included by default: `yes`
 
 `Open videos fullscreen`: Adds an option to open videos in full screen portrait mode.
 
-Target version: `19.47.53`, `20.07.39`, `20.12.46`, `20.13.41`
+Target version: `20.07.39`, `20.13.41`, `20.14.43`
 
 Dependencies: `BytecodePatch`, `BytecodePatch`, `ResourcePatch`, `ResourcePatch`
 
@@ -1282,7 +1340,7 @@ Included by default: `yes`
 
 `Custom player overlay opacity`: Adds an option to change the opacity of the video player background when player controls are visible.
 
-Target version: `19.34.42`, `19.43.41`, `19.47.53`, `20.07.39`, `20.12.46`, `20.13.41`
+Target version: `19.34.42`, `20.07.39`, `20.13.41`, `20.14.43`
 
 Dependencies: `ResourcePatch`
 
@@ -1292,7 +1350,7 @@ Included by default: `yes`
 
 `Return YouTube Dislike`: Adds an option to show the dislike count of videos with Return YouTube Dislike.
 
-Target version: `19.34.42`, `19.43.41`, `19.47.53`, `20.07.39`, `20.12.46`, `20.13.41`
+Target version: `19.34.42`, `20.07.39`, `20.13.41`, `20.14.43`
 
 Dependencies: `BytecodePatch`, `BytecodePatch`, `ResourcePatch`, `BytecodePatch`, `BytecodePatch`, `BytecodePatch`, `ResourcePatch`
 
@@ -1302,7 +1360,7 @@ Included by default: `yes`
 
 `Wide search bar`: Adds an option to replace the search icon with a wide search bar. This will hide the YouTube logo when active.
 
-Target version: `19.34.42`, `19.43.41`, `19.47.53`, `20.07.39`, `20.12.46`, `20.13.41`
+Target version: `19.34.42`, `20.07.39`, `20.13.41`, `20.14.43`
 
 Dependencies: `BytecodePatch`, `BytecodePatch`, `ResourcePatch`, `ResourcePatch`
 
@@ -1312,7 +1370,7 @@ Included by default: `yes`
 
 `Shorts autoplay`: Adds options to automatically play the next Short.
 
-Target version: `19.34.42`, `19.43.41`, `19.47.53`, `20.07.39`, `20.12.46`, `20.13.41`
+Target version: `19.34.42`, `20.07.39`, `20.13.41`, `20.14.43`
 
 Dependencies: `BytecodePatch`, `BytecodePatch`, `ResourcePatch`, `ResourcePatch`
 
@@ -1322,7 +1380,7 @@ Included by default: `yes`
 
 `Open Shorts in regular player`: Adds options to open Shorts in the regular video player.
 
-Target version: `19.34.42`, `19.43.41`, `19.47.53`, `20.07.39`, `20.12.46`, `20.13.41`
+Target version: `19.34.42`, `20.07.39`, `20.13.41`, `20.14.43`
 
 Dependencies: `BytecodePatch`, `BytecodePatch`, `ResourcePatch`, `BytecodePatch`, `BytecodePatch`, `ResourcePatch`, `ResourcePatch`
 
@@ -1332,7 +1390,7 @@ Included by default: `yes`
 
 `SponsorBlock`: Adds options to enable and configure SponsorBlock, which can skip undesired video segments such as sponsored content.
 
-Target version: `19.34.42`, `19.43.41`, `19.47.53`, `20.07.39`, `20.12.46`, `20.13.41`
+Target version: `19.34.42`, `20.07.39`, `20.13.41`, `20.14.43`
 
 Dependencies: `BytecodePatch`, `BytecodePatch`, `BytecodePatch`, `BytecodePatch`, `BytecodePatch`, `ResourcePatch`
 
@@ -1342,7 +1400,7 @@ Included by default: `yes`
 
 `Spoof app version`: Adds an option to trick YouTube into thinking you are running an older version of the app. This can be used to restore old UI elements and features.
 
-Target version: `19.34.42`, `19.43.41`, `19.47.53`, `20.07.39`, `20.12.46`, `20.13.41`
+Target version: `19.34.42`, `20.07.39`, `20.13.41`, `20.14.43`
 
 Dependencies: `ResourcePatch`, `BytecodePatch`, `BytecodePatch`, `ResourcePatch`, `ResourcePatch`
 
@@ -1352,7 +1410,7 @@ Included by default: `yes`
 
 `Change start page`: Adds an option to set which page the app opens in instead of the homepage.
 
-Target version: `19.34.42`, `19.43.41`, `19.47.53`, `20.07.39`, `20.12.46`, `20.13.41`
+Target version: `19.34.42`, `20.07.39`, `20.13.41`, `20.14.43`
 
 Dependencies: `BytecodePatch`, `BytecodePatch`, `ResourcePatch`
 
@@ -1362,7 +1420,7 @@ Included by default: `yes`
 
 `Disable resuming Shorts on startup`: Adds an option to disable the Shorts player from resuming on app startup when Shorts were last being watched.
 
-Target version: `19.34.42`, `19.43.41`, `19.47.53`, `20.07.39`, `20.12.46`, `20.13.41`
+Target version: `19.34.42`, `20.07.39`, `20.13.41`, `20.14.43`
 
 Dependencies: `BytecodePatch`, `BytecodePatch`, `ResourcePatch`
 
@@ -1370,11 +1428,11 @@ Included by default: `yes`
 
 ---
 
-`Theme`: Adds options for theming and applies a custom background theme (dark background theme defaults to amoled black).
+`Theme`: Adds options for theming and applies a custom background theme (dark background theme defaults to pure black).
 
-Target version: `19.34.42`, `19.43.41`, `19.47.53`, `20.07.39`, `20.12.46`, `20.13.41`
+Target version: `19.34.42`, `20.07.39`, `20.13.41`, `20.14.43`
 
-Dependencies: `BytecodePatch`, `BytecodePatch`, `ResourcePatch`, `BytecodePatch`, `BytecodePatch`, `ResourcePatch`, `ResourcePatch`
+Dependencies: `BytecodePatch`, `BytecodePatch`, `ResourcePatch`, `BytecodePatch`, `ResourcePatch`, `ResourcePatch`, `BytecodePatch`
 
 Included by default: `yes`
 
@@ -1383,15 +1441,15 @@ Included by default: `yes`
 
 | Key | Description |
 | :---: | :---: |
-| `darkThemeBackgroundColor` | Can be a hex color (#AARRGGBB) or a color resource reference. |
-| `lightThemeBackgroundColor` | Can be a hex color (#AARRGGBB) or a color resource reference. |
+| `darkThemeBackgroundColor` | Can be a hex color (#RRGGBB) or a color resource reference. |
+| `lightThemeBackgroundColor` | Can be a hex color (#RRGGBB) or a color resource reference. |
 </details>
 
 ---
 
 `Alternative thumbnails`: Adds options to replace video thumbnails using the DeArrow API or image captures from the video.
 
-Target version: `19.34.42`, `19.43.41`, `19.47.53`, `20.07.39`, `20.12.46`, `20.13.41`
+Target version: `19.34.42`, `20.07.39`, `20.13.41`, `20.14.43`
 
 Dependencies: `BytecodePatch`, `BytecodePatch`, `ResourcePatch`, `BytecodePatch`, `BytecodePatch`
 
@@ -1401,7 +1459,7 @@ Included by default: `yes`
 
 `Bypass image region restrictions`: Adds an option to use a different host for user avatar and channel images and can fix missing images that are blocked in some countries.
 
-Target version: `19.34.42`, `19.43.41`, `19.47.53`, `20.07.39`, `20.12.46`, `20.13.41`
+Target version: `19.34.42`, `20.07.39`, `20.13.41`, `20.14.43`
 
 Dependencies: `BytecodePatch`, `BytecodePatch`, `ResourcePatch`, `BytecodePatch`
 
@@ -1411,17 +1469,7 @@ Included by default: `yes`
 
 `Announcements`: Adds an option to show announcements from ReVanced on app startup.
 
-Target version: `19.34.42`, `19.43.41`, `19.47.53`, `20.07.39`, `20.12.46`, `20.13.41`
-
-Dependencies: `BytecodePatch`, `ResourcePatch`
-
-Included by default: `yes`
-
----
-
-`Always repeat`: Adds an option to always repeat videos when they end.
-
-Target version: `19.34.42`, `19.43.41`, `19.47.53`, `20.07.39`, `20.12.46`, `20.13.41`
+Target version: `19.34.42`, `20.07.39`, `20.13.41`, `20.14.43`
 
 Dependencies: `BytecodePatch`, `ResourcePatch`
 
@@ -1431,7 +1479,7 @@ Included by default: `yes`
 
 `Remove background playback restrictions`: Removes restrictions on background playback, including playing kids videos in the background.
 
-Target version: `19.34.42`, `19.43.41`, `19.47.53`, `20.07.39`, `20.12.46`, `20.13.41`
+Target version: `19.34.42`, `20.07.39`, `20.13.41`, `20.14.43`
 
 Dependencies: `ResourcePatch`, `BytecodePatch`, `BytecodePatch`, `BytecodePatch`, `BytecodePatch`, `ResourcePatch`
 
@@ -1441,9 +1489,9 @@ Included by default: `yes`
 
 `Enable debugging`: Adds options for debugging and exporting ReVanced logs to the clipboard.
 
-Target version: `19.34.42`, `19.43.41`, `19.47.53`, `20.07.39`, `20.12.46`, `20.13.41`
+Target version: `19.34.42`, `20.07.39`, `20.13.41`, `20.14.43`
 
-Dependencies: `BytecodePatch`, `BytecodePatch`, `ResourcePatch`, `ResourcePatch`
+Dependencies: `ResourcePatch`, `BytecodePatch`, `BytecodePatch`
 
 Included by default: `yes`
 
@@ -1451,7 +1499,7 @@ Included by default: `yes`
 
 `Spoof device dimensions`: Adds an option to spoof the device dimensions which can unlock higher video qualities.
 
-Target version: `19.34.42`, `19.43.41`, `19.47.53`, `20.07.39`, `20.12.46`, `20.13.41`
+Target version: `19.34.42`, `20.07.39`, `20.13.41`, `20.14.43`
 
 Dependencies: `BytecodePatch`, `BytecodePatch`, `ResourcePatch`
 
@@ -1461,9 +1509,9 @@ Included by default: `yes`
 
 `Check watch history domain name resolution`: Checks if the device DNS server is preventing user watch history from being saved.
 
-Target version: `19.34.42`, `19.43.41`, `19.47.53`, `20.07.39`, `20.12.46`, `20.13.41`
+Target version: `19.34.42`, `20.07.39`, `20.13.41`, `20.14.43`
 
-Dependencies: `BytecodePatch`, `ResourcePatch`
+Dependencies: `BytecodePatch`
 
 Included by default: `yes`
 
@@ -1471,7 +1519,7 @@ Included by default: `yes`
 
 `GmsCore support`: Allows the app to work without root by using a different package name when patched using a GmsCore instead of Google Play Services.
 
-Target version: `19.34.42`, `19.43.41`, `19.47.53`, `20.07.39`, `20.12.46`, `20.13.41`
+Target version: `19.34.42`, `20.07.39`, `20.13.41`, `20.14.43`
 
 Dependencies: `Change package name`, `ResourcePatch`, `BytecodePatch`, `Hide player overlay buttons`, `Spoof video streams`
 
@@ -1489,7 +1537,7 @@ Included by default: `yes`
 
 `Disable haptic feedback`: Adds an option to disable haptic feedback in the player for various actions.
 
-Target version: `19.34.42`, `19.43.41`, `19.47.53`, `20.07.39`, `20.12.46`, `20.13.41`
+Target version: `19.34.42`, `20.07.39`, `20.13.41`, `20.14.43`
 
 Dependencies: `BytecodePatch`, `ResourcePatch`
 
@@ -1499,7 +1547,7 @@ Included by default: `yes`
 
 `Bypass URL redirects`: Adds an option to bypass URL redirects and open the original URL directly.
 
-Target version: `19.34.42`, `19.43.41`, `19.47.53`, `20.07.39`, `20.12.46`, `20.13.41`
+Target version: `19.34.42`, `20.07.39`, `20.13.41`, `20.14.43`
 
 Dependencies: `BytecodePatch`, `BytecodePatch`, `ResourcePatch`, `ResourcePatch`
 
@@ -1509,7 +1557,7 @@ Included by default: `yes`
 
 `Open links externally`: Adds an option to always open links in your browser instead of the in-app browser.
 
-Target version: `19.34.42`, `19.43.41`, `19.47.53`, `20.07.39`, `20.12.46`, `20.13.41`
+Target version: `19.34.42`, `20.07.39`, `20.13.41`, `20.14.43`
 
 Dependencies: `BytecodePatch`
 
@@ -1517,9 +1565,19 @@ Included by default: `yes`
 
 ---
 
-`Remove tracking query parameter`: Adds an option to remove the tracking parameter from links you share.
+`Loop video`: Adds an option to loop videos and display loop video button in the video player.
 
-Target version: `19.34.42`, `19.43.41`, `19.47.53`, `20.07.39`, `20.12.46`, `20.13.41`
+Target version: `19.34.42`, `20.07.39`, `20.13.41`, `20.14.43`
+
+Dependencies: `BytecodePatch`, `ResourcePatch`, `BytecodePatch`
+
+Included by default: `yes`
+
+---
+
+`Sanitize sharing links`: Adds an option to remove the tracking query parameter from shared links.
+
+Target version: `19.34.42`, `20.07.39`, `20.13.41`, `20.14.43`
 
 Dependencies: `BytecodePatch`, `BytecodePatch`, `ResourcePatch`
 
@@ -1529,7 +1587,7 @@ Included by default: `yes`
 
 `Spoof video streams`: Adds options to spoof the client video streams to fix playback.
 
-Target version: `19.34.42`, `19.43.41`, `19.47.53`, `20.07.39`, `20.12.46`, `20.13.41`
+Target version: `19.34.42`, `20.07.39`, `20.13.41`, `20.14.43`
 
 Dependencies: `BytecodePatch`, `BytecodePatch`, `ResourcePatch`, `ResourcePatch`
 
@@ -1539,7 +1597,7 @@ Included by default: `yes`
 
 `Force original audio`: Adds an option to always use the original audio track.
 
-Target version: `19.34.42`, `19.43.41`, `19.47.53`, `20.07.39`, `20.12.46`, `20.13.41`
+Target version: `19.34.42`, `20.07.39`, `20.13.41`, `20.14.43`
 
 Dependencies: `BytecodePatch`, `BytecodePatch`, `ResourcePatch`, `ResourcePatch`
 
@@ -1547,9 +1605,9 @@ Included by default: `yes`
 
 ---
 
-`Disable HDR video`: Adds an option to disable video HDR.
+`Disable video codecs`: Adds options to disable HDR and VP9 codecs.
 
-Target version: `19.34.42`, `19.43.41`, `19.47.53`, `20.07.39`, `20.12.46`, `20.13.41`
+Target version: `19.34.42`, `20.07.39`, `20.13.41`, `20.14.43`
 
 Dependencies: `BytecodePatch`, `BytecodePatch`, `ResourcePatch`, `BytecodePatch`
 
@@ -1557,9 +1615,9 @@ Included by default: `yes`
 
 ---
 
-`Video quality`: Adds options to use the advanced video quality menu and set default video qualities.
+`Video quality`: Adds options to use the advanced video quality menu, set default video qualities, and disable video codecs such as VP9/HDR.
 
-Target version: `19.34.42`, `19.43.41`, `19.47.53`, `20.07.39`, `20.12.46`, `20.13.41`
+Target version: `19.34.42`, `20.07.39`, `20.13.41`, `20.14.43`
 
 Dependencies: `BytecodePatch`, `BytecodePatch`, `BytecodePatch`
 
@@ -1567,9 +1625,9 @@ Included by default: `yes`
 
 ---
 
-`Playback speed`: Adds options to customize available playback speeds, set default a playback speed, and show a speed dialog button in the video player.
+`Playback speed`: Adds options to customize available playback speeds, set a default playback speed, and show a speed dialog button in the video player.
 
-Target version: `19.34.42`, `19.43.41`, `19.47.53`, `20.07.39`, `20.12.46`, `20.13.41`
+Target version: `19.34.42`, `20.07.39`, `20.13.41`, `20.14.43`
 
 Dependencies: `BytecodePatch`, `BytecodePatch`, `BytecodePatch`
 
@@ -1593,6 +1651,16 @@ Included by default: `yes`
 
 ---
 
+`Limit feed to followed profiles`: Filters the home feed to display only content from profiles you follow.
+
+Target version: `all`
+
+Dependencies: `BytecodePatch`
+
+Included by default: `no`
+
+---
+
 `Hide explore feed`: Hides posts and reels from the explore/search page.
 
 Target version: `all`
@@ -1605,7 +1673,7 @@ Included by default: `no`
 
 `Hide navigation buttons`: Hides navigation bar buttons, such as the Reels and Create button.
 
-Target version: `397.1.0.52.81`
+Target version: `all`
 
 Dependencies: `none`
 
@@ -2636,6 +2704,16 @@ Included by default: `yes`
 
 ---
 
+`Disable Tumblr TV`: Removes the Tumblr TV navigation button from the bottom navigation bar.
+
+Target version: `all`
+
+Dependencies: `BytecodePatch`
+
+Included by default: `yes`
+
+---
+
 `Fix old versions`: Fixes old versions of the app (v33.2 and earlier) breaking due to Tumblr removing remnants of Tumblr Live from the API, which causes many requests to fail. This patch has no effect on newer versions of the app.
 
 Target version: `all`
@@ -2748,7 +2826,7 @@ Included by default: `yes`
 
 `Hide Ads`: Hides ad banners between chats.
 
-Target version: `25.9.2.0`
+Target version: `25.9.2.0`, `26.1.2.0`
 
 Dependencies: `none`
 
