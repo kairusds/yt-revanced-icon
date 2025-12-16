@@ -122,6 +122,40 @@ Included by default: `no`
 
 ---
 
+`Custom network security`: Allows trusting custom certificate authorities for a specific domain.
+
+Target version: `all`
+
+Dependencies: `none`
+
+Included by default: `no`
+
+<details>
+<summary>Options</summary>
+
+| Key | Description |
+| :---: | :---: |
+| `targetDomains` | List of domains to which the custom trust configuration will be applied (one domain per entry). |
+| `includeSubdomains` | Applies the configuration to all subdomains of the target domains. |
+| `customCAFilePaths` | List of paths to files in PEM or DER format (one file path per entry).
+
+Makes an app trust the provided custom certificate authorities (CAs),
+for the specified domains |
+| `and if the option "Include Subdomains" is enabled then also the subdomains.
+
+
+CA files will be bundled in res/raw/ of resulting APK` | undefined |
+| `allowUserCerts` | Makes an app trust certificates from the Android user store for the specified domains |
+| `and if the option "Include Subdomains" is enabled then also the subdomains.` | undefined |
+| `allowSystemCerts` | Makes an app trust certificates from the Android system store for the specified domains |
+| `and and if the option "Include Subdomains" is enabled then also the subdomains.` | undefined |
+| `allowCleartextTraffic` | Allows unencrypted HTTP traffic for the specified domains |
+| `and if "Include Subdomains" is enabled then also the subdomains.` | undefined |
+| `overridePins` | Overrides certificate pinning for the specified domains and their subdomains if the option "Include Subdomains" is enabled to allow inspecting app traffic via a proxy. |
+</details>
+
+---
+
 `Enable Android debugging`: Enables Android debugging capabilities. This can slow down the app.
 
 Target version: `all`
@@ -334,7 +368,7 @@ Included by default: `yes`
 
 ---
 
-`Remove root detection`: Removes the check for root permissions.
+`Remove root detection`: Removes the check for root permissions and unlocked bootloader.
 
 Target version: `all`
 
@@ -610,7 +644,7 @@ Included by default: `yes`
 
 `Disable ads`: null
 
-Target version: `all`
+Target version: `6.54.5`
 
 Dependencies: `none`
 
@@ -620,11 +654,21 @@ Included by default: `yes`
 
 `Enable debug menu`: null
 
-Target version: `5.158.4`
+Target version: `all`
 
 Dependencies: `none`
 
 Included by default: `no`
+
+---
+
+`Skip energy recharge ads`: Skips watching ads to recharge energy.
+
+Target version: `all`
+
+Dependencies: `none`
+
+Included by default: `yes`
 
 ---
 
@@ -849,11 +893,43 @@ Included by default: `yes`
 
 ---
 
-`Hide cast button`: Adds an option to hide the cast button.
+`Custom branding`: Adds options to change the app icon and app name. Branding cannot be changed for mounted (root) installations.
 
 Target version: `7.29.52`, `8.10.52`
 
-Dependencies: `BytecodePatch`, `BytecodePatch`, `ResourcePatch`
+Dependencies: `BytecodePatch`, `BytecodePatch`, `ResourcePatch`, `ResourcePatch`, `RawResourcePatch`, `BytecodePatch`
+
+Included by default: `yes`
+
+<details>
+<summary>Options</summary>
+
+| Key | Description |
+| :---: | :---: |
+| `customName` | Custom app name. |
+| `customIcon` | Folder with images to use as a custom icon.
+
+The folder must contain one or more of the following folders |
+| `depending on the DPI of the device` | 
+- mipmap-mdpi
+- mipmap-hdpi
+- mipmap-xhdpi
+- mipmap-xxhdpi
+- mipmap-xxxhdpi
+
+Each of the folders must contain all of the following files |
+| `the path contains a 'drawable' folder with any of the monochrome icon files` | 
+revanced_adaptive_monochrome_custom.xml
+revanced_notification_icon_custom.xml |
+</details>
+
+---
+
+`Hide buttons`: Adds options to hide the cast, history, notification, and search buttons.
+
+Target version: `7.29.52`, `8.10.52`
+
+Dependencies: `BytecodePatch`, `BytecodePatch`, `ResourcePatch`, `ResourcePatch`
 
 Included by default: `yes`
 
@@ -864,6 +940,16 @@ Included by default: `yes`
 Target version: `7.29.52`, `8.10.52`
 
 Dependencies: `BytecodePatch`, `BytecodePatch`, `ResourcePatch`
+
+Included by default: `yes`
+
+---
+
+`Change miniplayer color`: Adds an option to change the miniplayer background color to match the fullscreen player.
+
+Target version: `7.29.52`, `8.10.52`
+
+Dependencies: `BytecodePatch`, `BytecodePatch`, `ResourcePatch`, `ResourcePatch`
 
 Included by default: `yes`
 
@@ -931,7 +1017,7 @@ Included by default: `yes`
 
 Target version: `7.29.52`, `8.10.52`
 
-Dependencies: `ResourcePatch`, `BytecodePatch`, `BytecodePatch`
+Dependencies: `ResourcePatch`, `ResourcePatch`, `BytecodePatch`, `BytecodePatch`
 
 Included by default: `yes`
 
@@ -965,7 +1051,7 @@ Included by default: `yes`
 
 ---
 
-`Sanitize sharing links`: Adds an option to remove the tracking query parameter from shared links.
+`Sanitize sharing links`: Removes the tracking query parameters from shared links.
 
 Target version: `7.29.52`, `8.10.52`
 
@@ -980,6 +1066,16 @@ Included by default: `yes`
 Target version: `7.29.52`, `8.10.52`
 
 Dependencies: `BytecodePatch`, `BytecodePatch`, `ResourcePatch`, `ResourcePatch`, `BytecodePatch`
+
+Included by default: `yes`
+
+---
+
+`Force original audio`: Adds an option to always use the original audio track.
+
+Target version: `7.29.52`, `8.10.52`
+
+Dependencies: `BytecodePatch`, `BytecodePatch`, `ResourcePatch`, `ResourcePatch`
 
 Included by default: `yes`
 
@@ -1081,32 +1177,34 @@ Included by default: `yes`
 
 ---
 
-`Custom branding`: Applies a custom app name and icon. Defaults to "YouTube ReVanced" and the ReVanced logo.
+`Custom branding`: Adds options to change the app icon and app name. Branding cannot be changed for mounted (root) installations.
 
 Target version: `19.34.42`, `20.07.39`, `20.13.41`, `20.14.43`
 
-Dependencies: `ResourcePatch`
+Dependencies: `BytecodePatch`, `ResourcePatch`, `ResourcePatch`, `RawResourcePatch`, `BytecodePatch`
 
-Included by default: `no`
+Included by default: `yes`
 
 <details>
 <summary>Options</summary>
 
 | Key | Description |
 | :---: | :---: |
-| `appName` | The name of the app. |
-| `iconPath` | The icon to apply to the app.
+| `customName` | Custom app name. |
+| `customIcon` | Folder with images to use as a custom icon.
 
-If a path to a folder is provided |
-| `the folder must contain the following folders` | 
-
-- mipmap-xxxhdpi
-- mipmap-xxhdpi
-- mipmap-xhdpi
-- mipmap-hdpi
+The folder must contain one or more of the following folders |
+| `depending on the DPI of the device` | 
 - mipmap-mdpi
+- mipmap-hdpi
+- mipmap-xhdpi
+- mipmap-xxhdpi
+- mipmap-xxxhdpi
 
-Each of these folders must contain the following files |
+Each of the folders must contain all of the following files |
+| `the path contains a 'drawable' folder with any of the monochrome icon files` | 
+revanced_adaptive_monochrome_custom.xml
+revanced_notification_icon_custom.xml |
 </details>
 
 ---
@@ -1128,11 +1226,10 @@ Included by default: `yes`
 
 The folder must contain one or more of the following folders |
 | `depending on the DPI of the device` | 
-- drawable-xxxhdpi
-- drawable-xxhdpi
-- drawable-xhdpi
 - drawable-hdpi
-- drawable-mdpi
+- drawable-xhdpi
+- drawable-xxhdpi
+- drawable-xxxhdpi
 
 Each of the folders must contain all of the following files |
 </details>
@@ -1183,7 +1280,7 @@ Included by default: `yes`
 
 Target version: `19.34.42`, `20.07.39`, `20.13.41`, `20.14.43`
 
-Dependencies: `BytecodePatch`, `ResourcePatch`
+Dependencies: `BytecodePatch`, `ResourcePatch`, `ResourcePatch`
 
 Included by default: `yes`
 
@@ -1491,7 +1588,7 @@ Included by default: `yes`
 
 Target version: `19.34.42`, `20.07.39`, `20.13.41`, `20.14.43`
 
-Dependencies: `ResourcePatch`, `BytecodePatch`, `BytecodePatch`
+Dependencies: `ResourcePatch`, `ResourcePatch`, `BytecodePatch`, `BytecodePatch`
 
 Included by default: `yes`
 
@@ -1575,7 +1672,7 @@ Included by default: `yes`
 
 ---
 
-`Sanitize sharing links`: Adds an option to remove the tracking query parameter from shared links.
+`Sanitize sharing links`: Removes the tracking query parameters from shared links.
 
 Target version: `19.34.42`, `20.07.39`, `20.13.41`, `20.14.43`
 
@@ -1615,7 +1712,7 @@ Included by default: `yes`
 
 ---
 
-`Video quality`: Adds options to use the advanced video quality menu, set default video qualities, and disable video codecs such as VP9/HDR.
+`Video quality`: Adds options to set default video qualities and always use the advanced video quality menu.
 
 Target version: `19.34.42`, `20.07.39`, `20.13.41`, `20.14.43`
 
@@ -1673,9 +1770,9 @@ Included by default: `no`
 
 `Hide navigation buttons`: Hides navigation bar buttons, such as the Reels and Create button.
 
-Target version: `all`
+Target version: `401.0.0.48.79`
 
-Dependencies: `none`
+Dependencies: `BytecodePatch`
 
 Included by default: `no`
 
@@ -1697,6 +1794,66 @@ Target version: `all`
 Dependencies: `none`
 
 Included by default: `no`
+
+---
+
+`Hide suggested content`: Hides suggested stories, reels, threads and survey from feed (Suggested posts will still be shown).
+
+Target version: `all`
+
+Dependencies: `none`
+
+Included by default: `no`
+
+---
+
+`Enable developer menu`: Enables the developer menu, which can be found at the bottom of settings menu with name 'Internal Settings'.
+
+It is recommended to use this patch with an alpha/beta Instagram release. Patching a stable release works, but the developer menu shows the developer flags as numbers and does not show a human readable description.
+
+Target version: `all`
+
+Dependencies: `none`
+
+Included by default: `no`
+
+---
+
+`Open links externally`: Changes links to always open in your external browser, instead of the in-app browser.
+
+Target version: `all`
+
+Dependencies: `BytecodePatch`
+
+Included by default: `no`
+
+---
+
+`Change link sharing domain`: Replaces the domain name of shared links.
+
+Target version: `all`
+
+Dependencies: `BytecodePatch`
+
+Included by default: `no`
+
+<details>
+<summary>Options</summary>
+
+| Key | Description |
+| :---: | :---: |
+| `domainName` | The domain name to use when sharing links. |
+</details>
+
+---
+
+`Sanitize sharing links`: Removes the tracking query parameters from shared links.
+
+Target version: `all`
+
+Dependencies: `BytecodePatch`
+
+Included by default: `yes`
 
 ---
 
@@ -2078,7 +2235,7 @@ Included by default: `yes`
 
 <details>
 
-`Remove root detection`: Removes the check for root permissions.
+`Remove root detection`: Removes the check for root permissions and unlocked bootloader.
 
 Target version: `all`
 
@@ -2268,7 +2425,7 @@ Included by default: `yes`
 
 ---
 
-`Sanitize sharing links`: Removes (tracking) query parameters from the URLs when sharing links.
+`Sanitize sharing links`: Removes the tracking query parameters from shared links.
 
 Target version: `all`
 
@@ -2344,6 +2501,32 @@ Included by default: `yes`
 
 </details>
 
+## `com.sec.android.app.fm`
+
+<details>
+
+`Fix crashes`: Prevents the app from crashing because of missing system permissions.
+
+Target version: `12.4.00.7`, `12.3.00.13`, `12.3.00.11`
+
+Dependencies: `ResourcePatch`, `Bypass device checks`
+
+Included by default: `yes`
+
+---
+
+`Bypass device checks`: Removes firmware and region blacklisting. This patch will still not allow the app to run on devices that do not have the required hardware.
+
+Target version: `12.4.00.7`, `12.3.00.13`, `12.3.00.11`
+
+Dependencies: `none`
+
+Included by default: `yes`
+
+---
+
+</details>
+
 ## `com.sony.songpal.mdr`
 
 <details>
@@ -2410,16 +2593,6 @@ Included by default: `yes`
 
 <details>
 
-`Hide Create button`: Hides the "Create" button in the navigation bar.
-
-Target version: `all`
-
-Dependencies: `BytecodePatch`
-
-Included by default: `yes`
-
----
-
 `Custom theme`: Applies a custom theme (defaults to amoled black)
 
 Target version: `all`
@@ -2474,7 +2647,7 @@ Included by default: `no`
 
 ---
 
-`Sanitize sharing links`: Removes the tracking query parameters from links before they are shared.
+`Sanitize sharing links`: Removes the tracking query parameters from shared links.
 
 Target version: `all`
 
@@ -2571,6 +2744,16 @@ Included by default: `yes`
 ---
 
 `Settings`: Adds ReVanced settings to TikTok.
+
+Target version: `36.5.4`
+
+Dependencies: `BytecodePatch`, `RawResourcePatch`
+
+Included by default: `yes`
+
+---
+
+`Sanitize sharing links`: Removes the tracking query parameters from shared links.
 
 Target version: `36.5.4`
 
@@ -2752,7 +2935,7 @@ Included by default: `no`
 
 `Dynamic color`: Replaces the default X (Formerly Twitter) Blue with the user's Material You palette.
 
-Target version: `10.86.0-release.0`, `10.60.0-release.0`, `10.48.0-release.0`
+Target version: `10.60.0-release.0`, `10.86.0-release.0`
 
 Dependencies: `none`
 
@@ -2762,7 +2945,7 @@ Included by default: `yes`
 
 `Hide ads`: null
 
-Target version: `10.86.0-release.0`, `10.60.0-release.0`, `10.48.0-release.0`
+Target version: `10.60.0-release.0`, `10.86.0-release.0`
 
 Dependencies: `BytecodePatch`
 
@@ -2772,7 +2955,7 @@ Included by default: `yes`
 
 `Hide recommended users`: null
 
-Target version: `10.86.0-release.0`, `10.60.0-release.0`, `10.48.0-release.0`
+Target version: `10.60.0-release.0`, `10.86.0-release.0`
 
 Dependencies: `BytecodePatch`
 
@@ -2780,13 +2963,13 @@ Included by default: `yes`
 
 ---
 
-`Change link sharing domain`: Replaces the domain name of Twitter links when sharing them.
+`Change link sharing domain`: Replaces the domain name of shared links. Including this patch can prevent making posts that quote other posts.
 
-Target version: `10.86.0-release.0`, `10.60.0-release.0`, `10.48.0-release.0`
+Target version: `10.60.0-release.0`, `10.86.0-release.0`
 
-Dependencies: `ResourcePatch`, `BytecodePatch`
+Dependencies: `BytecodePatch`
 
-Included by default: `yes`
+Included by default: `no`
 
 <details>
 <summary>Options</summary>
@@ -2798,19 +2981,9 @@ Included by default: `yes`
 
 ---
 
-`Open links with app chooser`: Instead of opening links directly, open them with an app chooser. As a result you can select a browser to open the link with.
+`Sanitize sharing links`: Removes the tracking query parameters from shared links.
 
-Target version: `10.48.0-release.0`
-
-Dependencies: `BytecodePatch`
-
-Included by default: `no`
-
----
-
-`Sanitize sharing links`: Removes the tracking query parameters from links before they are shared.
-
-Target version: `10.86.0-release.0`, `10.60.0-release.0`, `10.48.0-release.0`
+Target version: `10.60.0-release.0`, `10.86.0-release.0`
 
 Dependencies: `none`
 
@@ -2831,6 +3004,30 @@ Target version: `25.9.2.0`, `26.1.2.0`
 Dependencies: `none`
 
 Included by default: `yes`
+
+---
+
+`Hide navigation buttons`: Permanently hides navigation bar buttons, such as Explore and Marketplace.
+
+Target version: `all`
+
+Dependencies: `none`
+
+Included by default: `no`
+
+<details>
+<summary>Options</summary>
+
+| Key | Description |
+| :---: | :---: |
+| `hideChats` | Permanently hides the Chats button. |
+| `hideCalls` | Permanently hides the Calls button. |
+| `hideExplore` | Permanently hides the Explore button. |
+| `hideMore` | Permanently hides the More button. |
+| `hidePay` | Permanently hides the Pay button. |
+| `hideCamera` | Permanently hides the Camera button. |
+| `hideMarketplace` | Permanently hides the Marketplace button. |
+</details>
 
 ---
 
@@ -2937,6 +3134,16 @@ Included by default: `yes`
 ---
 
 `Settings`: Adds ReVanced settings to TikTok.
+
+Target version: `36.5.4`
+
+Dependencies: `BytecodePatch`, `RawResourcePatch`
+
+Included by default: `yes`
+
+---
+
+`Sanitize sharing links`: Removes the tracking query parameters from shared links.
 
 Target version: `36.5.4`
 
