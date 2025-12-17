@@ -6,9 +6,9 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v5
 
-    - uses: actions/setup-java@v4
+    - uses: actions/setup-java@v5
       with:
         distribution: "zulu"
         java-version: "17"
@@ -31,14 +31,14 @@ jobs:
         cp -r ../custom-branding . ; jar cvf ../$old_file *
 
     - name: Update README
-      run: node gen-readme.js
-
-    - name: Commit README
-      uses: EndBug/add-and-commit@v9
-      with:
-        add: "README.md"
-        default_author: github_actions
-        message: "Update README.md"
+      run: |
+          cd $GITHUB_WORKSPACE
+          node gen-readme.js
+          git config --local user.email "actions@github.com"
+          git config --local user.name "GitHub Actions"
+          git add .
+          git commit -m "Update README.md" || exit 0
+          git push
 
     - name: Get files checksum
       run: |
