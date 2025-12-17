@@ -34,8 +34,8 @@ jobs:
       run: |
           cd $GITHUB_WORKSPACE
           node gen-readme.js
-          git config --local user.email "actions@github.com"
-          git config --local user.name "GitHub Actions"
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
           git add README.md
           git commit -m "Update README.md" || exit 0
           git push
