@@ -93,7 +93,7 @@ Included by default: `no`
 
 ---
 
-`Spoof SIM country`: Spoofs country information returned by the SIM card provider.
+`Spoof SIM provider`: Spoofs information about the SIM card provider.
 
 Target version: `all`
 
@@ -107,7 +107,11 @@ Included by default: `no`
 | Key | Description |
 | :---: | :---: |
 | `networkCountryIso` | ISO-3166-1 alpha-2 country code equivalent for the SIM provider's country code. |
+| `networkOperator` | The 5 or 6 digits MCC+MNC (Mobile Country Code + Mobile Network Code) of the network operator. |
+| `networkOperatorName` | The full name of the network operator. |
 | `simCountryIso` | ISO-3166-1 alpha-2 country code equivalent for the SIM provider's country code. |
+| `simOperator` | The 5 or 6 digits MCC+MNC (Mobile Country Code + Mobile Network Code) of the SIM operator. |
+| `simOperatorName` | The full name of the SIM operator. |
 </details>
 
 ---
@@ -384,7 +388,7 @@ Included by default: `yes`
 
 <details>
 
-`Remove root detection`: Removes the check for root permissions and unlocked bootloader.
+`Remove device integrity checks`: Removes the check for root permissions and unlocked bootloader.
 
 Target version: `all`
 
@@ -448,6 +452,22 @@ Included by default: `yes`
 
 </details>
 
+## `ch.protonvpn.android`
+
+<details>
+
+`Remove delay`: Removes the delay when changing servers.
+
+Target version: `all`
+
+Dependencies: `none`
+
+Included by default: `yes`
+
+---
+
+</details>
+
 ## `com.adobe.lrmobile`
 
 <details>
@@ -463,6 +483,16 @@ Included by default: `yes`
 ---
 
 `Unlock Premium`: null
+
+Target version: `9.3.0`
+
+Dependencies: `none`
+
+Included by default: `yes`
+
+---
+
+`Disable version check`: Disables the server-side version check that prevents the app from starting.
 
 Target version: `9.3.0`
 
@@ -611,6 +641,22 @@ Included by default: `yes`
 <details>
 
 `Hide ads`: null
+
+Target version: `all`
+
+Dependencies: `none`
+
+Included by default: `yes`
+
+---
+
+</details>
+
+## `com.disney.disneyplus`
+
+<details>
+
+`Skip ads`: Automatically skips ads.
 
 Target version: `all`
 
@@ -1738,6 +1784,16 @@ Included by default: `yes`
 
 <details>
 
+`Disable Reels scrolling`: Disables the endless scrolling behavior in Instagram Reels, preventing swiping to the next Reel. Note: On a clean install, the 'Tip' animation may appear but will stop on its own after a few seconds.
+
+Target version: `all`
+
+Dependencies: `none`
+
+Included by default: `yes`
+
+---
+
 `Hide ads`: null
 
 Target version: `all`
@@ -1753,6 +1809,18 @@ Included by default: `yes`
 Target version: `all`
 
 Dependencies: `BytecodePatch`
+
+Included by default: `no`
+
+---
+
+`Anonymous story viewing`: View stories without sending any information to the server. 
+Your view will not appear in the story viewers list. 
+Note: Since no data is sent, a story you have already viewed may appear as new on another device.
+
+Target version: `all`
+
+Dependencies: `none`
 
 Included by default: `no`
 
@@ -1857,13 +1925,23 @@ Included by default: `yes`
 
 ---
 
-`Disable signature check`: Disables the signature check that causes the app to crash on startup.
+`Disable signature check`: Disables the signature check that can cause the app to crash on startup. Including this patch may cause issues with sharing or opening external Instagram links.
 
 Target version: `all`
 
 Dependencies: `none`
 
-Included by default: `yes`
+Included by default: `no`
+
+---
+
+`Disable story auto flipping`: Disable stories automatically flipping/skipping after some seconds.
+
+Target version: `all`
+
+Dependencies: `none`
+
+Included by default: `no`
 
 ---
 
@@ -2147,6 +2225,22 @@ Included by default: `yes`
 
 </details>
 
+## `com.letterboxd.letterboxd`
+
+<details>
+
+`Hide ads`: null
+
+Target version: `all`
+
+Dependencies: `none`
+
+Included by default: `yes`
+
+---
+
+</details>
+
 ## `com.microblink.photomath`
 
 <details>
@@ -2341,6 +2435,22 @@ Included by default: `yes`
 
 </details>
 
+## `com.peacocktv.peacockandroid`
+
+<details>
+
+`Hide ads`: Hides all video ads.
+
+Target version: `all`
+
+Dependencies: `none`
+
+Included by default: `yes`
+
+---
+
+</details>
+
 ## `com.piccomaeurope.fr`
 
 <details>
@@ -2397,9 +2507,9 @@ Included by default: `yes`
 
 `Hide ads`: null
 
-Target version: `2024.17.0`
+Target version: `all`
 
-Dependencies: `ResourcePatch`, `BytecodePatch`, `BytecodePatch`
+Dependencies: `BytecodePatch`, `BytecodePatch`
 
 Included by default: `yes`
 
@@ -3302,6 +3412,38 @@ Included by default: `yes`
 `Unlock pro`: null
 
 Target version: `2.2 build 016`
+
+Dependencies: `none`
+
+Included by default: `yes`
+
+---
+
+</details>
+
+## `in.startv.hotstar`
+
+<details>
+
+`Skip ads`: Automatically skips ads.
+
+Target version: `all`
+
+Dependencies: `none`
+
+Included by default: `yes`
+
+---
+
+</details>
+
+## `in.startv.hotstaronly`
+
+<details>
+
+`Skip ads`: Automatically skips ads.
+
+Target version: `all`
 
 Dependencies: `none`
 
