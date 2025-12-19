@@ -27,7 +27,7 @@ jobs:
         old_file=$(find patches*.rvp)
         echo "PATCHES_JAR_FILE=$old_file" >> $GITHUB_ENV
         mkdir rp ; mv $old_file rp ; cd rp
-        unzip patches*.rvp ; rm $old_file ; rm -r custom-branding
+        unzip patches*.rvp ; rm $old_file
         cp -r ../custom-branding . ; jar cvf ../$old_file *
 
     - name: Update README
